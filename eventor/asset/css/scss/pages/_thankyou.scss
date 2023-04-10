@@ -1,0 +1,21 @@
+.delivered{
+    min-height: 100vh;
+    padding-left: 0;
+    @include display-f;
+    @include text-align(center);
+    padding: 150px 0;
+    & .delivery-img{
+        @include smcontainer(205px);
+        padding-bottom: 25px;
+        img{
+            @include fit-image;
+        }
+    }
+    & .delivered-blk{
+        @include smcontainer(750px);
+
+    }
+    p{
+        padding-top: 35px;
+    }
+}

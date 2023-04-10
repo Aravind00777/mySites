@@ -1,0 +1,29 @@
+header{
+    position: fixed;
+    padding: 23px 0;
+    width: 100%;
+    z-index: 99999;
+    @include mq(phablet){
+        padding: 20px 0;
+    }
+    @include tranistions-;
+    & .logo{
+        max-width: 283px;
+        display: block;
+        @include mq(laptop){
+            max-width: 235px;
+        }
+        @include mq(mobile){
+            max-width: 194px;
+        }
+        img{
+            @include fit-image();
+        }
+        &.thankyou-logo{
+            margin:  0 auto;
+        }
+    }
+    &.active{
+        background-color: $blue;
+    }
+}

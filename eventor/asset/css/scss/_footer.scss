@@ -1,0 +1,42 @@
+footer{
+    background-color: $white;
+    padding: 22px 0;
+    .footerrow{
+        @include display-f($align:unset , $jc:space-between);
+        @include mq(phablet){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & a{
+                padding-bottom: 18px;
+            }
+            & .made{
+                order: 1;
+            }
+            & .rights{
+                order: 3;
+            }
+            & .emalis{
+                order: 2;
+            }
+        }
+        a{
+            @include fontvariable($size:16px , $w:400);
+            color: $blue;
+            display: block;
+        }
+        p{
+            @include fontvariable($size:16px , $w:400);
+            color: $blue;
+            
+        }
+        & .heart{
+            max-width: 14px;
+            width: 100%;
+        }
+        & .bubble-img{
+            max-width: 66px;
+            width: 100%;
+        }
+    }
+}

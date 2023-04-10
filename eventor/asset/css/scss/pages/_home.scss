@@ -1,0 +1,165 @@
+.banner{
+    background-color: $blue;
+    @include mq(xxxxl){
+        padding-left: 50px;
+    }
+    @include mq(laptop){
+        padding-left: 30px;
+    }
+    @include mq(phablet){
+        padding-left: 0;
+    }
+    & .col-lg-6{
+        &:first-child{
+            padding: 130px 0;
+            @include mq(xxl){
+                padding: 120px 0 ;
+            }
+            @include mq(tablet){
+                padding: 100px 0 50px 0;
+            }
+            @include mq(phablet){
+                padding: 100px 0 50px 30px;
+            }
+            @include mq(vsmall){
+                padding: 100px 0 30px 22px;
+            }
+        }
+        @include display-f();
+        & .banner-cnt{
+            @include maxwidth($max:656px , $left:auto ,$right:34px);
+            p{
+                padding-top: 35px;
+                @include lineh(1.94);
+                padding-bottom: 35px;
+                @include mq(vsmall){
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+    & .banner-bg{
+        height: 100%;
+        img{
+            @include fit-image();
+        }
+    }
+}
+.event{
+    background-color: $light-white;
+    padding: 100px 0;
+    @include mq(xxl){
+        padding: 75px 0;
+    }
+    @include mq(mobile){
+        padding: 50px 0;
+    }
+    .event-cnt{
+        @include text-align();
+        p{
+            color: $blue;
+            padding-top: 20px;
+        }
+    }
+    .form{
+        @include border-radius(5px);
+        @include smcontainer(1220px);
+        background-color: $blue;
+        padding: 40px 149px ;
+        margin-top: 40px;
+        @include mq(laptop){
+            padding: 40px 75px;
+        }
+        @include mq(mobile){
+            padding: 40px 30px;
+        }
+        @include mq(vsmall){
+            padding: 40px 20px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 18px;
+            outline: none;
+            @include border-radius(5px);
+            @include fontvariable($size:16px ,$w:400);
+            border: 1px solid $border-color;
+            color: $input-color;
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid $border-color;
+            @include border-radius(5px);
+            outline: none;
+            min-height: 128px;
+            padding: 15px;
+            @include fontvariable($size:16px ,$w:400);
+            @include lineh(1.9);
+            color: $input-color;
+            @include mq(mobile){
+                min-height: 238px;
+            }
+        }
+        // checkbox 
+        .form-group{
+            padding-top: 17PX;
+            & #check-error{
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    display: block;
+                }
+            }
+        }
+.form-group input {
+    padding: 0;
+    height: 0;
+    width: 0;
+    margin-bottom: 0;
+    display: block;
+    visibility: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+    font-weight: 300;
+    padding-bottom: 0;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5.5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 9px;
+    background-color: $white;
+}
+
+.form-group input:checked~label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    width: 5px;
+    height: 9px;
+    border: solid $blue;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.privacy{
+    display: inline-block;
+    color: $white;
+    text-decoration: underline;
+}
+    }
+}

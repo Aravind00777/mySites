@@ -1,0 +1,95 @@
+body{
+    @include fontvariable($size:14px , $w:400 );
+    color: $white;
+}
+
+.container{
+    @include smcontainer(1410px);
+    @include mq(xxxxl){
+        padding: 0 50px;
+    }
+    @include mq(laptop){
+        padding: 0 30px  ;
+    }
+    @include mq(vsmall){
+        padding: 0 22px  ;
+    }
+    
+}
+h1{
+    @include fontvariable($size:55px , $w:700 );
+    @include mq(xxxxl){
+        font-size: 45px;
+    }
+    @include mq(laptop){
+        font-size: 37px;
+    }
+    @include mq(tablet){
+        font-size: 35px;
+    }
+    
+}
+h2{
+    @include fontvariable($size:40px , $w:700);
+    color: $blue;
+    @include mq(xxxxl){
+        font-size: 35px;
+    }
+    @include mq(tablet){
+        font-size: 30px;
+    }
+    
+}
+p{
+    @include fontvariable($size:18px , $w:400);
+    
+}
+.btn-touch{
+    @include fontvariable($size:18px !important, $w:700 !important);
+    display: inline-block;
+    max-width: 201px;
+    width: 100%;
+    padding: 14px;
+    @include text-align();
+    @include border-radius(5px);
+    background-color: $light-blue;
+    color: $blue;
+    @include tranistions-;
+    &:hover{
+        background-color: $hcolor ;
+        color: $blue;
+    }
+    &.Submit{
+        @include display-f;
+        margin: 0 auto;
+        margin-top: 55px;
+        border: 2px solid transparent !important    ;
+        background-color: $light-orange;
+        color: $btn-color !important;
+        @include mq(laptop){
+            margin-top: 40px;
+        }
+        &:hover{
+            border-color: $light-orange !important;
+            background-color: transparent ;
+            color: $white !important; 
+        }
+    }
+}
+label{
+    @include fontvariable($size:16px , $w:600);
+    color: $white;
+    display: block;
+    padding-bottom: 16px;
+}
+.star{
+    display: inline-block;
+    color: $orange;
+}
+.error{
+    color: red;
+    @include fontvariable($size:14px , $w:400);
+}
+// #div1{
+//     @include fontvariable($size:20px , $w:500);
+// }
