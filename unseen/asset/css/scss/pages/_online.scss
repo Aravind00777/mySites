@@ -1,0 +1,54 @@
+.medium{
+    @include rfs(80px 0 40px 0 , padding);
+    @include text-align();
+    p{
+        color: $o-black;
+        @include rfs(30px , padding-top);
+    }
+    .medium-wrap{
+        @include smcontainer(74%);
+        @include mq(phablet){
+            @include smcontainer(100%);
+        }
+    }
+
+}
+.midweek{
+    @include rfs(60px 0 80px 0 , padding);
+    background-color: $light-grey;
+    color: $o-black;
+    .col-lg-6{
+        &:first-child{
+            @include display-f($jc:unset, $align:unset);
+        }
+    }
+    .midweekimg{
+        @include rfs(20px , margin-right);
+        @include psudeo(){
+            left: unset;
+            @include rfs(20px , width);
+            height: 100%;
+            @include rfs(-20px , right);
+            background-color: $rose;
+            z-index: 2;
+        }
+        img{
+            @include fit-image();
+        }
+    }
+    .misweek-img1{
+        @extend .midweekimg;
+        @include rfs(40px , margin-top);
+    }
+    .midweek-cnt{
+        &:nth-child(2){
+            @include rfs(45px , padding-top);
+        }
+        p{
+            @include rfs(20px , padding-top);
+        }
+        h3{
+            color: $o-black;
+        }
+    }
+}

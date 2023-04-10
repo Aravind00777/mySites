@@ -1,0 +1,158 @@
+footer{
+    @include rfs(100px 0 30px 0 , padding);
+    background-color: $o-black;
+    position: relative;
+    z-index: 1;
+    hr{
+        top: 0;
+        position: absolute;
+        min-height: 7px;
+        width: 100%;
+        background-color: $rose;
+        margin: 0;
+        opacity: 1;
+    }
+    .row{
+       
+        .footer-link-head{
+            display: block;
+            @include fontvariables($w:700);
+            @include font-size(18px);
+            text-transform: uppercase;
+            &.touch{
+                @include font-size(20px);
+                text-transform: unset;
+                font-weight: 400;
+            }
+        }
+        & .footer-links{
+            
+            @include rfs(30px , padding-top);
+            li{
+                @include rfs(20px , padding-bottom);
+                &:last-child{
+                    padding-bottom: 0;
+                }
+                a{
+                    display: inline-block;
+                    color: $white;
+                    @include tranistions-;
+                    &:hover{
+                        color: $rose;
+                    }
+                }
+            }
+        }
+        & .form{
+            padding-top: 30px;
+            @include display-f();
+            input{
+                border: 1px solid $rose;
+                outline: none;
+                display: block;
+                @include font-size(15px);
+                color: $white;
+                background-color: transparent;
+                padding: 10px 15px;
+                width: 100%;
+                max-width: 80%;
+                @include mq(mobile){
+                    max-width: 100%;
+                }
+            }
+            & .go-btn{
+                display: block;
+                border: 1px solid $rose;
+                outline: none;
+                background-color: $rose;
+                @include font-size(16px);
+                color: $white;
+                margin-left: 0px;
+                padding: 9.42px 16px;
+                max-width: 20%;
+                @include tranistions-;
+                &:hover{
+                    background-color:transparent;
+
+                }
+            }
+        }
+        &.row-cols-lg-5{
+            @include rfs(60px , padding-top);
+            .col{
+                width: 18.5%;
+                &:last-child{
+                    width: 26%;
+                    @include mq(tablet){
+                        width: 40.33%;
+                    }
+                    @include mq(phablet){
+                        width: 50%;
+                    }
+                    @include mq(mobile){
+                        width: 100%;
+                    }
+                }
+                @include mq(tablet){
+                    width: 33.33%;
+                    @include rfs(30px , margin-bottom);
+                    &:last-child,
+                    &:nth-last-child(2){
+                        margin-bottom: 0;
+                        @include mq(phablet){
+                            @include rfs(30px , margin-bottom);
+                        }
+                    }
+                    
+                }
+                @include mq(phablet){
+                    width: 47%;
+                }
+                @include mq(mobile){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    & .footerbtm{
+        @include rfs(94px , padding-top);
+        p{
+            @include font-size(14px);
+        }
+        & .social-icons{
+            @include display-f($jc:right);
+            @include mq(tablet){
+                justify-content: left;
+                margin-top: 30px;
+            }
+            li{
+                margin-right: 16px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    display: block;
+                    border: 1px solid $rose;
+                    width: 48px;
+                    height: 48px;
+                    @include display-f();
+                    @include border-radius(2px);
+                    @include tranistions-;
+                    &:hover{
+                        background-color: $rose;
+                    }
+                    @include mq(mobile){
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        & .separator{
+            position: relative;
+            min-height: 1px;
+            @include rfs(45px 0 30px 0 , margin);
+
+        }
+    }
+}

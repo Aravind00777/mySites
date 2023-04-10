@@ -1,0 +1,103 @@
+.contact{
+    @include rfs(80px 0 , padding);
+    .row{
+        @include text-align();
+        
+        .col-lg-4{
+            p{
+                color: $o-black;
+            }
+            .mail{
+                li{
+                    padding-bottom: 10px;
+                    a{
+                        display: block;
+                        color: $o-black;
+                    }
+                }
+            }
+        }
+        .call-us{
+            color: $o-black;
+            @include rfs(18px 0 30px 0 , padding);
+        }
+        .call{
+            @include rfs(38px , max-width);
+            margin: 0 auto;
+            img{
+                @include fit-image();
+            }
+        }
+        .ph-link{
+            @include rfs(0 60px , padding);
+            li{
+                padding-bottom: 10px;
+                &:nth-child(3),
+                &:nth-child(4){
+                    padding-bottom: 0;
+                }
+                a{
+                    display: block;
+                    @include font-size(18px);
+                    color: $o-black;
+                }
+            }
+        }
+    }
+}
+.general{
+    @include rfs(60px 0 , padding);
+    background-color: $light-grey;
+    @include border-radius(6px);
+    .card-head{
+        color: $o-black;
+    }
+    .form-blk{
+        background-color: $white;
+        @include rfs(40px 68px 60px 68px , padding);
+        @include rfs(30px , margin-top);
+        textarea,
+        input{
+            width: 100%;
+            outline: none;
+            border: 1px solid $border-color;
+            @include border-radius(5px);
+            @include rfs(12px 20px , padding);
+            @include font-size(15px);
+            color: $input-color;
+        }
+        textarea{
+            height: 47px;
+        }
+        .col{
+            padding-bottom: 10px;
+        }
+        .complete{
+            display: block;
+            @include font-size(12px);
+            color: $o-black;
+        }
+        .confirm{
+            @extend .complete;
+            @include rfs(15px , padding-top);
+        }
+        .learn{
+            display: block;
+            text-decoration: underline;
+            color: $rose;
+            @include font-size(12px);
+            padding-top: 10px;
+        }
+        .submit-blk{
+            @include display-f($jc:left);
+            @include rfs(45px , padding-top);
+        }
+        .captcha{
+            @include rfs(225px , max-width);
+            @include rfs(66px , margin-right);
+            img{
+                @include fit-image();
+            }
+        }
+    }
+}

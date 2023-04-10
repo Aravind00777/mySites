@@ -1,0 +1,33 @@
+.inclusive{
+    @include rfs(80px 0 40px 0 , padding);
+    display: block;
+    p{
+        color: $o-black;
+        @include rfs(30px , padding-top);
+
+    }
+}
+.grey{
+    background-color: $light-grey;
+    @include rfs(50px 0 60px 0 , padding);
+    .video-img{
+        @include rfs(134px , max-width);
+        img{
+            @include fit-image();
+        }
+    }
+    .col-lg-10{
+        p{
+            padding-top: 0;
+            @include font-size(24px);
+            @include fontvariables($w:700 , $family:'Gilroy');
+
+        }
+    }
+}
+.student{
+    @include rfs(40px 0 80px 0 , padding);
+    p{
+        padding-top: 0;
+    }
+}
