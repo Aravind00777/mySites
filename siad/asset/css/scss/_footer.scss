@@ -1,0 +1,309 @@
+footer {
+
+    // @include psudeo($top:unset, $left:unset , $after-index:5){
+    //     @include backgoundformat($image:url("/asset/image/footer-after.png"));
+    //     width: 30%;
+    //     height: 98%;
+    // };
+    & .col-lg-5 {
+        padding: 70px 114px 87px 119px;
+        background-color: $blue;
+        @include mq(xxxxl){
+            padding: 60px 80px 75px 80px;
+        }
+        @include mq(xxl){
+            padding: 50px;
+        }
+        @include mq(mobile){
+            padding: 50px 30px;
+        }
+        & .footer-logo {
+            max-width: 340px;
+            display: block;
+            @include mq(xxl){
+                max-width: 260px;
+            }
+            @include mq(mobile){
+                max-width: 198px;
+            }
+
+            img {
+                @include fit-image;
+            }
+        }
+
+        & .footer-heading {
+            display: inline-block;
+            @include fontvariable($size: 16px, $w: 400);
+            color: $white;
+            padding: 65px 0 37px 0;
+            @include mq(tablet){
+                padding: 31px 0;
+            }
+
+            @include psudeo($top: unset, $bottom: 23px) {
+                width: 100%;
+                height: 2px;
+                background-color: $white;
+            }
+
+            ;
+
+        }
+
+        & form {
+            @include display-f($jc:space-between);
+            flex-wrap: wrap;
+            & .inputs {
+                @include flexw(48%);
+                border: 1px solid $light-violet;
+                outline: none;
+                font-size: 16px;
+                background-color: transparent;
+                color: $light-violet;
+                padding: 9px 20px;
+                margin-bottom: 15px;
+                @include border-radius(5px);
+                margin-right: 15px;
+                @include mq(laptop){
+                    @include flexw(47%);
+                }
+                @include mq(mobile){
+                    @include flexw(100%);
+                    margin-right: 0;
+                }
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+
+                display: inline-block;
+
+                &::placeholder {
+                    color: $light-violet;
+                }
+            }
+
+            textarea {
+                @extend .inputs;
+                @include flexw(100%);
+                margin-bottom: 0;
+                height: 95px;
+                margin-right: 0;
+            }
+
+            & .more {
+                width: 100%;
+                text-transform: uppercase;
+                @include text-align;
+                @include fontvariable($size: 18px, $w: 700);
+                @include border-radius(5px);
+                margin-top: 20px;
+                background-color: $orange;
+                padding: 11px 20px;
+
+                &::after {
+                    right: 44%;
+                    height: 11px;
+                    width: 11px;
+                    top: 36%;
+                    @include mq(laptop){
+                        right: 35%;
+                        height: 10px;
+                        width: 10px;
+                        top: 37%;
+                    }
+
+                }
+            }
+        }
+    }
+
+    & .col-lg-7 {
+        background-color: $orange;
+        padding: 70px 200px 97px 160px;
+        @include mq(xxxxl){
+            padding: 60px 100px 80px 100px;
+        }
+        @include mq(xxl){
+            padding: 50px;
+        }
+        & .footer-links {
+            padding-left: 78px;
+            @include mq(xxxxl){
+                padding-left: 49px;
+            }
+            @include mq(mobile){
+                padding-left: 35px;
+            }
+        }
+
+        & .quick {
+            display: block;
+            @include fontvariable($size: 18px, $w: 700);
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        & .quick-links {
+            padding-top: 20px;
+
+            li {
+                padding-bottom: 14px;
+
+                & .footer-link {
+                    color: $white;
+                    font-size: 14px;
+                    @include tranistions-;
+
+                    &:hover {
+                        color: $light-violet;
+                    }
+                }
+            }
+        }
+        & .line{
+            position: absolute;
+            left: -54px;
+            width: auto;
+            height: 100%;
+            img{
+                @include fit-image;
+            }
+            @include mq(xxl){
+                left: -25px;
+            }
+            @include mq(laptop){
+                left: 0;
+            }
+            &.line2{
+                left: 0;
+            }
+        }
+        & .location-cnt2{
+            @include relation();
+        }
+        & .location-cnt {
+            @include relation();
+            z-index: 11;
+
+            & .footer-links {
+                padding-left: 40px;
+                @include mq(laptop){
+                    padding-left: 30px
+                }
+            }
+
+            & .quick-links {
+                li {
+                    & .location {
+                        @include flexw(20px);
+                        margin-right: 15px;
+                        margin-top: 10px;
+                        @include mq(xxxxl){
+                            @include flexw(18px);
+                        }
+                        img {
+                            @include fit-image($coverd: contain);
+                        }
+
+                        &.location1 {
+                            img {
+                                margin-bottom: -14px;
+                            }
+                        }
+                    }
+
+                    @include display-f($jc: unset, $align: baseline);
+
+                    p {
+                        color: $white;
+                        font-size: 16px;
+                    }
+
+                    & .phone {
+                        font-size: 18px;
+                        color: $white;
+                    }
+                }
+            }
+
+            & .social-link {
+                padding-top: 100px;
+                @include display-f($align: baseline, $jc: left);
+                @include mq(phablet){
+                    padding-top: 40px;
+                }
+                li {
+                    width: 32px;
+                    height: 32px;
+                    @include border-radius(50%);
+                    background-color: $dark-blue;
+                    margin-right: 10px;
+                    @include display-f();
+
+                    a {
+                        max-width: 21px;
+                        margin: 0 auto;
+                        display: block;
+
+                        img {
+                            @include fit-image;
+                        }
+                    }
+
+                    &.red {
+                        background-color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    & .footer-after {
+        position: absolute;
+        width: 144%;
+        height: 135%;
+        right: -40%;
+        bottom: -22%;
+        z-index: -1;
+        @include mq(cmtab){
+            right: 44%;
+            width: 59%;
+            height: 133%;
+        }
+        @include mq(xxxxl){
+            width: 128%;
+            height: 98%;
+            right: -21%;
+            bottom: 0%;
+        }
+        @include mq(xxl){
+            width: 118%;
+            height: 86%;
+            right: -7%;
+            bottom: 9%;
+        }
+        @include mq(laptop){
+            width: 113%;
+            height: 62%;
+            right: -6%;
+            bottom: 36%;
+        }
+        @include mq(tablet){
+            display: none;
+        }
+        img {
+            @include fit-image;
+        }
+    }
+    & .business{
+        padding: 20px 0;
+        background-color: $dark-violet;
+        @include display-f;
+        & .business-cnts{
+            display: block;
+            color: $white;
+            @include fontvariable($size:12px , $w:700 );
+        }
+    }
+}

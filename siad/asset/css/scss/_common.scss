@@ -1,0 +1,145 @@
+body{
+    @include fontvariable($size:16px , $w:400 );
+    @include mq(vsmall){
+        font-size: 14px;
+    }
+}
+
+.container{
+        @include smcontainer(1150px);
+        padding-left: 0;
+        padding-right: 0;
+    @include mq(xxxxl){
+        padding: 0 50px;
+    }
+    @include mq(laptop){
+        padding: 0 30px !important;
+    }
+    @include mq(vsmall){
+        padding: 0 20px !important;
+    }
+    
+}
+h1{
+    @include fontvariable($size:36px , $w:300 );
+    color: $white;
+    @include mq(tablet){
+        font-size: 32px;
+    }
+}
+h2{
+    @include fontvariable($size:32px , $w:300 );
+    color: $green;
+    @include mq(tablet){
+        font-size: 28px;
+    }
+}
+
+.form-group {
+    display: block;
+    & input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+    }
+    
+    & label {
+        position: relative;
+        cursor: pointer;
+        color: $grey;
+    }
+    
+    & label:before {
+        content: '';
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 2px solid $green;
+        padding: 11.5px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        width: 22px;
+        height: 22px;
+        @include border-radius(50%);
+        cursor: pointer;
+        margin-right: 0px;
+        
+        
+    }
+    
+    & input:checked+label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 23%;
+        left: 22%;
+        width: 15px;
+        height: 15px;
+        @include border-radius(50%);
+        background-color: $green;
+    
+}
+& input:checked+label.label2:after {
+    top: 22%;
+}
+}
+form{
+    @include relation;
+    & .plusminus{
+        position: absolute;
+        right: 0;
+        width: 26px;
+        height: 50%;
+        outline: none;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 1px solid $lighter-grey;
+        background-color: $white;
+        @include display-f;
+        display: inline-flex;
+        &.minus{
+            bottom: 0;
+            border-top: 1px solid $lighter-grey;
+            border-bottom-right-radius: 9px;
+            
+        }
+        &.plus{
+            border-top-right-radius: 9px;
+        }
+    }
+    input{
+        width: 100%;
+        border: 0;
+        outline: none;
+        box-shadow: 0px 0px 6px #00000029;
+        @include border-radius(9px);
+        padding: 8.5px 26px 8.5px 22px;
+        color: $black;
+        font-size: 16px;
+    }
+}
+.ui-spinner{
+    display: block;
+    & .ui-spinner-button{
+        z-index: 3;
+        width: 26px;
+        height: 23px;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+        border-left: 1px solid $lighter-grey;
+        @include backgoundformat($image:url("../image/minus1.png") ,$cover:contain);
+        &:nth-child(2){
+            top: 0;
+            bottom: unset;
+            background-image: url("../image/plus1.png");
+            border-bottom: 1px solid $lighter-grey;
+        }
+    }
+}

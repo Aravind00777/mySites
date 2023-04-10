@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/helvetica/HelveticaNeueBold.woff2') format('woff2'),
+        url('../font/helvetica/HelveticaNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/helvetica/HelveticaNeueLight.woff2') format('woff2'),
+        url('../font/helvetica/HelveticaNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/helvetica/HelveticaNeueMedium.woff2') format('woff2'),
+        url('../font/helvetica/HelveticaNeueMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/helvetica/HelveticaNeueRegular.woff2') format('woff2'),
+        url('../font/helvetica/HelveticaNeueRegular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: 'HelveticaNeueW01-77BdCnObl';
+//     src: url('../font/helvetica/HelveticaNeueW01-77BdCnObl.woff2') format('woff2'),
+//         url('../font/helvetica/HelveticaNeueW01-77BdCnObl.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }

@@ -1,0 +1,123 @@
+header{
+    background-color: $green;
+    padding: 12px 0;
+    & .blog{
+        max-width: 215px;
+        @include mq(phablet){
+            max-width: 135px;
+        }
+        img{
+            @include fit-image;
+            @include mq(mobile){
+                width: auto;
+                max-width: 135px;
+            }
+        }
+    }
+    & .navbar{
+        @include mq(tablet){
+            overflow-x: auto;
+            flex-wrap: nowrap;
+        }
+    }
+    & .navbar-collapse{
+        flex-basis: auto;
+    }
+    & .ul_header{
+        flex-direction: unset;
+        justify-content: right;
+        & li{
+            width: auto;
+            padding-right: 21px;
+            @include mq(phablet){
+                padding-right: 10px;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            & .dropdown{
+                & .btn-secondary{
+                    @include backgroundopacity($bgc:rgba($white ,23%));
+                    border-color: transparent;
+                    padding: 4px;
+                    width: 40px;
+                    height: 40px;
+                    @include border-radius(50%);
+                    text-transform: uppercase;
+                    @include fontvariable($size:18px , $w:300 );
+                    box-shadow: unset;
+                    &.dropdown-toggle {
+                        &::after{
+                        margin-left: 0px;
+                        border-top: 0;
+                        border-right: 0;
+                        border-bottom: 2px solid $white;
+                        border-left: 2px solid $white;
+                        width: 10px;
+                        height: 10px;
+                        @include rotate(-45deg);
+                        }
+                    }
+                }
+                & .dropdown-menu {
+                    box-shadow: 0px 0px 6px #00000029;
+                    width: 300px;
+                    top: 40px;
+                    @include tranistions-;
+                    border: 0;
+                    padding: 15px 0px;
+                    & .dropdown-item{
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        @include fontvariable($size:16px , $w:400);
+                        color: $grey
+                    }
+                    li{
+                        padding-right: 0;
+                    }
+                }
+                &:hover{
+                    & .dropdown-menu{
+                        display: block;
+                    }
+                }
+            }
+            & .btn-cnt{
+                @include relation();
+                input{
+                    display: block;
+                    width: 240px;
+                    outline: none;
+                    border: 0;
+                    @include border-radius(31px);
+                    @include backgroundopacity($bgc:rgba($white ,23%));
+                    padding: 7.5px 13px 7.5px 50px;
+                    color: $white;
+                    @include mq(tablet){
+                        width: 190px;
+                    }
+                }
+                & .search-btn{
+                    position: absolute;
+                    left: 13px;
+                    background-color: transparent;
+                    outline: none;
+                    border: 0;
+                    top: 50%;
+                    @include translatey(-50%);
+                }
+            }
+            & .person{
+                display: block;
+                width: 40px;
+                height: 40px;
+                @include border-radius(50%);
+                @include backgroundopacity($bgc:rgba($white ,23%));
+                img{
+                    @include fit-image($coverd:contain);
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
