@@ -1,0 +1,1794 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-Black.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-ExtraBold.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-Bold.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-ExtraLight.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-Light.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-SemiBold.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-Medium.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-Regular.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/asset/font/montaserrat/Montserrat-Thin.woff2") format("woff2"), url("/asset/font/montaserrat/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+@media (max-width: 1199px) {
+  body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #fff;
+}
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #000000;
+}
+@media (max-width: 1400px) {
+  h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #000000;
+}
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #000000;
+}
+@media (max-width: 1199px) {
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+
+.info, .knowmore .knowmore-wrap p .conds, .partner .partner-wrap .featured-blk .trainers .personal-trainer-detail .read-more {
+  display: inline-block;
+  color: #FF5A11;
+}
+
+.collapse:not(.show) {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .collapse {
+    background-color: #000000;
+    position: fixed;
+    width: 50%;
+    right: -100%;
+    top: 0;
+    padding: 10% 5%;
+    height: 100vh;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+  }
+  .collapse.active {
+    right: 0;
+  }
+  .collapse.active .cross {
+    right: 36px;
+    top: 8%;
+    position: absolute !important;
+    width: 30px;
+    display: block;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+    position: relative;
+    z-index: 1;
+  }
+  .collapse.active .cross::after {
+    content: "";
+    position: absolute;
+    top: 3%;
+    bottom: unset;
+    right: 0;
+    left: 13px;
+    z-index: -1;
+    width: 4px;
+    height: 30px;
+    background-color: #FF5A11;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+}
+@media (max-width: 991px) and (max-width: 480px) {
+  .collapse.active .cross::after {
+    width: 3px;
+    height: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .collapse.active .cross::before {
+    content: "";
+    position: absolute;
+    top: 3%;
+    bottom: unset;
+    right: 0;
+    left: 13px;
+    z-index: -1;
+    width: 4px;
+    height: 30px;
+    background-color: #FF5A11;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}
+@media (max-width: 991px) and (max-width: 480px) {
+  .collapse.active .cross::before {
+    width: 3px;
+    height: 25px;
+  }
+}
+@media (max-width: 991px) and (max-width: 575px) {
+  .collapse.active .cross {
+    right: 21px;
+    top: 6%;
+  }
+}
+@media (max-width: 991px) and (max-width: 480px) {
+  .collapse.active .cross {
+    right: 14px;
+    top: 5%;
+  }
+}
+@media (max-width: 575px) {
+  .collapse {
+    width: 90%;
+    padding: 15% 5%;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+@media (max-width: 1199px) {
+  header {
+    padding: 18px 0;
+  }
+}
+header.header.active {
+  background-color: #000000;
+}
+header .navbar-brand img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  header .navbar-brand {
+    max-width: 120px;
+  }
+}
+@media (max-width: 480px) {
+  header .navbar-brand {
+    max-width: 100px;
+  }
+}
+header .ul_header li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+header .ul_header li:nth-child(5) {
+  padding-right: 10px;
+}
+@media (max-width: 991px) {
+  header .ul_header li:nth-child(5) {
+    padding-right: 0;
+  }
+}
+header .ul_header li:last-child {
+  padding-right: 0;
+}
+@media (max-width: 991px) {
+  header .ul_header li {
+    padding-right: 0;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  header .ul_header li:last-child {
+    margin-bottom: 0;
+  }
+}
+header .ul_header li .linkz {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+header .ul_header li .linkz.login, header .ul_header li .linkz.get-started {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-left: 33px;
+}
+@media (max-width: 991px) {
+  header .ul_header li .linkz.login, header .ul_header li .linkz.get-started {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+header .ul_header li .linkz.get-started {
+  margin-left: 0;
+  background-color: #FF5A11;
+  border-color: transparent;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+header .ul_header li .linkz.get-started:hover {
+  border-color: #FF5A11;
+  background-color: transparent;
+}
+@media (max-width: 991px) {
+  header .ul_header li .dropdown {
+    width: 100%;
+  }
+}
+header .ul_header li .dropdown .dropdown-menu {
+  margin-top: 0;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  header .ul_header li .dropdown .dropdown-menu li {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+  header .ul_header li .dropdown .dropdown-menu li:first-child {
+    padding-left: 30px;
+    background-color: #3a2b2b;
+    position: relative;
+    z-index: 1;
+    position: relative;
+    z-index: 1;
+  }
+  header .ul_header li .dropdown .dropdown-menu li:first-child::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    bottom: unset;
+    right: unset;
+    left: 15px;
+    z-index: -1;
+    width: 4px;
+    height: 15px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+  header .ul_header li .dropdown .dropdown-menu li:first-child::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    bottom: unset;
+    right: unset;
+    left: 15px;
+    z-index: -1;
+    width: 4px;
+    height: 15px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}
+@media (max-width: 991px) {
+  header .ul_header li .dropdown .dropdown-menu {
+    position: fixed;
+    display: block;
+    width: 0 !important;
+    min-width: 0;
+    top: 0;
+    left: unset;
+    right: -50%;
+    height: 100vh;
+    background-color: #4a3e3e;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+  }
+  header .ul_header li .dropdown .dropdown-menu.show {
+    margin-left: 0;
+    width: 100%;
+    min-width: 50%;
+    right: 0;
+    z-index: 9999999;
+  }
+}
+@media (max-width: 991px) and (max-width: 575px) {
+  header .ul_header li .dropdown .dropdown-menu.show {
+    min-width: 90%;
+  }
+}
+@media (max-width: 991px) {
+  header .ul_header li .dropdown .dropdown-menu .dropdown-item {
+    color: #fff;
+    padding: 0;
+  }
+}
+header .ul_header li .dropdown .btn-secondary {
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+@media (max-width: 991px) {
+  header .ul_header li .dropdown .btn-secondary {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+  header .ul_header li .dropdown .btn-secondary.dropdown-toggle::after {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 9px;
+    height: 9px;
+    top: 6px;
+    position: absolute;
+    border-bottom: 0;
+    border-left: 0;
+    right: 0;
+    transform: rotate(45deg);
+  }
+}
+header .ul_header li .dropdown .btn-secondary:focus {
+  box-shadow: unset;
+}
+
+#nav-burger {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  width: 30px;
+  height: 23px;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  display: block;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+@media (max-width: 991px) {
+  #nav-burger {
+    display: block;
+    z-index: 0;
+  }
+}
+#nav-burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+}
+#nav-burger span:nth-child(1) {
+  top: 0px;
+}
+#nav-burger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+#nav-burger span:nth-child(2), #nav-burger span:nth-child(3) {
+  top: 9px;
+}
+#nav-burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+#nav-burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+#nav-burger span:nth-child(4) {
+  top: 18px;
+}
+#nav-burger.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+footer {
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+}
+@media (max-width: 1400px) {
+  footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 1199px) {
+  footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+footer .footer-wrap {
+  padding-bottom: 85px;
+  border-bottom: 1px solid #EDEEEF;
+}
+@media (max-width: 991px) {
+  footer .footer-wrap {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  footer .footer-wrap {
+    padding-bottom: 25px;
+  }
+}
+footer .footer-wrap .footer-cnt h4 {
+  padding-bottom: 20px;
+}
+footer .footer-wrap .footer-cnt .footer-link {
+  color: #656565;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  padding-bottom: 10px;
+}
+footer .footer-wrap .footer-cnt .explore li p {
+  color: #656565;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Montserrat";
+}
+footer .footer-wrap .footer-cnt .explore li.albans {
+  padding-top: 15px;
+}
+footer .footer-wrap .footer-cnt .explore .why {
+  padding-bottom: 10px;
+}
+footer .footer-wrap .footer-cnt .explore .why span {
+  display: block;
+}
+footer .footer-wrap .footer-cnt .explore .why .date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #B4C2C9;
+}
+footer .terms-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+@media (max-width: 991px) {
+  footer .terms-cnt {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  footer .terms-cnt {
+    flex-direction: column;
+  }
+}
+footer .terms-cnt .terms, footer .terms-cnt .terms-icons {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+}
+@media (max-width: 480px) {
+  footer .terms-cnt .terms, footer .terms-cnt .terms-icons {
+    flex-direction: column;
+  }
+}
+footer .terms-cnt .terms li, footer .terms-cnt .terms-icons li {
+  padding-right: 50px;
+}
+footer .terms-cnt .terms li:last-child, footer .terms-cnt .terms-icons li:last-child {
+  padding-right: 0;
+}
+@media (max-width: 991px) {
+  footer .terms-cnt .terms li, footer .terms-cnt .terms-icons li {
+    padding-right: 24px;
+  }
+}
+@media (max-width: 480px) {
+  footer .terms-cnt .terms li, footer .terms-cnt .terms-icons li {
+    padding-right: 0;
+  }
+}
+footer .terms-cnt .terms li .notice, footer .terms-cnt .terms-icons li .notice {
+  color: #656565;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+@media (max-width: 480px) {
+  footer .terms-cnt .terms-icons {
+    flex-direction: unset;
+    padding-top: 20px;
+  }
+}
+footer .terms-cnt .terms-icons li {
+  padding-right: 25px;
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+.banner .owl-carosal-body {
+  height: 100%;
+}
+.banner .owl-carosal-body .banner-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .owl-carosal-body .banner-content .container {
+  position: relative;
+}
+.banner .owl-carosal-body .banner-content .container .support {
+  position: absolute;
+  width: 135px;
+  bottom: -240px;
+  right: 0px;
+  background-color: #FF5A11;
+  z-index: 99;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+@media (max-width: 1199px) {
+  .banner .owl-carosal-body .banner-content .container .support {
+    right: 30px;
+  }
+}
+.banner .owl-carosal-body .banner-content .container .support img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  max-width: 24px;
+  display: inline-block;
+  padding-right: 5px;
+}
+.banner .owl-carosal-body .banner-content .bgm {
+  height: 100%;
+}
+.banner .owl-carosal-body .banner-content .bgm .banner-img {
+  content: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.banner .owl-carosal-body .banner-content .bgm .banner-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.banner .owl-carosal-body .banner-content .banner-wrap {
+  max-width: 624px;
+}
+.banner .owl-carosal-body .banner-content .banner-wrap p {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+}
+@media (max-width: 1199px) {
+  .banner .owl-carosal-body .banner-content .banner-wrap p {
+    font-size: 18px;
+    padding: 16px 0;
+  }
+}
+@media (max-width: 991px) {
+  .banner .owl-carosal-body .banner-content .banner-wrap p {
+    font-size: 16px;
+  }
+}
+.banner .owl-carosal-body .banner-content .banner-wrap form {
+  position: relative;
+}
+.banner .owl-carosal-body .banner-content .banner-wrap form input {
+  outline: none;
+  padding: 25px 100px 25px 24px;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 2px solid #FF5A11;
+}
+@media (max-width: 480px) {
+  .banner .owl-carosal-body .banner-content .banner-wrap form input {
+    padding: 25px 110px 25px 24px;
+    font-size: 14px;
+  }
+}
+.banner .owl-carosal-body .banner-content .banner-wrap form .fitness {
+  position: absolute;
+  width: 170px;
+  right: 9px;
+  top: 9px;
+  height: 76%;
+  background-color: #FF5A11;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  outline: none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  border: 2px solid transparent;
+}
+@media (max-width: 480px) {
+  .banner .owl-carosal-body .banner-content .banner-wrap form .fitness {
+    width: 99px;
+  }
+}
+.banner .owl-carosal-body .banner-content .banner-wrap form .fitness:hover {
+  background-color: #fff;
+  color: #FF5A11;
+  border-color: #FF5A11;
+}
+
+.icons {
+  padding: 40px 0;
+  background-color: #F9FBFE;
+}
+.icons .icons-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .icons .icons-block {
+    flex-direction: column;
+  }
+}
+.icons .icons-block .icons-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .icons .icons-block .icons-wrap {
+    flex-direction: column;
+  }
+}
+.icons .icons-block .icons-wrap li {
+  padding: 0 80px;
+}
+@media (max-width: 767px) {
+  .icons .icons-block .icons-wrap li {
+    padding: 0 60px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .icons .icons-block .icons-wrap li {
+    padding: 0 5px;
+    padding-top: 20px;
+  }
+}
+.icons .icons-block .icons-wrap li a {
+  display: block;
+}
+.icons .icons-block .icons-wrap li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.workout, .partner, .tested, .beyond, .quality, .training {
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+}
+@media (max-width: 1400px) {
+  .workout, .partner, .tested, .beyond, .quality, .training {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 1199px) {
+  .workout, .partner, .tested, .beyond, .quality, .training {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .workout, .partner, .tested, .beyond, .quality, .training {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.workout .workout-wrap .workout-header, .partner .workout-wrap .workout-header, .partner .partner-wrap .workout-header, .tested .workout-wrap .workout-header, .tested .tested-wrap .workout-header, .beyond .workout-wrap .workout-header, .beyond .beyond-wrap .workout-header, .quality .workout-wrap .workout-header, .quality .quality-wrap .workout-header, .training .workout-wrap .workout-header, .training .training-wrap .workout-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .workout .workout-wrap .workout-header, .partner .workout-wrap .workout-header, .partner .partner-wrap .workout-header, .tested .workout-wrap .workout-header, .tested .tested-wrap .workout-header, .beyond .workout-wrap .workout-header, .beyond .beyond-wrap .workout-header, .quality .workout-wrap .workout-header, .quality .quality-wrap .workout-header, .training .workout-wrap .workout-header, .training .training-wrap .workout-header {
+    max-width: 100%;
+  }
+}
+.workout .workout-wrap .workout-header .works, .partner .workout-wrap .workout-header .works, .partner .partner-wrap .workout-header .works, .tested .workout-wrap .workout-header .works, .tested .tested-wrap .workout-header .works, .beyond .workout-wrap .workout-header .works, .beyond .beyond-wrap .workout-header .works, .quality .workout-wrap .workout-header .works, .quality .quality-wrap .workout-header .works, .training .workout-wrap .workout-header .works, .training .training-wrap .workout-header .works {
+  color: #B4C2C9;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+.workout .workout-wrap .purchase-block, .partner .workout-wrap .purchase-block, .partner .partner-wrap .purchase-block, .tested .workout-wrap .purchase-block, .tested .tested-wrap .purchase-block, .beyond .workout-wrap .purchase-block, .beyond .beyond-wrap .purchase-block, .quality .workout-wrap .purchase-block, .quality .quality-wrap .purchase-block, .training .workout-wrap .purchase-block, .training .training-wrap .purchase-block {
+  text-align: center;
+  padding-top: 55px;
+}
+@media (max-width: 991px) {
+  .workout .workout-wrap .purchase-block, .partner .workout-wrap .purchase-block, .partner .partner-wrap .purchase-block, .tested .workout-wrap .purchase-block, .tested .tested-wrap .purchase-block, .beyond .workout-wrap .purchase-block, .beyond .beyond-wrap .purchase-block, .quality .workout-wrap .purchase-block, .quality .quality-wrap .purchase-block, .training .workout-wrap .purchase-block, .training .training-wrap .purchase-block {
+    padding-top: 40px;
+  }
+}
+.workout .workout-wrap .purchase-block ul li .venus-img, .partner .workout-wrap .purchase-block ul li .venus-img, .partner .partner-wrap .purchase-block ul li .venus-img, .tested .workout-wrap .purchase-block ul li .venus-img, .tested .tested-wrap .purchase-block ul li .venus-img, .beyond .workout-wrap .purchase-block ul li .venus-img, .beyond .beyond-wrap .purchase-block ul li .venus-img, .quality .workout-wrap .purchase-block ul li .venus-img, .quality .quality-wrap .purchase-block ul li .venus-img, .training .workout-wrap .purchase-block ul li .venus-img, .training .training-wrap .purchase-block ul li .venus-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 184px;
+  margin: 0 auto;
+  min-height: 184px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #F9FBFE;
+  margin-bottom: 40px;
+}
+.workout .workout-wrap .purchase-block ul li h4, .partner .workout-wrap .purchase-block ul li h4, .partner .partner-wrap .purchase-block ul li h4, .tested .workout-wrap .purchase-block ul li h4, .tested .tested-wrap .purchase-block ul li h4, .beyond .workout-wrap .purchase-block ul li h4, .beyond .beyond-wrap .purchase-block ul li h4, .quality .workout-wrap .purchase-block ul li h4, .quality .quality-wrap .purchase-block ul li h4, .training .workout-wrap .purchase-block ul li h4, .training .training-wrap .purchase-block ul li h4 {
+  padding: 0px 60px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .workout .workout-wrap .purchase-block ul li h4, .partner .workout-wrap .purchase-block ul li h4, .partner .partner-wrap .purchase-block ul li h4, .tested .workout-wrap .purchase-block ul li h4, .tested .tested-wrap .purchase-block ul li h4, .beyond .workout-wrap .purchase-block ul li h4, .beyond .beyond-wrap .purchase-block ul li h4, .quality .workout-wrap .purchase-block ul li h4, .quality .quality-wrap .purchase-block ul li h4, .training .workout-wrap .purchase-block ul li h4, .training .training-wrap .purchase-block ul li h4 {
+    padding: 0 40px;
+    margin-bottom: 15px;
+  }
+}
+
+.training {
+  background-color: #F9FBFE;
+}
+.training .training-wrap {
+  text-align: center;
+}
+.training .training-wrap .workout-header {
+  max-width: 700px;
+}
+.training .training-wrap p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #000000;
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
+  .training .training-wrap p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+.training .final-img {
+  padding-top: 40px;
+  width: 100%;
+}
+.training .final-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.quality .quality-wrap .workout-header {
+  text-align: left;
+}
+.quality .quality-wrap p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #656565;
+  padding: 20px 0;
+}
+.quality .quality-wrap .benifits-block {
+  padding: 63px 53px 70px 50px;
+  box-shadow: 7px 32px 30px -9px rgba(0, 0, 0, 0.16);
+}
+@media (max-width: 767px) {
+  .quality .quality-wrap .benifits-block {
+    padding: 25px;
+    margin-top: 25px;
+  }
+}
+
+.ticks, .beyond .beyond-wrap .beyond-content-body .beyond-cnt .benifits-cnt .tickz {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #000000;
+  padding-top: 32px;
+}
+@media (max-width: 767px) {
+  .ticks, .beyond .beyond-wrap .beyond-content-body .beyond-cnt .benifits-cnt .tickz {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+.ticks img, .beyond .beyond-wrap .beyond-content-body .beyond-cnt .benifits-cnt .tickz img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  max-width: 16px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.find, .partner .partner-wrap .stated-blk .booking li .book-venue, .partner .partner-wrap .stated-blk .booking li .find-trainer, .partner .partner-wrap .hub-blk .hub-cnt .apply, .customize .customize-wrap .mobile-cnt .register, .knowmore .customize-wrap .mobile-cnt .register {
+  border: 0;
+  outline: none;
+  background-color: #FF5A11;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 12px 13px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  border: 2px solid transparent;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.find img, .partner .partner-wrap .stated-blk .booking li .book-venue img, .partner .partner-wrap .stated-blk .booking li .find-trainer img, .partner .partner-wrap .hub-blk .hub-cnt .apply img, .customize .customize-wrap .mobile-cnt .register img, .knowmore .customize-wrap .mobile-cnt .register img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  display: inline-block;
+  max-width: 25px;
+  margin-right: 8px;
+}
+.find:hover, .partner .partner-wrap .stated-blk .booking li .book-venue:hover, .partner .partner-wrap .stated-blk .booking li .find-trainer:hover, .partner .partner-wrap .hub-blk .hub-cnt .apply:hover, .customize .customize-wrap .mobile-cnt .register:hover, .knowmore .customize-wrap .mobile-cnt .register:hover {
+  border-color: #FF5A11;
+  background-color: transparent;
+  color: #FF5A11;
+}
+
+.beyond {
+  background-color: #F9FBFE;
+}
+.beyond .beyond-wrap .workout-header {
+  max-width: 750px;
+}
+.beyond .beyond-wrap .workout-header p {
+  text-align: center;
+  padding-top: 17px;
+}
+.beyond .beyond-wrap .beyond-content-body {
+  padding-top: 40px;
+}
+.beyond .beyond-wrap .beyond-content-body .beyond-cnt {
+  padding: 30px 24px 37px 24px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.beyond .beyond-wrap .beyond-content-body .beyond-cnt h4 {
+  padding-top: 20px;
+}
+.beyond .beyond-wrap .beyond-content-body .beyond-cnt .benifits-cnt .tickz {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  padding-top: 25px;
+}
+
+.customize, .knowmore {
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  background-color: #000000;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
+  .customize, .knowmore {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 1199px) {
+  .customize, .knowmore {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .customize, .knowmore {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.customize::after, .knowmore::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(81deg, rgb(0, 0, 0) 0%, rgba(255, 90, 17, 0.2525385154) 100%);
+}
+.customize .customize-wrap, .knowmore .customize-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.customize .customize-wrap .custom-cnt .cutome-header, .knowmore .customize-wrap .custom-cnt .cutome-header {
+  max-width: 510px;
+}
+.customize .customize-wrap .custom-cnt h2, .knowmore .customize-wrap .custom-cnt h2 {
+  color: #fff;
+}
+.customize .customize-wrap .custom-cnt p, .knowmore .customize-wrap .custom-cnt p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  padding: 20px 0 40px 0;
+}
+@media (max-width: 1199px) {
+  .customize .customize-wrap .custom-cnt p, .knowmore .customize-wrap .custom-cnt p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: "Montserrat";
+    padding: 18px 0 35px 0;
+  }
+}
+.customize .customize-wrap .custom-cnt .special-cnt, .knowmore .customize-wrap .custom-cnt .special-cnt {
+  margin-top: 45px;
+  max-width: 530px;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 41px 42px;
+}
+@media (max-width: 1199px) {
+  .customize .customize-wrap .custom-cnt .special-cnt, .knowmore .customize-wrap .custom-cnt .special-cnt {
+    padding: 30px;
+  }
+}
+.customize .customize-wrap .custom-cnt .special-cnt h4, .knowmore .customize-wrap .custom-cnt .special-cnt h4 {
+  color: #fff;
+  padding-bottom: 15px;
+}
+.customize .customize-wrap .custom-cnt .special-cnt span, .knowmore .customize-wrap .custom-cnt .special-cnt span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #fff;
+}
+.customize .customize-wrap .mobile-cnt, .knowmore .customize-wrap .mobile-cnt {
+  background-image: url("/asset/image/mobile_cnt_img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 38px 33px;
+}
+@media (max-width: 1199px) {
+  .customize .customize-wrap .mobile-cnt, .knowmore .customize-wrap .mobile-cnt {
+    padding: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .customize .customize-wrap .mobile-cnt, .knowmore .customize-wrap .mobile-cnt {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+.customize .customize-wrap .mobile-cnt .mobile-top-cnt, .knowmore .customize-wrap .mobile-cnt .mobile-top-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customize .customize-wrap .mobile-cnt .mobile-top-cnt img, .knowmore .customize-wrap .mobile-cnt .mobile-top-cnt img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.customize .customize-wrap .mobile-cnt .personal, .knowmore .customize-wrap .mobile-cnt .personal {
+  padding-top: 113PX;
+}
+.customize .customize-wrap .mobile-cnt .personal li, .knowmore .customize-wrap .mobile-cnt .personal li {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-right: 10px;
+  width: 46%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.customize .customize-wrap .mobile-cnt .personal li:nth-child(3), .knowmore .customize-wrap .mobile-cnt .personal li:nth-child(3), .customize .customize-wrap .mobile-cnt .personal li:nth-child(4), .knowmore .customize-wrap .mobile-cnt .personal li:nth-child(4) {
+  margin-top: 10px;
+}
+.customize .customize-wrap .mobile-cnt .personal li .pillates, .knowmore .customize-wrap .mobile-cnt .personal li .pillates {
+  max-width: 75px;
+  margin: 0 auto;
+}
+.customize .customize-wrap .mobile-cnt .personal li .pillates.pillates3, .knowmore .customize-wrap .mobile-cnt .personal li .pillates.pillates3 {
+  max-width: 61px;
+}
+.customize .customize-wrap .mobile-cnt .personal li .pillates.pillates4, .knowmore .customize-wrap .mobile-cnt .personal li .pillates.pillates4 {
+  max-width: 53px;
+}
+.customize .customize-wrap .mobile-cnt .personal li .pillates img, .knowmore .customize-wrap .mobile-cnt .personal li .pillates img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.customize .customize-wrap .mobile-cnt .personal li span, .knowmore .customize-wrap .mobile-cnt .personal li span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+.customize .customize-wrap .mobile-cnt .personal li span.physiotherapy, .knowmore .customize-wrap .mobile-cnt .personal li span.physiotherapy {
+  padding-top: 35px;
+}
+.customize .customize-wrap .mobile-cnt .personal li span.personal-train, .knowmore .customize-wrap .mobile-cnt .personal li span.personal-train {
+  padding-top: 26px;
+}
+.customize .customize-wrap .mobile-cnt h4, .knowmore .customize-wrap .mobile-cnt h4 {
+  color: #fff;
+  font-weight: 700;
+  padding-top: 15px;
+}
+.customize .customize-wrap .mobile-cnt .register, .knowmore .customize-wrap .mobile-cnt .register {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 13px;
+}
+
+.tested {
+  background-color: #F9FBFE;
+}
+.tested .tested-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.tested .tested-wrap .workout-header {
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+.tested .tested-wrap .proven-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .tested .tested-wrap .proven-block .proven-img {
+    max-width: 75px;
+  }
+}
+.tested .tested-wrap .proven-block .proven-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.tested .tested-wrap .proven-block .proven-blk-cnt {
+  padding-left: 40px;
+  max-width: 68%;
+}
+@media (max-width: 767px) {
+  .tested .tested-wrap .proven-block .proven-blk-cnt {
+    padding-left: 20px;
+  }
+}
+.tested .tested-wrap .proven-block .proven-blk-cnt p {
+  padding-top: 20px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+.tested .tested-wrap .covered-areas {
+  margin-top: 100px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 5px rgb(226, 229, 232);
+  max-width: 890px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px;
+}
+@media (max-width: 480px) {
+  .tested .tested-wrap .covered-areas {
+    padding: 20px;
+  }
+}
+.tested .tested-wrap .covered-areas .ed-p-row {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #F3F5F7;
+}
+@media (max-width: 991px) {
+  .tested .tested-wrap .covered-areas .ed-img {
+    max-width: 151px;
+    margin: 0 auto;
+  }
+}
+.tested .tested-wrap .covered-areas .ed-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.tested .tested-wrap .covered-areas .ed-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  padding-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .tested .tested-wrap .covered-areas .ed-cnt {
+    justify-content: center;
+  }
+}
+.tested .tested-wrap .covered-areas .areas {
+  display: block;
+  color: #656565;
+}
+.tested .tested-wrap .covered-areas .holloway-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-wrap: wrap;
+}
+.tested .tested-wrap .covered-areas .holloway-cnt li {
+  padding-right: 10px;
+  flex-basis: auto;
+  padding-top: 10px;
+}
+.tested .tested-wrap .covered-areas .holloway-cnt li .barn {
+  display: block;
+  padding: 7px 10px;
+  border: 1px solid #E0E0E0;
+  color: #656565;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+.tested .tested-wrap .covered-areas .review-blk {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.tested .tested-wrap .covered-areas .review-blk h4 {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.tested .tested-wrap .covered-areas .review-blk span {
+  display: block;
+  padding-top: 10px;
+}
+.tested .questions-blk {
+  padding-top: 100px;
+}
+.tested .questions-blk .quest {
+  padding-top: 50px;
+}
+.tested .questions-blk h2 {
+  text-align: center;
+}
+.tested .questions-blk .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #fff;
+  box-shadow: unset;
+}
+.tested .questions-blk .accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+@media (max-width: 480px) {
+  .tested .questions-blk .accordion-button {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: "Montserrat";
+  }
+}
+.tested .questions-blk .accordion-button::after {
+  width: 30px;
+  height: 30px;
+  background-image: url("/asset/image/cross.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.tested .questions-blk .accordion-button:not(.collapsed)::after {
+  background-image: url("/asset/image/minus.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tested .questions-blk .accordion-button:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.partner .partner-wrap .workout-header p {
+  color: #000000;
+  padding: 20px 63px 0 63px;
+}
+@media (max-width: 767px) {
+  .partner .partner-wrap .workout-header p {
+    padding: 20px 30px 0 30px;
+  }
+}
+.partner .partner-wrap .hub-blk {
+  max-width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+@media (max-width: 767px) {
+  .partner .partner-wrap .hub-blk {
+    padding-top: 20px;
+    max-width: 76%;
+  }
+}
+@media (max-width: 480px) {
+  .partner .partner-wrap .hub-blk {
+    max-width: 100%;
+  }
+}
+.partner .partner-wrap .hub-blk .hub-cnt {
+  padding: 42px 27px 32px 27px;
+  box-shadow: 0px 0px 20px 5px rgb(226, 229, 232);
+}
+@media (max-width: 991px) {
+  .partner .partner-wrap .hub-blk .hub-cnt {
+    margin-top: 35px;
+  }
+}
+.partner .partner-wrap .hub-blk .hub-cnt figure {
+  max-width: 91px;
+  margin: 0 auto;
+}
+.partner .partner-wrap .hub-blk .hub-cnt img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.partner .partner-wrap .hub-blk .hub-cnt .apply {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px 13px;
+}
+.partner .partner-wrap .fitness-blk {
+  padding-top: 100px;
+}
+.partner .partner-wrap .fitness-blk .fitness-blk-cnt {
+  padding-top: 40px;
+}
+.partner .partner-wrap .fitness-blk .fitness-blk-cnt img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.partner .partner-wrap .fitness-blk .fitness-blk-cnt .high {
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+}
+.partner .partner-wrap .featured-blk {
+  padding-top: 100px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.partner .partner-wrap .featured-blk h2 {
+  text-align: center;
+}
+.partner .partner-wrap .featured-blk .trainers {
+  padding-top: 60px;
+}
+@media (max-width: 767px) {
+  .partner .partner-wrap .featured-blk .trainers {
+    padding-top: 25px;
+  }
+}
+.partner .partner-wrap .featured-blk .trainers .feature-img {
+  padding-left: 36px;
+  max-width: 224px;
+}
+@media (max-width: 767px) {
+  .partner .partner-wrap .featured-blk .trainers .feature-img {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+}
+.partner .partner-wrap .featured-blk .trainers .feature-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+.partner .partner-wrap .featured-blk .trainers .personal-trainer-detail h4 {
+  padding-top: 28px;
+  padding-bottom: 15px;
+}
+.partner .partner-wrap .featured-blk .trainers .personal-trainer-detail .special {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  color: #000000;
+  padding-top: 20px;
+  display: block;
+}
+.partner .partner-wrap .featured-blk .trainers .personal-trainer-detail .viewall {
+  display: block;
+  color: #656565;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+.partner .partner-wrap .featured-blk .trainers .personal-trainer-detail .holloway-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.partner .partner-wrap .featured-blk .trainers .personal-trainer-detail .holloway-cnt li {
+  padding-right: 10px;
+  flex-basis: auto;
+  padding-top: 10px;
+}
+.partner .partner-wrap .featured-blk .trainers .personal-trainer-detail .holloway-cnt li .barn {
+  display: block;
+  padding: 7px 10px;
+  border: 1px solid #E0E0E0;
+  color: #656565;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Montserrat";
+}
+.partner .partner-wrap .stated-blk {
+  padding-top: 100px;
+}
+.partner .partner-wrap .stated-blk h2 {
+  text-align: center;
+}
+.partner .partner-wrap .stated-blk .booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+@media (max-width: 480px) {
+  .partner .partner-wrap .stated-blk .booking {
+    flex-wrap: wrap;
+  }
+}
+.partner .partner-wrap .stated-blk .booking li {
+  padding-right: 20px;
+  max-width: 228px;
+  flex-basis: 228px;
+}
+@media (max-width: 480px) {
+  .partner .partner-wrap .stated-blk .booking li {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .partner .partner-wrap .stated-blk .booking li:first-child {
+    padding-top: 0;
+  }
+}
+.partner .partner-wrap .stated-blk .booking li:last-child {
+  padding-right: 0;
+}
+.partner .partner-wrap .stated-blk .booking li .book-venue, .partner .partner-wrap .stated-blk .booking li .find-trainer {
+  display: block;
+}
+.partner .partner-wrap .stated-blk .booking li .book-venue {
+  background-color: #5903E3;
+}
+
+.knowmore .knowmore-wrap {
+  text-align: center;
+}
+.knowmore .knowmore-wrap h2,
+.knowmore .knowmore-wrap h4 {
+  color: #fff;
+}
+.knowmore .knowmore-wrap h4 {
+  padding-top: 20px;
+}
+.knowmore .knowmore-wrap p {
+  color: #fff;
+}
+.knowmore .knowmore-wrap p .conds {
+  padding-top: 10px;
+}
+.knowmore .knowmore-wrap form {
+  position: relative;
+  max-width: 510px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.knowmore .knowmore-wrap form input {
+  outline: none;
+  padding: 25px 192px 25px 24px;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 2px solid #FF5A11;
+}
+.knowmore .knowmore-wrap form .fitness {
+  position: absolute;
+  width: 170px;
+  right: 9px;
+  top: 9px;
+  height: 76%;
+  background-color: #FF5A11;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.3;
+  font-family: "Montserrat";
+  outline: none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  border: 2px solid transparent;
+}
+.knowmore .knowmore-wrap form .fitness:hover {
+  background-color: #fff;
+  color: #FF5A11;
+  border-color: #FF5A11;
+}/*# sourceMappingURL=main.css.map */

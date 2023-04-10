@@ -1,0 +1,968 @@
+.banner {
+    position: relative;
+    z-index: 1;
+
+    .owl-carosal-body {
+        height: 100%;
+
+        .banner-content {
+            .container {
+                position: relative;
+
+                & .support {
+                    position: absolute;
+                    width: 135px;
+                    bottom: -240px;
+                    right: 0px;
+                    background-color: $orange;
+                    z-index: 99;
+                    @include border-radius(30px);
+                    padding: 10px 20px;
+                    color: $white;
+                    text-align: center;
+                    display: inline-block;
+
+                    @include mq(laptop) {
+                        right: 30px;
+                    }
+
+                    img {
+                        @include fit-image($coverd: contain);
+                        max-width: 24px;
+                        display: inline-block;
+                        padding-right: 5px;
+                    }
+                }
+            }
+
+            min-height: 100vh;
+            @include display-f();
+
+            .bgm {
+                height: 100%;
+
+                & .banner-img {
+                    @include after($content: unset);
+
+                    img {
+                        @include fit-image;
+                    }
+                }
+            }
+
+            & .banner-wrap {
+                max-width: 624px;
+
+                p {
+                    color: $white;
+                    font-size: 20px;
+                    padding: 20px 0;
+
+                    @include mq(laptop) {
+                        font-size: 18px;
+                        padding: 16px 0;
+                    }
+
+                    @include mq(tablet) {
+                        font-size: 16px;
+                    }
+                }
+
+                & form {
+                    position: relative;
+
+                    input {
+                        outline: none;
+                        padding: 25px 100px 25px 24px;
+                        width: 100%;
+                        font-size: 16px;
+                        display: block;
+                        @include border-radius(6px);
+                        border: 2px solid $orange;
+
+                        @include mq(vsmall) {
+                            padding: 25px 110px 25px 24px;
+                            font-size: 14px;
+                        }
+                    }
+
+                    & .fitness {
+                        position: absolute;
+                        width: 170px;
+                        right: 9px;
+                        top: 9px;
+                        height: 100% - 24%;
+                        background-color: $orange;
+                        color: $white;
+                        @include border-radius(5px);
+                        border: 0;
+                        @include fontvariable($size: 14px, $w: bold);
+                        outline: none;
+                        @include tranistions-;
+                        border: 2px solid transparent;
+
+                        @include mq(vsmall) {
+                            width: 99px;
+                        }
+
+                        &:hover {
+                            background-color: $white;
+                            color: $orange;
+                            border-color: $orange;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+// icons section content
+.icons {
+    padding: 40px 0;
+    background-color: $light-gray;
+
+    .icons-block {
+        @include display-f;
+
+        @include mq(vsmall) {
+            flex-direction: column
+        }
+
+        .icons-wrap {
+            @include display-f;
+
+            @include mq(phablet) {
+                flex-direction: column;
+            }
+
+            li {
+                padding: 0 80px;
+
+                @include mq(phablet) {
+                    padding: 0 60px;
+                    padding-top: 20px
+                }
+
+                @include mq(vsmall) {
+                    padding: 0 5px;
+                    padding-top: 20px;
+                }
+
+                a {
+                    display: block
+                }
+
+                img {
+                    @include fit-image;
+                }
+            }
+        }
+    }
+}
+
+// workout  section
+.workout {
+    @include paddings;
+
+    .workout-wrap {
+        & .workout-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+
+            @include mq(tablet) {
+                max-width: 100%;
+            }
+
+            & .works {
+                color: $light-color;
+                @include fontvariable($size: 18px, $w: 600);
+
+            }
+        }
+
+        .purchase-block {
+            text-align: center;
+            padding-top: 55px;
+
+            @include mq(tablet) {
+                padding-top: 40px;
+            }
+
+            ul {
+                li {
+                    & .venus-img {
+                        @include display-f;
+                        max-width: 184px;
+                        margin: 0 auto;
+                        min-height: 184px;
+                        @include border-radius(50%);
+                        background-color: $light-gray;
+                        margin-bottom: 40px;
+                    }
+
+                    h4 {
+                        padding: 0px 60px;
+                        margin-bottom: 20px;
+
+                        @include mq(laptop) {
+                            padding: 0 40px;
+                            margin-bottom: 15px;
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+// training section
+.training {
+    @extend .workout;
+    background-color: $light-gray;
+
+    .training-wrap {
+        @extend .workout-wrap;
+        text-align: center;
+
+        & .workout-header {
+            max-width: 700px;
+        }
+
+        p {
+            @include fontvariable($size: 18px, $w: 300);
+            color: $black;
+            padding-top: 15px;
+
+            @include mq(phablet) {
+                @include fontvariable($size: 15px, $w: 300);
+            }
+        }
+    }
+
+    & .final-img {
+        padding-top: 40px;
+        width: 100%;
+
+        img {
+            @include fit-image;
+        }
+    }
+}
+
+// quality section 
+.quality {
+    @extend .workout;
+
+    .quality-wrap {
+        @extend .workout-wrap;
+
+        .workout-header {
+            text-align: left;
+        }
+
+        p {
+            @include fontvariable($size: 18px, $w: 400);
+            color: $grey;
+            padding: 20px 0;
+        }
+
+        .benifits-block {
+            padding: 63px 53px 70px 50px;
+            box-shadow: 7px 32px 30px -9px rgb(0 0 0 / 16%);
+
+            @include mq(phablet) {
+                padding: 25px;
+                margin-top: 25px;
+            }
+        }
+
+    }
+}
+
+.ticks {
+
+    @include fontvariable($size: 18px, $w: 400);
+    color: $black;
+    padding-top: 32px;
+
+    @include mq(phablet) {
+        @include fontvariable($size: 16px, $w: 400);
+    }
+
+    img {
+        @include fit-image;
+        max-width: 16px;
+        margin-right: 6px;
+        display: inline-block;
+    }
+}
+
+.find {
+    border: 0;
+    outline: none;
+    background-color: $orange;
+    @include border-radius(6px);
+    padding: 12px 13px;
+    color: $white;
+    @include fontvariable($size: 14px, $w: bold);
+    border: 2px solid transparent;
+    @include tranistions-;
+
+    img {
+        @include fit-image;
+        display: inline-block;
+        max-width: 25px;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        border-color: $orange;
+        background-color: transparent;
+        color: $orange;
+    }
+
+}
+
+// beyond section
+.beyond {
+    background-color: $light-gray;
+    @extend .workout;
+
+    .beyond-wrap {
+        @extend .workout-wrap;
+
+        .workout-header {
+            max-width: 750px;
+
+            p {
+                text-align: center;
+                padding-top: 17px;
+            }
+        }
+
+        & .beyond-content-body {
+            padding-top: 40px;
+
+            & .beyond-cnt {
+                padding: 30px 24px 37px 24px;
+                box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 16%);
+
+                h4 {
+                    padding-top: 20px
+                }
+
+                .benifits-cnt {
+                    .tickz {
+                        @extend .ticks;
+                        @include fontvariable($size: 14px, $w: 400);
+                        padding-top: 25px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.customize {
+    @include paddings;
+    background-color: $black;
+
+    @include psudeo() {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(81deg, rgba(0, 0, 0, 1) 0%, rgba(255, 90, 17, 0.25253851540616246) 100%);
+    }
+
+    .customize-wrap {
+        max-width: 980px;
+        margin: 0 auto;
+
+        & .custom-cnt {
+
+            & .cutome-header {
+                max-width: 510px;
+            }
+
+            h2 {
+                color: $white;
+            }
+
+            p {
+                color: $white;
+                @include fontvariable($size: 18px, $w: 400);
+                padding: 20px 0 40px 0;
+
+                @include mq(laptop) {
+                    @include fontvariable($size: 15px, $w: 400);
+                    padding: 18px 0 35px 0;
+                }
+
+            }
+
+            .special-cnt {
+                margin-top: 45px;
+                max-width: 530px;
+                background-color: rgba(255, 255, 255, 13%);
+                padding: 41px 42px;
+
+                @include mq(laptop) {
+                    padding: 30px;
+                }
+
+                h4 {
+                    color: $white;
+                    padding-bottom: 15px;
+                }
+
+                span {
+                    @include fontvariable($size: 14px, $w: 400);
+                    color: $white;
+                }
+            }
+        }
+
+        & .mobile-cnt {
+            @include backgoundformat($image: url("/asset/image/mobile_cnt_img.jpg"));
+            border: 2px solid $white;
+            @include border-radius(10px);
+            padding: 38px 33px;
+
+            @include mq(laptop) {
+                padding: 20px;
+            }
+
+            @include mq(tablet) {
+                max-width: 320px;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+
+            & .mobile-top-cnt {
+                @include display-f($jc: space-between);
+
+                img {
+                    @include fit-image;
+                }
+            }
+
+            & .personal {
+                padding-top: 113PX;
+
+                li {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    margin-right: 10px;
+                    width: 46%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    @include display-f;
+                    flex-direction: column;
+
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-top: 10px;
+                    }
+
+                    & .pillates {
+                        &.pillates3 {
+                            max-width: 61px;
+                        }
+
+                        &.pillates4 {
+                            max-width: 53px;
+                        }
+
+                        max-width: 75px;
+                        margin: 0 auto;
+
+                        img {
+                            @include fit-image;
+
+                        }
+
+                    }
+
+                    span {
+                        color: $white;
+                        text-align: center;
+                        display: block;
+                        padding-top: 5px;
+                        @include fontvariable($size: 12px, $w: 400);
+
+                        &.physiotherapy {
+                            padding-top: 35px;
+                        }
+
+                        &.personal-train {
+                            padding-top: 26px;
+                        }
+                    }
+                }
+            }
+
+            h4 {
+                color: $white;
+                font-weight: 700;
+                padding-top: 15px;
+            }
+
+            & .register {
+                @extend .find;
+                width: 100%;
+                margin-top: 15px;
+                padding: 10px 13px;
+            }
+        }
+    }
+}
+
+// tested section
+.tested {
+    background-color: $light-gray;
+    @extend .workout;
+
+    & .tested-wrap {
+        @extend .workout-wrap;
+        max-width: 980px;
+        margin: 0 auto;
+
+        .workout-header {
+            max-width: 100%;
+            padding-bottom: 40px
+        }
+
+        & .proven-block {
+            @include display-f;
+
+            & .proven-img {
+                @include mq(vsmall) {
+                    max-width: 75px;
+                }
+
+                img {
+                    @include fit-image;
+                }
+            }
+
+            & .proven-blk-cnt {
+                padding-left: 40px;
+                max-width: 68%;
+
+                @include mq(phablet) {
+                    padding-left: 20px;
+                }
+
+                p {
+                    padding-top: 20px;
+                    color: $black;
+                    @include fontvariable($size: 14px, $w: 400);
+                }
+            }
+        }
+
+        .covered-areas {
+            margin-top: 100px;
+            background-color: $white;
+            box-shadow: 0px 0px 20px 5px rgb(226 229 232);
+            max-width: 890px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 60px;
+
+            @include mq(vsmall) {
+                padding: 20px;
+            }
+
+            & .ed-p-row {
+                padding-bottom: 60px;
+                border-bottom: 1px solid $border-bottom;
+            }
+
+            & .ed-img {
+                @include mq(tablet) {
+                    max-width: 151px;
+                    margin: 0 auto
+                }
+
+                img {
+                    @include fit-image;
+                }
+            }
+
+            & .ed-cnt {
+                @include display-f($jc: unset);
+                padding-bottom: 15px;
+
+                @include mq(tablet) {
+                    justify-content: center;
+                }
+            }
+
+            .areas {
+                display: block;
+                color: $grey;
+
+            }
+
+            & .holloway-cnt {
+                @include display-f($jc: unset);
+                flex-wrap: wrap;
+
+                li {
+                    padding-right: 10px;
+                    flex-basis: auto;
+
+                    & .barn {
+                        display: block;
+                        padding: 7px 10px;
+                        border: 1px solid $border-color;
+                        color: $grey;
+                        @include fontvariable($size: 12px, $w: 400);
+                    }
+
+                    padding-top: 10px;
+                }
+            }
+
+            & .review-blk {
+                text-align: center;
+                max-width: 80%;
+                margin: 0 auto;
+
+                h4 {
+                    font-weight: 400;
+                    padding-bottom: 10px;
+                }
+
+                span {
+                    display: block;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    & .questions-blk {
+        .quest {
+            padding-top: 50px;
+        }
+
+        padding-top: 100px;
+
+        h2 {
+            text-align: center;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: $black;
+            background-color: $white;
+            box-shadow: unset;
+        }
+
+        .accordion-button {
+            @include fontvariable($size: 18px, $w: 600);
+            @include mq(vsmall){
+                @include fontvariable($size: 15px, $w: 600);
+            }
+        }
+
+        .accordion-button::after {
+            width: 30px;
+            height: 30px;
+            @include backgoundformat($image: url("/asset/image/cross.png"), $cover: contain);
+            @include border-radius(50%);
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            @include backgoundformat($image: url("/asset/image/minus.png"));
+        }
+
+        .accordion-button:focus {
+            border-color: unset;
+            box-shadow: unset;
+        }
+
+    }
+}
+
+// partner section
+
+.partner {
+    @extend .workout;
+
+    & .partner-wrap {
+        @extend .workout-wrap;
+
+        & .workout-header {
+            p {
+                color: $black;
+                padding: 20px 63px 0 63px;
+
+                @include mq(phablet) {
+                    padding: 20px 30px 0 30px;
+                }
+            }
+        }
+
+        & .hub-blk {
+            max-width: 50%;
+            margin: 0 auto;
+            padding-top: 40px;
+
+            @include mq(phablet) {
+                padding-top: 20px;
+                max-width: 76%;
+            }
+            @include mq(vsmall){
+                max-width: 100%;
+            }
+
+            & .hub-cnt {
+                padding: 42px 27px 32px 27px;
+                box-shadow: 0px 0px 20px 5px rgb(226 229 232);
+
+                @include mq(tablet) {
+                    margin-top: 35px;
+                }
+
+                figure {
+                    max-width: 91px;
+                    margin: 0 auto;
+                }
+
+                img {
+                    @include fit-image;
+                }
+
+                & .apply {
+                    @extend .find;
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 16px 13px;
+
+                }
+            }
+
+        }
+
+        & .fitness-blk {
+            padding-top: 100px;
+
+            & .fitness-blk-cnt {
+                padding-top: 40px;
+
+                img {
+                    @include fit-image;
+                }
+
+                & .high {
+                    display: block;
+                    text-align: center;
+                    padding-top: 15px;
+                }
+            }
+        }
+
+        & .featured-blk {
+            padding-top: 100px;
+            max-width: 85%;
+            margin: 0 auto;
+
+            h2 {
+                text-align: center;
+            }
+
+            .trainers {
+                padding-top: 60px;
+
+                @include mq(phablet) {
+                    padding-top: 25px;
+                }
+
+                & .feature-img {
+                    padding-left: 36px;
+                    max-width: 224px;
+
+                    @include mq(phablet) {
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        padding-left: 0;
+                    }
+
+                    img {
+                        @include fit-image($coverd: contain);
+                    }
+                }
+
+                .personal-trainer-detail {
+                    & .read-more {
+                        @extend .info;
+                    }
+
+                    h4 {
+                        padding-top: 28px;
+                        padding-bottom: 15px;
+                    }
+
+                    & .special {
+                        @include fontvariable($size: 14px, $w: 600);
+                        color: $black;
+                        padding-top: 20px;
+                        display: block;
+                    }
+
+                    & .viewall {
+                        display: block;
+                        color: $grey;
+                        @include fontvariable($size: 14px, $w: 600);
+                    }
+
+                    & .holloway-cnt {
+                        @include display-f($jc: unset);
+                        flex-wrap: wrap;
+                        padding: 15px 0;
+
+                        li {
+                            padding-right: 10px;
+                            flex-basis: auto;
+
+                            & .barn {
+                                display: block;
+                                padding: 7px 10px;
+                                border: 1px solid $border-color;
+                                color: $grey;
+                                @include fontvariable($size: 12px, $w: 400);
+                            }
+
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .stated-blk {
+            padding-top: 100px;
+
+            h2 {
+                text-align: center;
+            }
+
+            & .booking {
+                @include display-f;
+                padding-top: 40px;
+                @include mq(vsmall) {
+                    flex-wrap: wrap;
+                }
+                li {
+                    padding-right: 20px;
+                    max-width: 228px;
+                    flex-basis: 228px;
+
+                    @include mq(vsmall) {
+                        max-width: 100%;
+                        flex-basis: 100%;
+                        padding-right: 0;
+                        padding-top: 20px;
+                        &:first-child{
+                            padding-top: 0;
+                        }
+                    }
+
+                    &:last-child {
+                        padding-right: 0
+                    }
+
+                    & .book-venue,
+                    & .find-trainer {
+                        @extend .find;
+                        display: block;
+
+                    }
+
+                    & .book-venue {
+                        background-color: $violet;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// knowmore section
+.knowmore {
+    @extend .customize;
+
+    & .knowmore-wrap {
+
+        text-align: center;
+
+        h2,
+        h4 {
+            color: $white;
+        }
+
+        h4 {
+            padding-top: 20px;
+        }
+
+        p {
+            color: $white;
+
+            & .conds {
+                @extend .info;
+                padding-top: 10px;
+            }
+        }
+
+        & form {
+            position: relative;
+            max-width: 510px;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            input {
+                outline: none;
+                padding: 25px 192px 25px 24px;
+                width: 100%;
+                font-size: 16px;
+                display: block;
+                @include border-radius(6px);
+                border: 2px solid $orange;
+            }
+
+            & .fitness {
+                position: absolute;
+                width: 170px;
+                right: 9px;
+                top: 9px;
+                height: 100% - 24%;
+                background-color: $orange;
+                color: $white;
+                @include border-radius(5px);
+                border: 0;
+                @include fontvariable($size: 14px, $w: bold);
+                outline: none;
+                @include tranistions-;
+                border: 2px solid transparent;
+
+                &:hover {
+                    background-color: $white;
+                    color: $orange;
+                    border-color: $orange;
+                }
+
+            }
+        }
+    }
+}

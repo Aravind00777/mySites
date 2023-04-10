@@ -1,0 +1,88 @@
+// footer section
+footer{
+    @include paddings;
+    & .footer-wrap{
+        padding-bottom: 85px;
+        border-bottom: 1px solid $border-bottom2;
+        @include mq(tablet){
+            padding-bottom: 50px;
+        }
+        @include mq(vsmall){
+            padding-bottom: 25px;
+        }
+        & .footer-cnt{
+            h4{
+                padding-bottom: 20px;
+            }
+            & .footer-link{
+                color: $grey;
+                display: block;
+                @include fontvariable($size:14px , $w:400);
+                padding-bottom: 10px;
+            }
+            & .explore{
+                li{
+                    p{
+                        color: $grey;
+                        @include fontvariable($size:14px , $w:400 , $lineheight:1.6);
+                    }
+                    &.albans{
+                        padding-top: 15px;
+                    }
+                }
+                & .why{
+                    padding-bottom: 10px;
+                    span{
+                        display: block;
+                    }
+                    & .date{
+                        @include fontvariable($size:14px , $w:400);
+                        color: $light-color;
+                    }
+                }
+            }
+        }
+    }
+    & .terms-cnt{
+        @include display-f($jc:space-between);
+        padding-top: 40px;
+        @include mq(tablet){
+            padding-top: 30px;
+        }
+        @include mq(vsmall){
+            flex-direction: column;
+        }
+        & .terms{
+            @include display-f($jc:unset);
+            @include mq(vsmall){
+                flex-direction: column;
+            }
+            li{
+                &:last-child{
+                    padding-right: 0;
+                }
+                padding-right: 50px;
+                @include mq(tablet){
+                    padding-right: 24px;
+                }
+                @include mq(vsmall){
+                    padding-right: 0;
+                }
+                & .notice{
+                    color: $grey;
+                    @include fontvariable($size:14px , $w:400);
+                }
+            }
+        }
+        & .terms-icons{
+            @extend .terms;
+            @include mq(vsmall){
+                flex-direction: unset;
+                padding-top: 20px;
+            }
+            li{
+                padding-right: 25px;
+            }
+        }
+    }
+}
