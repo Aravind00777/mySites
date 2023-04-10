@@ -1,0 +1,56 @@
+
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../font/playfair-display/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../font/playfair-display/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../font/minion-pro/MinionPro-Medium.woff2') format('woff2'),
+        url('../font/minion-pro/MinionPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../font/minion-pro/MinionPro-Bold.woff2') format('woff2'),
+        url('../font/minion-pro/MinionPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../font/arial/Arial.woff2') format('woff2'),
+        url('../font/arial/Arial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../font/arial/Arial-BoldMT.woff2') format('woff2'),
+        url('../font/arial/Arial-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
