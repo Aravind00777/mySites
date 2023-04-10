@@ -1,0 +1,2050 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+/* common class  */
+.cmn h1 {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* common class  */
+.main_body {
+    padding-left: 140px;
+    width: 100%;
+    background: linear-gradient(193deg, rgba(10, 9, 23, 1) 0%, rgba(23, 21, 58, 1) 100%);
+}
+
+/* sidebar content */
+.sidebar {
+    padding-top: 40px;
+    max-width: 140px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: #141224;
+}
+
+.dash {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.dash li {
+    padding: 10px 0;
+    min-height: 63px;
+    margin-bottom: 33px;
+    cursor: pointer;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.dash li:hover{
+    background: linear-gradient(81deg, rgba(255, 64, 154, 1) 0%, rgba(196, 56, 239, 1) 100%);
+}
+.dash li:last-child {
+    margin-bottom: 0;
+}
+
+.kda li.active,
+.dash li.active {
+    background: linear-gradient(81deg, rgba(255, 64, 154, 1) 0%, rgba(196, 56, 239, 1) 100%);
+}
+
+.kda li.active {
+    border: 0;
+}
+
+.logout_btn figure img,
+.dashboard_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dashboard_img {
+    max-width: 30px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 4px;
+}
+
+.dashboard_img.dashboard_img2 {
+    max-width: 34px;
+}
+
+.dash_link:hover,
+.dash_link:focus {
+    color: #fff;
+}
+.display_none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.dash li .display_none{
+    display: none;
+}
+.dash li.active .display_none{
+    display: block;
+}
+.dash li.active .block{
+    display: none;
+}
+.dash_link {
+    display: block;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #46436D;
+}
+
+.dash li.active .dash_link {
+    color: #fff;
+}
+
+.logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+}
+
+.content_wrap.active {
+    display: block;
+}
+
+.logout_btn {
+    border: 0;
+    background: transparent;
+    outline: none;
+
+}
+
+.logout_btn a {
+    font-size: 8px;
+    color: #46436D;
+    font-weight: 600;
+}
+
+.logout_btn figure {
+    max-width: 23px;
+    margin: 0 auto;
+}
+
+/* content wrap  */
+.content_wrap {
+    padding: 0 50px 55px 50px;
+    display: none;
+}
+
+/* header content */
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 52px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gold_img img,
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    padding: 40px 0 30px 0;
+    justify-content: space-between;
+}
+
+.header_drop_body {
+    max-width: 23.5%;
+    flex-basis: 23.5%;
+}
+
+.dropdown-item {
+    font-size: 12px;
+}
+
+.navbar form {
+    display: flex;
+    max-width: 52.52%;
+    flex-basis: 52.52%;
+}
+
+.navbar form input {
+    background-color: #242151;
+    width: 100%;
+    display: inline-block;
+    outline: none;
+    padding: 5px 10px 5px 45px;
+    min-height: 38px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+}
+
+.navbar form input::placeholder {
+    color: #332F61;
+}
+
+.search_btn {
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    margin-right: -30px;
+    position: relative;
+    max-width: 30px;
+}
+
+.bell_icon img {
+    max-width: 14px;
+    margin-right: 5px;
+}
+
+.search_btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.btn-secondary.dropdown-toggle.bell_icon {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 41px -2px rgba(186, 19, 88, 1);
+    -moz-box-shadow: 0px 0px 41px -2px rgba(186, 19, 88, 1);
+    box-shadow: 0px 0px 41px -2px rgb(186 19 88);
+    max-width: 48px;
+    min-height: 28px;
+    border-radius: 14px;
+    font-size: 12px;
+    border: 0;
+    background: linear-gradient(81deg, rgba(189, 18, 157, 1) 29%, rgba(113, 14, 168, 1) 94%);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.btn.btn-secondary.pixel {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dropdown-toggle.bell_icon::after {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    background-image: url(../image/drop_arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    width: 5px;
+    height: 8px;
+}
+
+.ul_header {
+    text-align: center;
+    align-items: center;
+    max-width: 50%;
+    flex-basis: 50%;
+    justify-content: right;
+}
+
+.ul_header li {
+    width: auto;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #5B5A99;
+    border: 0;
+    box-shadow: unset;
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.profile_pic {
+    max-width: 28px;
+    margin-right: 16px;
+}
+
+.profile_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #5B5A99;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: unset;
+}
+
+.btn-secondary:active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: unset;
+}
+
+.wallet_btn {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 5px;
+    min-height: 38px;
+    border: 0;
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    background: linear-gradient(81deg, rgba(255, 64, 154, 1) 0%, rgba(196, 56, 239, 1) 100%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wallet_cnt_btn {
+    max-width: 137px;
+    flex-basis: 137px;
+}
+
+.ul_header li:last-child {
+    margin-right: 0;
+}
+
+
+/* dashboard content  */
+.dashboard_cnt p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #5B5A99;
+}
+
+.total {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 56%);
+}
+.total.blur{
+    color: #fff;
+}
+.kda_cnt p,
+.gold {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.number {
+    display: inline-block;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.kda {
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.kda li {
+    border: 1px solid;
+    border-color: rgba(80, 77, 133, 15%);
+    border-radius: 10px;
+    max-width: 24.3%;
+    flex-basis: 24.3%;
+    padding: 20px 34px;
+    cursor: pointer;
+    min-height: 119px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-right: .9%;
+}
+
+.kda li:last-child {
+    margin-right: 0;
+}
+
+.current_month_rate {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 29%);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.kda.current_month {
+    padding-bottom: 22px;
+}
+
+.dashboard_cnt.nft_cnt {
+    padding-bottom: 25px;
+}
+
+/* Miners Statics conetnt */
+
+.minor_body {
+    background: linear-gradient(-171deg, rgba(28, 26, 67, 1) 45%, rgba(36, 33, 81, 1) 100%, rgba(38, 35, 83, 1) 80%);
+    padding: 31px 34px 41px 34px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.kda.minor_cnt {
+    padding-top: 22px;
+}
+
+.kda_cnt.protocol p {
+    font-size: 31px;
+}
+
+.kda.minor_cnt li {
+    border: 3px solid;
+    border-color: rgba(80, 77, 133, 15%);
+    max-width: 23.3%;
+    flex-basis: 23.3%;
+    margin-right: 2.2%;
+    min-height: 134px;
+}
+
+.kda.minor_cnt li:last-child {
+    margin-right: 0;
+}
+
+.rigs_cnt {
+    padding-top: 45px;
+}
+
+.goldshell {
+    padding-top: 25px;
+}
+
+.gold {
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: unset;
+    padding-top: 10px;
+}
+
+.goldshell {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.goldshell li {
+    background-color: #23204e;
+    max-width: 24%;
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-right: 1.32%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.goldshell li:last-child {
+    margin-right: 0;
+}
+
+.goldshel_cnt {
+    padding: 32px 21px;
+}
+
+.running_body {
+    width: 100%;
+    padding-top: 16px;
+}
+
+.running_left {
+    max-width: 49%;
+    flex-basis: 49%;
+    margin-right: 1%;
+}
+
+.running_body .running_left:last-child {
+    margin-right: 0;
+}
+
+.gold_img {
+    max-width: 138px;
+    margin: 0 auto;
+    padding-top: 14px;
+}
+
+.running_left.running_right {
+    text-align: right;
+}
+
+.running_left span {
+    padding-bottom: 8px;
+}
+
+.running_left span:last-child {
+    padding-bottom: 0;
+}
+
+.total.online {
+    display: inline-block;
+    max-width: 87px;
+    flex-basis: 87px;
+    width: 100%;
+    text-align: center;
+    padding: 4px !important;
+    font-size: 12px;
+    color: #1F1D47;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: #3EFF58;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.common_padding_right {
+    margin-right: 120px;
+}
+
+.transation_cnt {
+    padding-top: 25px;
+}
+
+.table tbody tr td span {
+    display: block;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+.table tbody tr td .table_number {
+    font-size: 10px;
+}
+
+.table tbody tr th,
+.table tbody tr td {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 11px 72px;
+}
+
+.table thead tr th {
+    background-color: #252351;
+    color: #A3A6B4;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 20px 72px;
+}
+
+.table tbody tr .kda_medium {
+    font-size: 18px;
+}
+
+.paid,
+.table tbody tr .paid {
+    font-size: 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #3B3967;
+}
+
+.table tbody tr:last-child {
+    border: 0;
+}
+
+.gold.stat {
+    text-align: left;
+    padding-top: 0;
+}
+
+.minor_body.nft_stats {
+    padding-left: 31px;
+    padding-right: 48px;
+}
+
+.gold_img.tier_img.tier_img_small {
+    max-width: 212px;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+    box-shadow: unset;
+}
+
+.goldshel_cnt.tier_small_cnt {
+    padding: 43px 28px 31px 30px;
+}
+
+.tier_bar {
+    margin: 15px 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 18px;
+    background-color: rgba(230, 39, 185, 27%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.tier_bar_cnt {
+    position: absolute;
+    z-index: 2;
+    width: 54%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #E627BB;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-box-shadow: 0px 3px 24px 0px rgba(230, 39, 187, 1);
+    -moz-box-shadow: 0px 3px 24px 0px rgba(230, 39, 187, 1);
+    box-shadow: 0px 3px 24px 0px rgba(230, 39, 187, 1);
+}
+
+.tier_bar.color_blue {
+    background-color: rgba(39, 160, 230, 27%);
+}
+
+.tier_bar_cnt.blue {
+    background-color: #27A0E6;
+    -webkit-box-shadow: 0px 3px 24px 0px rgba(39, 160, 230, 1);
+    -moz-box-shadow: 0px 3px 24px 0px rgba(39, 160, 230, 1);
+    box-shadow: 0px 3px 24px 0px rgba(39, 160, 230, 1);
+}
+
+.tier_bar.color_yellow {
+    background-color: rgba(230, 205, 39, 27%);
+}
+
+.tier_bar_cnt.yellow {
+    background-color: #E6CD27;
+    -webkit-box-shadow: 0px 3px 24px 0px rgba(230, 205, 39, 1);
+    -moz-box-shadow: 0px 3px 24px 0px rgba(230, 205, 39, 1);
+    box-shadow: 0px 3px 24px 0px rgba(230, 205, 39, 1);
+}
+
+.number_count {
+    display: inline-block;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.number_count.bold {
+    font-weight: 600;
+}
+
+.common_padding_right.common_padding_right2 {
+    margin-right: 46px;
+}
+
+.trade_body {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet_btn.trade_btn {
+    max-width: 157px;
+    flex-basis: 157px;
+    font-size: 14px;
+}
+
+.number_block {
+    text-align: center;
+}
+
+/* Live Rewards content */
+.reward_body {
+    margin-bottom: 15px;
+}
+
+.reward_left {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: linear-gradient(27deg, rgba(28, 26, 67, 1) 45%, rgba(36, 33, 81, 1) 54%, rgba(38, 35, 83, 1) 80%);
+    max-width: 31.78%;
+    flex-basis: 31.78%;
+    margin-right: 0.91%;
+    padding: 30px 34px 44px 34px;
+}
+
+.reward_right {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: linear-gradient(27deg, rgba(28, 26, 67, 1) 45%, rgba(36, 33, 81, 1) 54%, rgba(38, 35, 83, 1) 80%);
+    max-width: 67.31%;
+    flex-basis: 67.31%;
+    padding: 35px 23px;
+}
+
+.usd_body {
+    padding-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.wallet_btn.claim_btn {
+    min-height: 65px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.wallet_btn.claim_btn:hover{
+    background: linear-gradient(81deg, rgba(196,56,239,1) 0%, rgba(255,64,154,1) 100%);
+}
+.total.fades{
+    color: rgba(255, 255, 255, 16%);
+}
+.total.fades_one{
+    color: rgba(255, 255, 255, 40%);
+}
+.dougnut_body {
+    padding-top: 35px;
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 220px;
+    position: relative;
+    z-index: 1;
+}
+
+#dougnut_chart {
+    width: 88% !important;
+    height: 88% !important;
+    margin: 0 auto;
+}
+
+.text_number {
+    display: block;
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+
+.texts {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.dollor {
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.current_body {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.rate {
+    display: inline-block;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-right: 5px;
+}
+
+.current_cnt {
+    max-width: 27.59%;
+    flex-basis: 27.59%;
+    margin-right: 1%;
+    text-align: left;
+    padding-left: 13px;
+}
+
+.current_body .current_cnt:last-child {
+    margin-right: 0;
+}
+
+.current_cnt.current_cnt2 {
+    text-align: center;
+    padding-left: 0;
+}
+
+.rate_unit {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.total.performance {
+    padding-left: 13px;
+}
+
+.line_chart {
+    min-height: 390px;
+}
+
+.monthly_report_cnt {
+    border-radius: 10px;
+    background: linear-gradient(-171deg, rgba(28, 26, 67, 1) 45%, rgba(36, 33, 81, 1) 100%, rgba(38, 35, 83, 1) 80%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 34px 31px 41px 31px;
+}
+
+.gold.monthly_data {
+    text-align: left;
+    font-weight: 400;
+    padding-top: 0;
+}
+
+.wallet_btn.wallet_btn2 {
+    background: #242248;
+    max-width: 136px;
+    margin-right: 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #3E3B64;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet_btn.all {
+    max-width: 87px;
+}
+
+.wallets_body {
+    justify-content: space-between;
+    padding-top: 15px;
+    position: relative;
+}
+
+.wallet_btn.wallet_btn2.active {
+    color: #fff;
+    background: linear-gradient(-186deg, rgba(255, 64, 154, 1) 0%, rgba(196, 56, 239, 1) 100%);
+}
+
+.wallet_cnt .wallet_btn2:last-child {
+    margin-right: 0;
+}
+/* custome tab  */
+.tabs_wrap{
+    width: 100%;
+}
+.tab_class{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.tab_class li:first-child{
+    max-width: 82px;
+    flex-basis: 82px;
+}
+.tab_class li {
+    max-width: 137px;
+    flex-basis: 137px;
+    width: 100%;
+    min-width: 38px;
+    background: transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    margin-right: .6%;
+}
+.tab_body{
+    background: transparent;
+    min-height: 400px;
+}
+.tab1_body{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+}
+.activetab.tab1_body{
+    display: block;
+}
+/* custome tab  */
+.wallet_cnt {
+    max-width: 100%;
+    flex-basis: 100%;
+}
+
+.wallet_btn.wallet_btn2.input_date {
+    border: 0;
+    outline: none;
+    padding: 0 12px;
+    color: #615F98;
+    font-size: 13px;
+}
+
+.wallet_btn.wallet_btn2.input_date::placeholder {
+    color: #615F98;
+}
+
+.wallet_btn.wallet_btn2.input_date:last-child {
+    margin-right: 0;
+}
+
+.select-date form {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.month-year_cnt {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+.bar_chart {
+    width: 100%;
+    min-height: 365px;
+    padding-top: 40px;
+}
+
+.goldshell.nft_tier li {
+    max-width: 31.47%;
+    flex-basis: 31.47%;
+    margin-right: 2.77%;
+}
+
+.goldshell.nft_tier li:last-child {
+    margin-right: 0;
+}
+
+.goldshel_cnt.tier_cnt {
+    padding: 33px 32px 20px 22px;
+}
+
+.gold_img.tier_img {
+    padding-top: 0;
+    max-width: 285px;
+    -webkit-box-shadow: 0px 3px 45px 0px rgba(255, 255, 255, 0.16);
+    -moz-box-shadow: 0px 3px 45px 0px rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 3px 45px 0px rgba(255, 255, 255, 0.16);
+}
+
+.running_body.tier_cnt_body {
+    padding-left: 3px;
+}
+
+.per_day {
+    font-size: 8px;
+}
+
+.goldshell.nft_tier {
+    padding-top: 20px;
+}
+.accordion-button {
+    padding: 15px 37px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #272550;
+    min-height: 55px;
+    line-height: 1.5;
+}
+.accordion-button:focus {
+    border-color: #fff;
+    box-shadow: unset;
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #272550;
+}
+.accordion-body {
+    padding: 10px 37px 20px 37px;
+    background-color:  #151727;
+    margin-top: -17px;
+}
+.accordion-button::after {
+    background-image: url(../image/cross.png);
+    width: 11px;
+    height: 11px;
+    background-size: cover;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../image/cross.png);
+}
+.accordion-item {
+    border:0;
+    background-color: transparent;
+}
+.accordion-flush .accordion-item .accordion-button {
+    margin-bottom: 17px;
+}
+.accordion-body p{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.accordion-button.collapsed {
+    margin-bottom: 17px;
+}
+.content_wrap.min_height{
+    min-height: 100vh;
+}
+/* media query */
+@media(max-width:1780px) {
+    .header_drop_body {
+        max-width: 33.5%;
+        flex-basis: 33.5%;
+        justify-content: right;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: 137px;
+        max-width: 137px;
+    }
+    #myCharts{
+        height: auto !important;
+    }
+    .line_chart {
+        min-height: 260px;
+    }
+}
+
+@media(max-width:1399px) {
+    .total {
+        font-size: 15px;
+    }
+
+    .kda_cnt.protocol p {
+        font-size: 28px;
+    }
+
+    .number {
+        font-size: 28px;
+    }
+
+    .cmn h1 {
+        font-size: 22px;
+    }
+
+    .rate {
+        font-size: 45px;
+    }
+
+    .current_cnt {
+        max-width: 31.59%;
+        flex-basis: 31.59%;
+    }
+
+    .rate_unit {
+        font-size: 27px;
+    }
+
+    .text_number {
+        font-size: 40px;
+    }
+
+    .line_chart {
+        min-height: 240px;
+    }
+
+    .kda li {
+        padding: 20px 20px;
+        min-height: 99px;
+    }
+
+    .header_drop_body {
+        max-width: 45.5%;
+        flex-basis: 45.5%;
+        justify-content: right;
+    }
+
+    .kda.minor_cnt li {
+        min-height: 112px;
+    }
+
+    .rigs_cnt {
+        padding-top: 30px;
+    }
+
+    .reward_left {
+        padding: 27px 34px 35px 34px;
+    }
+
+    .kda_cnt p,
+    .gold {
+        font-size: 19px;
+    }
+
+    .minor_body {
+        padding: 25px 24px 34px 24px;
+    }
+
+    .gold_img {
+        max-width: 106px;
+        padding-top: 8px;
+    }
+
+    .running_body {
+        padding-top: 14px;
+    }
+
+    .goldshel_cnt {
+        padding: 25px 14px;
+    }
+
+    .sidebar {
+        max-width: 100px;
+        padding-top: 35px;
+    }
+
+    .main_body {
+        padding-left: 100px;
+    }
+
+    .logo {
+        max-width: 44px;
+    }
+
+    .dashboard_img {
+        max-width: 25px;
+    }
+
+    .content_wrap {
+        padding: 0px 40px 45px 40px;
+    }
+
+    .navbar {
+        padding: 35px 0 27px 0;
+    }
+
+    .dashboard_img.dashboard_img2 {
+        max-width: 28px;
+    }
+
+    .table tbody tr th,
+    .table tbody tr td {
+        padding: 10px 36px;
+    }
+
+    .table thead tr th {
+        padding: 18px 36px;
+    }
+
+    .common_padding_right {
+        margin-right: 55px;
+    }
+
+    .table tbody tr .kda_medium {
+        font-size: 17px;
+    }
+
+    .monthly_report_cnt {
+        padding: 30px 24px 35px 24px;
+    }
+
+    .wallet_btn.wallet_btn2 {
+        max-width: 100px;
+    }
+
+    .bar_chart {
+        min-height: 332px;
+        padding-top: 30px;
+    }
+
+    .number_count {
+        font-size: 40px;
+    }
+    .goldshel_cnt.tier_cnt {
+        padding: 27px 28px 18px 17px;
+    }
+    .goldshel_cnt.tier_small_cnt {
+        padding: 35px 22px 28px 23px;
+    }
+    .goldshell.nft_tier {
+        padding-top: 16px;
+    }
+    .tab_class li {
+        max-width: 100px;
+        flex-basis: 100px;
+    }
+}
+
+@media(max-width:1199px) {
+    .search_btn img {
+        margin-left: 7px;
+    }
+
+    .navbar form input {
+        min-height: 36px;
+    }
+
+    .kda_cnt.protocol p {
+        font-size: 25px;
+    }
+
+    .number {
+        font-size: 25px;
+    }
+
+    .wallet_btn {
+        min-height: 36px;
+    }
+
+    .kda_cnt p,
+    .gold {
+        font-size: 17px;
+    }
+
+    .total {
+        font-size: 14px;
+    }
+
+    .rate {
+        font-size: 38px;
+    }
+
+    .rate_unit {
+        font-size: 21px;
+    }
+
+    .reward_right {
+        padding: 27px 16px;
+    }
+
+    .dougnut_body {
+        padding-top: 22px;
+        min-height: 169px;
+    }
+
+    .text_number {
+        font-size: 30px;
+    }
+
+    .dollor {
+        font-size: 14px;
+    }
+
+    .reward_left {
+        padding: 20px 25px 27px 25px;
+    }
+
+    .wallet_btn.claim_btn {
+        min-height: 55px;
+        font-size: 17px;
+    }
+
+    .current_cnt {
+        padding-left: 8px;
+    }
+
+    .line_chart {
+        min-height: 180px;
+        height: 180px;
+    }
+
+    .current_body {
+        padding-bottom: 14px;
+    }
+
+    .kda li {
+        padding: 15px 15px;
+        min-height: 91px;
+    }
+
+    .kda.minor_cnt li {
+        min-height: 95px;
+    }
+
+    .kda.minor_cnt {
+        padding-top: 18px;
+    }
+
+    .kda {
+        padding-bottom: 13px;
+    }
+
+    .gold_img {
+        max-width: 75px;
+        padding-top: 5px;
+    }
+
+    .minor_body {
+        padding: 25px 20px 34px 20px;
+    }
+
+    .dash {
+        padding-top: 35px;
+    }
+
+    .sidebar {
+        max-width: 70px;
+        padding-top: 30px;
+    }
+
+    .logo {
+        max-width: 33px;
+    }
+
+    .main_body {
+        padding-left: 70px;
+    }
+
+    .content_wrap {
+        padding: 0px 30px 40px 30px;
+    }
+
+    .cmn h1 {
+        font-size: 21px;
+    }
+
+    .navbar {
+        padding: 30px 0 23px 0;
+    }
+
+    .goldshell {
+        padding-top: 19px;
+    }
+
+    .rigs_cnt {
+        padding-top: 20px;
+    }
+
+    .common_padding_right {
+        margin-right: 40px;
+    }
+
+    .wallet_btn.wallet_btn2 {
+        max-width: 90px;
+    }
+
+    .number_count {
+        font-size: 30px;
+    }
+
+    .tier_bar {
+        margin: 10px 0;
+        min-height: 13px;
+    }
+
+    .common_padding_right.common_padding_right2 {
+        margin-right: 15px;
+    }
+    .goldshel_cnt.tier_small_cnt {
+        padding: 30px 20px 22px 20px;
+    }
+    .gold_img.tier_img.tier_img_small {
+        max-width: 153px;
+    }
+    .minor_body.nft_stats {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .accordion-flush .accordion-item .accordion-button {
+        margin-bottom: 14px;
+    }
+    .accordion-body {
+        margin-top: -14px;
+    }
+    .accordion-button {
+        padding: 15px 30px;
+        min-height: 47px;
+    }
+    .accordion-body {
+        padding: 10px 30px 20px 30px;
+        margin-top: -14px;
+    }
+    .line_chart #myCharts{
+        min-height: 250px !important;
+    }
+    .tab_class li {
+        max-width: 90px;
+        flex-basis: 90px;
+        min-height: 36px;
+    }
+}
+
+@media(max-width:991px) {
+    .kda li {
+        max-width: 49%;
+        flex-basis: 49%;
+        margin-bottom: .9%;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .kda.minor_cnt li {
+        max-width: 48.8%;
+        flex-basis: 48.8%;
+        margin-bottom: 2.2%;
+    }
+
+    .kda li:nth-child(3),
+    .kda li:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    .goldshell li:nth-child(2n),
+    .kda li:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .wallet_btn.claim_btn {
+        min-height: 42px;
+        font-size: 16px;
+    }
+
+    .btn-secondary.dropdown-toggle.bell_icon {
+        max-width: 32px;
+        font-size: 0;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        left: -68px;
+    }
+
+    .text_number {
+        font-size: 24px;
+    }
+
+    .reward_body {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .dougnut_body {
+        padding-top: 15px;
+        min-height: 125px;
+    }
+
+    .reward_left {
+        max-width: 70%;
+        flex-basis: 70%;
+        margin-right: 0;
+    }
+
+    .reward_right {
+        margin-top: 30px;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .goldshell li {
+        max-width: 49.3%;
+        flex-basis: 49.3%;
+        margin-bottom: 1.32%;
+    }
+
+    .minor_body {
+        padding: 20px;
+    }
+
+    .common_padding_right {
+        margin-right: 0;
+    }
+
+    .bar_chart {
+        min-height: 236px;
+        height: 236px;
+        padding-top: 25px;
+    }
+
+    .table tbody tr .kda_medium {
+        font-size: 16px;
+    }
+
+    .wallet_btn.wallet_btn2 {
+        max-width: 75px;
+        min-height: 27px;
+    }
+
+    .table tbody tr th,
+    .table tbody tr td {
+        padding: 6px 10px;
+    }
+
+    .table thead tr th {
+        padding: 13px 10px;
+    }
+
+    .table tbody tr .paid {
+        font-size: 14px;
+    }
+
+    .monthly_report_cnt {
+        padding: 20px 20px 28px 20px;
+    }
+
+    .ul_header li {
+        margin-right: 13px;
+    }
+
+    .profile_pic {
+        max-width: 18px;
+        margin-right: 7px;
+    }
+
+    .navbar form {
+        max-width: 45.52%;
+        flex-basis: 45.52%;
+    }
+
+    .header_drop_body {
+        max-width: 52.5%;
+        flex-basis: 52.5%;
+    }
+
+    .wallet_cnt_btn {
+        max-width: 90px;
+        flex-basis: 90px;
+    }
+
+    .btn-secondary.dropdown-toggle.bell_icon {
+        max-width: 32px;
+        font-size: 0;
+        min-height: 32px;
+        border-radius: 50%;
+    }
+    .common_padding_right.common_padding_right2 {
+        margin-right: 0;
+    }
+    .goldshel_cnt.tier_cnt {
+        padding: 22px 18px 16px 15px;
+    }
+    .goldshell.nft_tier li {
+        max-width: 48.47%;
+        flex-basis: 48.47%;
+        margin-bottom: 2.77%;
+    }
+    .goldshell.nft_tier{
+        justify-content: center;
+    }
+    .goldshell.nft_tier li:last-child{
+        margin-bottom: 0;
+    }
+    .number_count {
+        font-size: 28px;
+    }
+    .wallet_btn.trade_btn {
+        max-width: 133px;
+        flex-basis: 133px;
+    } 
+    .line_chart #myCharts {
+        min-height: auto !important;
+    }
+    .tab_body {
+        min-height: 275px;
+    }
+    .tab_class li {
+        max-width: 75px;
+        flex-basis: 75px;
+        min-height: 27px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .tab_class li:first-child {
+        max-width: 75px;
+        flex-basis: 75px;
+    }
+    .tab_class {
+        max-width: 65%;
+        flex-wrap: wrap;
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+}
+
+@media(max-width:767px) {
+    .kda.minor_cnt li {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+
+    .kda li {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .kda li:nth-child(3) {
+        margin-bottom: 2.2%;
+        margin-right: 0;
+    }
+
+    .goldshell li {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .wallet_cnt {
+        flex-wrap: wrap;
+    }
+
+    .wallet_cnt .wallet_btn.wallet_btn2 {
+        margin-bottom: 10px;
+    }
+
+    .monthly_report_cnt {
+        padding: 15px;
+    }
+
+    .wallet_cnt .wallet_btn.wallet_btn2:nth-child(4),
+    .wallet_cnt .wallet_btn.wallet_btn2:nth-child(5) {
+        margin-bottom: 0;
+    }
+
+    .bar_chart {
+        min-height: 200px;
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .bell_icon img {
+        max-width: 8px;
+        margin-right: 0;
+    }
+
+    .ul_header {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+
+    .ul_header li {
+        margin-right: 7px;
+    }
+
+    .wallet_btn {
+        min-height: 32px;
+        font-size: 10px;
+    }
+    .btn-secondary.dropdown-toggle.bell_icon {
+        max-width: 20px;
+        min-height: 20px;
+        justify-content: center;
+    }
+
+    .profile_pic {
+        display: none;
+    }
+    .goldshell.nft_tier li {
+        max-width: 80%;
+        flex-basis: 80%;
+        margin-right: 0;
+    }
+    .number_count {
+        font-size: 24px;
+    }
+    .wallet_btn.trade_btn {
+        max-width: 94px;
+        flex-basis: 94px;
+    }
+    .dashboard_cnt.nft_cnt {
+        padding-bottom: 15px;
+    }
+    .accordion-flush .accordion-item .accordion-button {
+        margin-bottom: 11px;
+    }
+    .accordion-button {
+        padding: 8px 20px;
+        min-height: 40px;
+    }
+    .accordion-body {
+        padding: 10px 20px 16px 20px;
+        margin-top: -11px;
+    }
+    .tab1_body {
+        top: 140px;
+    }
+    .tab_body {
+        min-height: 199px;
+    }
+}
+
+@media(max-width:575px) {
+    .content_wrap {
+        padding: 0px 20px 25px 20px;
+    }
+
+    .kda_cnt.protocol p {
+        font-size: 23px;
+    }
+
+    .sidebar {
+        max-width: 50px;
+        padding-top: 25px;
+    }
+
+    .main_body {
+        padding-left: 50px;
+    }
+
+    .cmn h1 {
+        font-size: 19px;
+    }
+
+    .dash_link {
+        display: none;
+    }
+
+    .dash li {
+        min-height: 49px;
+        margin-bottom: 25px;
+    }
+
+    .current_cnt {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .current_body {
+        flex-direction: column;
+    }
+
+    .wallet_cnt .wallet_btn.wallet_btn2:nth-child(4) {
+        margin-bottom: 10px;
+    }
+
+    .reward_left {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .number {
+        font-size: 23px;
+    }
+
+    .kda_cnt p,
+    .gold {
+        font-size: 14px;
+    }
+
+    .kda li {
+        padding: 15px 15px;
+        min-height: 75px;
+    }
+
+    .navbar {
+        padding: 25px 0 14px 0;
+    }
+
+    .navbar form {
+        max-width: 40.52%;
+        flex-basis: 40.52%;
+    }
+
+    .navbar form input {
+        min-height: 33px;
+    }
+
+    .search_btn img {
+        margin-left: 3px;
+    }
+
+    .goldshell li {
+        margin-bottom: 10.32%;
+    }
+
+    .table tbody tr .kda_medium {
+        font-size: 13px;
+    }
+
+    .table tbody tr th,
+    .table tbody tr td {
+        padding: 4px 5px;
+    }
+
+    .table thead tr th {
+        padding: 9px 5px;
+    }
+
+    .table tbody tr .paid {
+        font-size: 13px;
+    }
+
+    .ul_header {
+        max-width: 57%;
+        flex-basis: 57%;
+    }
+    .wallet_btn.trade_btn {
+        max-width: 81px;
+        flex-basis: 81px;
+    }
+    .tab_class {
+        max-width: 83%;
+    }
+}
+
+@media(max-width:480px) {
+    .content_wrap {
+        padding: 0px 15px 25px 15px;
+    }
+
+    .search_bar {
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+
+    .search_bar.active {
+        width: 500%;
+    }
+
+    .search_btn {
+        max-width: 24px;
+    }
+
+    .search_btn img {
+        margin-left: -5px;
+    }
+
+    .rate {
+        font-size: 30px;
+    }
+
+    .rate_unit {
+        font-size: 18px;
+    }
+
+    .wallet_cnt_btn {
+        max-width: 52px;
+        flex-basis: 52px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .navbar form {
+        max-width: 20.52%;
+        flex-basis: 20.52%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .select-date form {
+        flex-direction: column;
+    }
+
+    .wallet_btn.wallet_btn2.input_date {
+        margin-bottom: 10px;
+        padding: 0 5px;
+        margin-right: 0;
+    }
+    .goldshell.nft_tier li {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .wallet_btn.trade_btn {
+        max-width: 65px;
+        flex-basis: 65px;
+        font-size: 12px;
+        min-height: 27px;
+    }
+    .tier_bar {
+        min-height: 11px;
+    }
+    .gold_img.tier_img {
+        max-width: 235px;
+    }
+    .accordion-button {
+        padding: 7px 14px;
+        min-height: 35px;
+    }
+    .accordion-button::after {
+        width: 8px;
+        height: 8px;
+    }
+    .accordion-body {
+        padding: 8px 14px 15px 14px;
+        margin-top: -11px;
+    }
+    .tab1_body {
+        top: 231px;
+    }
+    .search_bar {
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        z-index: -1;
+    }
+}

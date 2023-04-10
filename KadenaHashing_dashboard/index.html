@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KadenaHashing_dashboard</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.min.css">
+    <!-- font css  -->
+    <link rel="stylesheet" href="asset/css/font.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="main_body">
+        <div class="sidebar">
+            <a href="#" class="logo"><img src="asset/image/logo.png" alt=""></a>
+            <ul class="dash">
+                <li  data="#one" class="active">
+                    <a href="#" class="dashboard_img">
+                        <img src="asset/image/Dashboard.png"  class="display_none" alt="">
+                        <img src="asset/image/Dashboard_gray.png" class="block" alt="">
+                    </a>
+                    <a href="#"  class="dash_link active">Dashboard</a>
+                </li>
+                <li  data="#two">
+                    <a href="#" class="dashboard_img">
+                        <img src="asset/image/reports.png"  class="block"  alt="">
+                        <img src="asset/image/reports_white.png" class="display_none" alt="">
+                    </a>
+                    <a href="#" class="dash_link ">Reports</a>
+                </li>
+                <li  data="#three">
+                    <a href="#" class="dashboard_img dashboard_img2">
+                        <img src="asset/image/nft.png" class="block"  alt="">
+                        <img src="asset/image/nft_white.png" class="display_none" alt="">
+                    </a>
+                    <a href="#" class="dash_link">NFTS</a>
+                </li>
+                <li data="#four">
+                    <a href="#" class="dashboard_img">
+                        <img src="asset/image/faq.png"class="block" alt="">
+                        <img src="asset/image/faq_white.png" class="display_none" alt="">
+                    </a>
+                    <a href="#" class="dash_link">FAQs</a>
+                </li>
+            </ul>
+            <div class="logout">
+                <button class="logout_btn">
+                    <figure><img src="asset/image/logout.png" alt=""></figure>
+                    <a href="#">Logout</a>
+                </button>
+            </div>
+        </div>
+        <!-- Dashboard content -->
+        <div class="content_wrap active" id="one">
+            <!-- header content -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <form action="">
+                        <button class="search_btn"><img src="asset/image/search.png" alt=""></button>
+                        <input class="search_bar" type="text" placeholder="Search here">
+                    </form>
+
+                    <ul class="navbar-nav ms-auto  mb-0 mb-lg-0 text-center ul_header">
+                        <li class="nav-item ">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bell_icon" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="asset/image/bell.png" alt=""> 15
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=" profile_cnt d-flex nav-item">
+                            <figure class="profile_pic"><img src="asset/image/profile.png" alt=""></figure>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle pixel" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pixelz Warrios
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item wallet_cnt_btn">
+                            <button class="wallet_btn">Connect Wallet</button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- dashboard content -->
+            <div class="dashboard_cnt cmn">
+                <h1>Dashboard</h1>
+                <p>With all of the styling tool options available in today’s market</p>
+                <ul class="kda d-flex">
+                    <li class="active">
+                        <div class="kda_cnt ">
+                            <span class="total">Total KDA Mined</span>
+                            <p><span class="number">2456</span> $KDA</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="kda_cnt ">
+                            <span class="total">My Lifetime Rewards</span>
+                            <p><span class="number">2456</span> $KDA</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="kda_cnt ">
+                            <span class="total">This Month Rewards</span>
+                            <p><span class="number">2456</span> $KDA</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="kda_cnt ">
+                            <span class="total">KDA Price</span>
+                            <span class="number">$23.56</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Live Rewards content -->
+            <div class="reward_body d-flex">
+                <div class="reward_left">
+                    <span class="total">Live Rewards</span>
+                    <div class="dougnut_body">
+                        <canvas id="dougnut_chart">
+                        </canvas>
+                        <div class="texts">
+                            <span class="text_number">245</span>
+                            <span class="dollor">$KDA</span>
+                        </div>
+                    </div>
+                    <div class="usd_body d-flex">
+                        <div class="usd_cnt">
+                            <span class="total">USD </span>
+                            <span class="total">Last Day </span>
+                        </div>
+                        <div class="usd_cnt">
+                            <span class="total blur">$2450 </span>
+                            <span class="total blur">45 $KDA</span>
+                        </div>
+                    </div>
+                    <button class="wallet_btn claim_btn">Claim</button>
+                </div>
+                <div class="reward_right">
+                    <div class="current_body d-flex">
+                        <div class="current_cnt">
+                            <span class="total">Current Hashrate</span>
+                            <p><span class="rate">3.0</span> <span class="rate_unit"> TH/s</span></p>
+                        </div>
+                        <div class="current_cnt current_cnt2">
+                            <span class="total">Average Hashrate (24h)</span>
+                            <p><span class="rate">2.5</span> <span class="rate_unit"> TH/s</span></p>
+                        </div>
+                        <div class="current_cnt current_cnt2">
+                            <span class="total">Online</span>
+                            <p><span class="rate">98%</span></p>
+                        </div>
+                    </div>
+                    <span class="total performance"> Performence</span>
+                    <div class="line_chart">
+                        <canvas id="myCharts"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Miners Statics conetnt -->
+            <div class="minor_body">
+                <span class="total">Miners Statics</span>
+                <ul class="kda minor_cnt d-flex">
+                    <li>
+                        <div class="kda_cnt ">
+                            <span class="total">Total Miners</span>
+                            <p><span class="number counter" data="2456">0</span> Unit</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="kda_cnt protocol">
+                            <span class="total">Protocol Investment</span>
+                            <p>$<span class="number counter" data="20340">0</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="kda_cnt protocol">
+                            <span class="total">Total Return</span>
+                            <p>$<span class="number counter" data="20340">0</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="kda_cnt protocol">
+                            <span class="total">ROI</span>
+                            <p>$<span class="number counter" data="20340">0</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="rigs_cnt">
+                    <span class="total">All Miner Rigs</span>
+                    <ul class="goldshell">
+                        <li>
+                            <div class="goldshel_cnt">
+                                <figure class="gold_img"><img src="asset/image/gold_img.png" alt=""></figure>
+                                <span class="gold">Goldshell KD5</span>
+                                <div class="running_body d-flex">
+                                    <div class="running_left">
+                                        <span class="total fades">Total Running</span>
+                                        <span class="total fades">Hasrate</span>
+                                        <span class="total fades">Statue</span>
+                                    </div>
+                                    <div class="running_left running_right">
+                                        <span class="total fades_one">123 UNIT</span>
+                                        <span class="total fades_one">18 TH/Sec</span>
+                                        <span class=" total online">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goldshel_cnt">
+                                <figure class="gold_img"><img src="asset/image/gold_img.png" alt=""></figure>
+                                <span class="gold">Goldshell KD5</span>
+                                <div class="running_body d-flex">
+                                    <div class="running_left">
+                                        <span class="total fades">Total Running</span>
+                                        <span class="total fades">Hasrate</span>
+                                        <span class="total fades">Statue</span>
+                                    </div>
+                                    <div class="running_left running_right">
+                                        <span class="total fades_one">123 UNIT</span>
+                                        <span class="total fades_one">18 TH/Sec</span>
+                                        <span class=" total online">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goldshel_cnt">
+                                <figure class="gold_img"><img src="asset/image/gold_img.png" alt=""></figure>
+                                <span class="gold">Goldshell KD5</span>
+                                <div class="running_body d-flex">
+                                    <div class="running_left">
+                                        <span class="total fades">Total Running</span>
+                                        <span class="total fades">Hasrate</span>
+                                        <span class="total fades">Statue</span>
+                                    </div>
+                                    <div class="running_left running_right">
+                                        <span class="total fades_one">123 UNIT</span>
+                                        <span class="total fades_one">18 TH/Sec</span>
+                                        <span class=" total online">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goldshel_cnt">
+                                <figure class="gold_img"><img src="asset/image/gold_img.png" alt=""></figure>
+                                <span class="gold">Goldshell KD5</span>
+                                <div class="running_body d-flex">
+                                    <div class="running_left">
+                                        <span class="total fades">Total Running</span>
+                                        <span class="total fades">Hasrate</span>
+                                        <span class="total fades">Statue</span>
+                                    </div>
+                                    <div class="running_left running_right">
+                                        <span class="total fades_one">123 UNIT</span>
+                                        <span class="total fades_one">18 TH/Sec</span>
+                                        <span class=" total online">Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Reports contents -->
+        <div class="content_wrap " id="two">
+            <!-- header content -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <form action="">
+                        <button class="search_btn"><img src="asset/image/search.png" alt=""></button>
+                        <input class="search_bar" type="text" placeholder="Search here">
+                    </form>
+                    <ul class="navbar-nav ms-auto  mb-0 mb-lg-0 text-center ul_header">
+                        <li class="nav-item ">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bell_icon" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="asset/image/bell.png" alt=""> 15
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=" profile_cnt d-flex nav-item">
+                            <figure class="profile_pic"><img src="asset/image/profile.png" alt=""></figure>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle pixel" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pixelz Warrios
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item wallet_cnt_btn">
+                            <button class="wallet_btn">Connect Wallet</button>
+                        </li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div class="common_padding_right">
+                <!-- dashboard content -->
+                <div class="dashboard_cnt report_cnt cmn">
+                    <h1>Reports</h1>
+                    <p>With all of the styling tool options available in today’s market</p>
+                    <ul class="kda minor_cnt  current_month d-flex">
+                        <li>
+                            <div class="kda_cnt ">
+                                <span class="total">Current Month Rewards</span>
+                                <p><span class="number">2000</span> $KDA</p>
+                                <span class="current_month_rate">$2345.34</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kda_cnt ">
+                                <span class="total"> Last Month Rewards</span>
+                                <p><span class="number">2000</span> $KDA</p>
+                                <span class="current_month_rate">$2345.34</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kda_cnt ">
+                                <span class="total">Lifetime Rewards</span>
+                                <p><span class="number">2000</span> $KDA</p>
+                                <span class="current_month_rate">$2345.34</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kda_cnt ">
+                                <span class="total">Lifetime Rewards</span>
+                                <p><span class="number">2000</span> $KDA</p>
+                                <span class="current_month_rate">$2345.34</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Live Rewards content -->
+                <div class="reward_body monthly_report">
+                    <div class="monthly_report_cnt">
+                        <span class="gold monthly_data ">Monthly Report</span>
+                        <div class="wallets_body d-flex">
+                            <div class="wallet_cnt d-flex">
+                                <div class="tabs_wrap">
+                                    <ul class="tab_class" id="tabz">
+                                        <li><a target="tab1" class="wallet_btn wallet_btn2 all">All</a></li>
+                                        <li><a target="tab2" class="wallet_btn wallet_btn2 active">Wallet 01</a></li>
+                                        <li><a target="tab3" class="wallet_btn wallet_btn2 ">Wallet 02</a></li>
+                                        <li><a target="tab4" class="wallet_btn wallet_btn2">Wallet 03</a></li>
+                                        <li><a target="tab5" class="wallet_btn wallet_btn2">Wallet 04</a></li>
+                                    </ul>
+                                    <div class="tab_body">
+                                        <div class="tab1_body" id="tab1" >
+                                            <!-- multi bar chart -->
+                                            <div class="bar_chart">
+                                                <canvas id="multiBar"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="tab1_body activetab" id="tab2">
+                                            <!-- first  bar chart  -->
+                                            <div class="bar_chart">
+                                                <canvas id="myBar"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="tab1_body" id="tab3">
+                                            <!-- second bar chart  -->
+                                            <div class="bar_chart">
+                                                <canvas id="myBarOne"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="tab1_body" id="tab4">
+                                            <!-- third bar chart  -->
+                                            <div class="bar_chart">
+                                                <canvas id="myBarTwo"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="tab1_body" id="tab5">
+                                            <!-- fourth bar chart  -->
+                                            <div class="bar_chart">
+                                                <canvas id="myBarThree"></canvas>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="month-year_cnt">
+                                <div class="select-date">
+                                    <form action="">
+                                        <select name="" class="wallet_btn wallet_btn2 input_date" id="">
+                                            <option value="">montlly</option>
+                                            <option value="">01</option>
+                                            <option value="">02</option>
+                                            <option value="">03</option>
+                                            <option value="">04</option>
+                                            <option value="">05</option>
+                                            <option value="">06</option>
+                                            <option value="">07</option>
+                                            <option value="">08</option>
+                                            <option value="">09</option>
+                                            <option value="">10</option>
+                                            <option value="">11</option>
+                                            <option value="">12</option>
+                                        </select>
+                                        <select name="" class="wallet_btn wallet_btn2 input_date" id="">
+                                            <option value="">Yearly</option>
+                                            <option>2001</option>
+                                            <option>2002</option>
+                                            <option>2003</option>
+                                            <option>2004</option>
+                                            <option>2005</option>
+                                            <option>2006</option>
+                                            <option>2007</option>
+                                            <option>2008</option>
+                                            <option>2009</option>
+                                            <option>2010</option>
+                                            <option>2011</option>
+                                            <option>2012</option>
+                                            <option>2013</option>
+                                            <option>2014</option>
+                                            <option>2015</option>
+                                            <option>2016</option>
+                                            <option>2017</option>
+                                            <option>2018</option>
+                                            <option>2019</option>
+                                            <option>2020</option>
+                                            <option>2021</option>
+                                            <option>2022</option>
+                                            <option>2023</option>
+                                            <option>2024</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                            <option>2028</option>
+                                            <option>2029</option>
+                                            <option>2030</option>
+                                            <option>2031</option>
+                                            <option>2032</option>
+                                            <option>2033</option>
+                                            <option>2034</option>
+                                            <option>2035</option>
+                                            <option>2036</option>
+                                            <option>2037</option>
+                                            <option>2038</option>
+                                            <option>2039</option>
+                                            <option>2040</option>
+                                            <option>2041</option>
+                                            <option>2042</option>
+                                            <option>2043</option>
+                                            <option>2044</option>
+                                            <option>2045</option>
+                                            <option>2046</option>
+                                            <option>2047</option>
+                                            <option>2048</option>
+                                            <option>2049</option>
+                                            <option>2050</option>
+                                            <option>2051</option>
+                                            <option>2052</option>
+                                            <option>2053</option>
+                                            <option>2054</option>
+                                            <option>2055</option>
+                                            <option>2056</option>
+                                            <option>2057</option>
+                                            <option>2058</option>
+                                            <option>2059</option>
+                                            <option>2060</option>
+                                            <option>2061</option>
+                                            <option>2062</option>
+                                            <option>2063</option>
+                                            <option>2064</option>
+                                            <option>2065</option>
+                                            <option>2066</option>
+                                            <option>2067</option>
+                                            <option>2068</option>
+                                            <option>2069</option>
+                                            <option>2070</option>
+                                            <option>2071</option>
+                                            <option>2072</option>
+                                            <option>2073</option>
+                                            <option>2074</option>
+                                            <option>2075</option>
+                                            <option>2076</option>
+                                            <option>2077</option>
+                                            <option>2078</option>
+                                            <option>2079</option>
+                                            <option>2080</option>
+                                            <option>2081</option>
+                                            <option>2082</option>
+                                            <option>2083</option>
+                                            <option>2084</option>
+                                            <option>2085</option>
+                                            <option>2086</option>
+                                            <option>2087</option>
+                                            <option>2088</option>
+                                            <option>2089</option>
+                                            <option>2090</option>
+                                            <option>2091</option>
+                                            <option>2092</option>
+                                            <option>2093</option>
+                                            <option>2094</option>
+                                            <option>2095</option>
+                                            <option>2096</option>
+                                            <option>2097</option>
+                                            <option>2098</option>
+                                            <option>2099</option>
+                                            <option>2100</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miners Statics conetnt -->
+                <div class="minor_body transaction_body">
+                    <span class="total">All Transactions</span>
+                    <div class="transation_cnt table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Wallet</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Statues</th>
+                                    <th scope="col">Rewards</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><span>Wallet_1</span> <span class="table_number">0x123..687bs45</span></td>
+                                    <td> 12/2/2022</td>
+                                    <td class="paid"> Paid</td>
+                                    <td class="kda_medium"> +251 KDA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- nft contents -->
+        <div class="content_wrap " id="three">
+            <!-- header content -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <form action="">
+                        <button class="search_btn"><img src="asset/image/search.png" alt=""></button>
+                        <input class="search_bar" type="text" placeholder="Search here">
+                    </form>
+                    <ul class="navbar-nav ms-auto  mb-0 mb-lg-0 text-center ul_header">
+                        <li class="nav-item ">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bell_icon" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="asset/image/bell.png" alt=""> 15
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=" profile_cnt d-flex nav-item">
+                            <figure class="profile_pic"><img src="asset/image/profile.png" alt=""></figure>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle pixel" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pixelz Warrios
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item wallet_cnt_btn">
+                            <button class="wallet_btn">Connect Wallet</button>
+                        </li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div class="common_padding_right common_padding_right2">
+                <!-- dashboard content -->
+                <div class="dashboard_cnt nft_cnt cmn">
+                    <h1>Your NFTs</h1>
+                    <p>With all of the styling tool options available in today’s market</p>
+                </div>
+                <!-- Live Rewards content -->
+                <div class="reward_body monthly_report">
+                    <div class="monthly_report_cnt">
+                        <span class="gold monthly_data ">You have 123 NFTs </span>
+                        <ul class="goldshell nft_tier">
+                            <li>
+                                <div class="goldshel_cnt tier_cnt">
+                                    <figure class="gold_img tier_img"><img src="asset/image/tier_img.jpg" alt="">
+                                    </figure>
+                                    <span class="gold">KH NFT TIER 1</span>
+                                    <div class="running_body tier_cnt_body d-flex">
+                                        <div class="running_left">
+                                            <span class="total">Rewards <sub class="per_day">(Per Day)</sub></span>
+                                            <span class="total">Total Owned</span>
+                                            <span class="total">Feature</span>
+                                        </div>
+                                        <div class="running_left running_right">
+                                            <span class="total">23KDA</span>
+                                            <span class="total">12</span>
+                                            <span class=" total">Feature</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goldshel_cnt tier_cnt">
+                                    <figure class="gold_img tier_img"><img src="asset/image/tier_img.jpg" alt="">
+                                    </figure>
+                                    <span class="gold">KH NFT TIER 2</span>
+                                    <div class="running_body tier_cnt_body d-flex">
+                                        <div class="running_left">
+                                            <span class="total">Rewards <sub class="per_day">(Per Day)</sub></span>
+                                            <span class="total">Total Owned</span>
+                                            <span class="total">Feature</span>
+                                        </div>
+                                        <div class="running_left running_right">
+                                            <span class="total">23KDA</span>
+                                            <span class="total">12</span>
+                                            <span class=" total">Feature</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goldshel_cnt tier_cnt">
+                                    <figure class="gold_img tier_img"><img src="asset/image/tier_img.jpg" alt="">
+                                    </figure>
+                                    <span class="gold">KH NFT TIER 3</span>
+                                    <div class="running_body tier_cnt_body  d-flex">
+                                        <div class="running_left">
+                                            <span class="total">Rewards <sub class="per_day">(Per Day)</sub></span>
+                                            <span class="total">Total Owned</span>
+                                            <span class="total">Feature</span>
+                                        </div>
+                                        <div class="running_left running_right">
+                                            <span class="total">23KDA</span>
+                                            <span class="total">12</span>
+                                            <span class=" total">Feature</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Miners Statics conetnt -->
+                <div class="minor_body nft_stats">
+                    <div class="trade_body d-flex">
+                        <span class="gold stat"> NFT Stats</span>
+                        <button class="wallet_btn trade_btn">Trade</button>
+                    </div>
+                    <ul class="kda minor_cnt d-flex">
+                        <li>
+                            <div class="kda_cnt ">
+                                <span class="total">Total Supply</span>
+                                <p><span class="number">10,000</span> Unit</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kda_cnt protocol">
+                                <span class="total">Total Mint</span>
+                                <p><span class="number">4,000</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kda_cnt protocol">
+                                <span class="total">Categories</span>
+                                <p><span class="number">3</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kda_cnt protocol">
+                                <span class="total">Floor Price</span>
+                                <p><span class="number">233</span><span class="paid"> $KDA</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="goldshell nft_tier">
+                        <li>
+                            <div class="goldshel_cnt tier_small_cnt">
+                                <figure class="gold_img tier_img tier_img_small"><img
+                                        src="asset/image/tier_img_small.png" alt="">
+                                </figure>
+                                <span class="gold">KH NFT TIER 1</span>
+                                <div class="tier_bar">
+                                    <div class="tier_bar_cnt"></div>
+                                </div>
+                                <div class="number_block">
+                                    <span class="number_count">455/</span>
+                                    <span class="number_count bold">3000</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goldshel_cnt tier_small_cnt">
+                                <figure class="gold_img tier_img tier_img_small"><img
+                                        src="asset/image/tier_img_small.png" alt="">
+                                </figure>
+                                <span class="gold">KH NFT TIER 2</span>
+                                <div class="tier_bar color_blue">
+                                    <div class="tier_bar_cnt blue"></div>
+                                </div>
+                                <div class="number_block">
+                                    <span class="number_count">455/</span>
+                                    <span class="number_count bold">3000</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goldshel_cnt tier_small_cnt">
+                                <figure class="gold_img tier_img tier_img_small"><img
+                                        src="asset/image/tier_img_small.png" alt="">
+                                </figure>
+                                <span class="gold">KH NFT TIER 3</span>
+                                <div class="tier_bar color_yellow">
+                                    <div class="tier_bar_cnt yellow"></div>
+                                </div>
+                                <div class="number_block">
+                                    <span class="number_count">455/</span>
+                                    <span class="number_count bold">3000</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- faqs content -->
+        <div class="content_wrap min_height" id="four">
+            <!-- header content -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <form action="">
+                        <button class="search_btn"><img src="asset/image/search.png" alt=""></button>
+                        <input class="search_bar" type="text" placeholder="Search here">
+                    </form>
+                    <ul class="navbar-nav ms-auto  mb-0 mb-lg-0 text-center ul_header">
+                        <li class="nav-item ">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bell_icon" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="asset/image/bell.png" alt=""> 15
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class=" profile_cnt d-flex nav-item">
+                            <figure class="profile_pic"><img src="asset/image/profile.png" alt=""></figure>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle pixel" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pixelz Warrios
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item wallet_cnt_btn">
+                            <button class="wallet_btn">Connect Wallet</button>
+                        </li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div class="common_padding_right common_padding_right2">
+                <!-- dashboard content -->
+                <div class="dashboard_cnt nft_cnt cmn">
+                    <h1>FAQs</h1>
+                    <p>Frequently Asked Questions</p>
+                </div>
+                <div class="accordian_block">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    First Question Comes Here?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"> 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    First Question Comes Here?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    First Question Comes Here?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    First Question Comes Here?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    First Question Comes Here?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------- JQUERY ----------------->
+    <script src="asset/js/jquery-min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <!----------------------- OWL CAROUSEL ----------------->
+    <script src="asset/js/owl.carousel.min.js">
+    </script>
+    <!-- chart js -->
+    <script src="asset/js/chart.min.js"></script>
+    <!-- datalables -->
+    <script src="asset/js/chartjs-plugin-datalabels.min.js"></script>
+    <!-- script js -->
+    <script src="asset/js/script.js"></script>
+</body>
+
+</html>
