@@ -1,0 +1,2510 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* common class */
+.cmn h1 {
+    font-size: 101px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.cmn h2 {
+    font-size: 57px;
+    color: #010101;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.cmn h3 {
+    font-size: 43px;
+    color: #010101;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.cmn h4 {
+    font-size: 38px;
+    line-height: 1.26;
+    color: #010101;
+    font-weight: bold;
+}
+
+.cmn h5 {
+    font-size: 28px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* common class */
+/* header content  */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transform: 0;
+    -webkit-transform: 0;
+    -moz-transform: 0;
+    -ms-transform: 0;
+    -o-transform: 0;
+}
+header.active{
+    background-color: #96999c;
+}
+.header_top {
+    align-items: center;
+    padding: 17px 0;
+    opacity: 1;
+}
+header.active{
+    transform: translateY(-61px);
+}
+.header_top::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 61px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+}
+
+.header_left {
+    max-width: 85.43%;
+    flex-basis: 85.43%;
+    justify-content: space-between;
+    padding-right: 34px;
+    position: relative;
+    z-index: 1;
+}
+
+.header_left::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -18px;
+    bottom: -18px;
+    background-color: #fff;
+    width: 1px;
+    height: calc(100% + 34px);
+}
+
+.header_right {
+    max-width: 14.57%;
+    flex-basis: 14.57%;
+    padding-left: 40px;
+    justify-content: right;
+}
+
+.header_left_cnt {
+    align-items: center;
+}
+
+.header_left_cnt a {
+    display: block;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.mail {
+    color: #fff;
+    margin-left: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.header_left_cnt a:hover,
+.mail:hover{
+    color: #b60001;
+}
+.h_left_logo li {
+    max-width: 23px;
+    flex-basis: 23px;
+    margin-right: 20px;
+}
+
+.h_left_logo li:last-child {
+    margin-right: 0 !important;
+}
+
+.blog {
+    max-width: 332px;
+    display: block;
+}
+.h_left_logo.h_left_logo2 li a img,
+.h_left_logo li a img{
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+.h_left_logo.h_left_logo2 li a{
+    display: block;
+}
+.banking_block figure img,
+.corporate_img2 img,
+.mail_img img,
+.header_right figure img,
+.contact-img1 img,
+.bank_logo2 img,
+.home_sm img,
+.bank_img_cnt .bank_logo1 img,
+.corporate_block.week_block figure img,
+.banking_cnt.banking_cnt2.client_cnt1 li figure img,
+.profile_right figure img,
+.business_left figure img,
+.aboutus_bgm img,
+.banking_block figure img,
+.background_img img,
+.corporte_right_cnt figure img,
+.blog img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.banking_cnt.banking_cnt2.client_cnt1 li figure a{
+    display: block;
+}
+.navbar {
+    padding: 30px 0;
+}
+
+.ul_header li {
+    margin-right: 2px;
+    min-width: 150px;
+}
+
+.ul_header li:last-child {
+    margin-right: 0;
+}
+
+.linkz {
+    color: #fff;
+    display: inline-block;
+    min-height: 29px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.links:focus,
+.linkz:hover {
+    font-weight: bold;
+    color: #fff;
+}
+.linkz.active{
+    font-weight: 700;
+}
+.linkz:hover::after,
+.links:focus {
+    width: calc(100% + 10px);
+}
+.linkz.active::after{
+    width: calc(100% + 10px);
+}
+.linkz::after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: -4px;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #b60001;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+/* banner content  */
+.banner {
+    position: relative;
+    z-index: 1;
+    min-height: 920px;
+}
+
+.slider li {
+    min-height: 920px;
+    display: flex;
+    align-items: center;
+}
+
+.background_img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner_wrap {
+    max-width: 58%;
+    overflow: hidden;
+}
+
+.banner_wrap p {
+    font-size: 29px;
+    line-height: 1.45;
+}
+
+.owl-dots {
+    margin-top: -12%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 11.7%;
+    width: 50%;
+    bottom: 16%;
+}
+
+.slider.owl-carousel .owl-dot {
+    min-width: 12px;
+    min-height: 12px;
+    background-color: rgba(255, 255, 255, .2);
+    margin-right: 12px;
+}
+
+.slider.owl-carousel .owl-dot.active {
+    background-color: #b60001;
+}
+
+.corporate_right {
+    max-width: 46.67%;
+    flex-basis: 46.67%;
+}
+
+.corporate_left {
+    max-width: 53.33%;
+    flex-basis: 53.33%;
+    padding-top: 85px;
+}
+
+.corporate_block {
+    min-height: 150px;
+    max-width: 150px;
+    background-color: #b60001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.view_more {
+    display: block;
+    max-width: 230px;
+    width: 100%;
+    flex-basis: 230px;
+    outline: none;
+    background-color: #b60001;
+    padding: 10px;
+    min-height: 80px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 600;
+    border: 0;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-top: 40px;
+    border: 2px solid transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.view_more:hover {
+    border-color: #b60001;
+    background-color: transparent;
+    color: #b60001;
+}
+
+.fields {
+    display: block;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #b60001;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 40px 0 25px 0;
+}
+
+.corporate_left_cnt {
+    max-width: 77%;
+    margin-left: auto;
+    text-align: right;
+    padding: 112px 100px 124px 0;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.corporte_right_cnt figure {
+    margin-left: -16%;
+    margin-top: -16%;
+    z-index: 1;
+    position: relative;
+}
+
+/* banking content  */
+
+.bank_img_cnt {
+    max-width: 83px;
+    min-height: 83px;
+    background-color: #b60001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+.banking_wrap.client_wrap{
+    max-width: 90.88%;
+    margin: 0 auto;
+}
+.banking_cnt li {
+    max-width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
+    padding-left: 1.82%;
+    padding-right: 1.82%;
+}
+
+.banking_blk_cnt p {
+    color: #505050;
+    padding-top: 27px;
+}
+
+.banking_blk_cnt {
+    padding: 0px 46px 40px 46px;
+    background-color: #f5f5f5;
+}
+
+.banking {
+    padding-top: 180px;
+    padding-bottom: 200px;
+}
+
+.banking_cnt {
+    margin-left: -1.82%;
+    margin-right: -1.82%;
+}
+
+.bank_logo3 {
+    max-width: 36px;
+}
+
+.bank_logo2 {
+    max-width: 45px;
+}
+
+.bank_logo1 {
+    max-width: 57px;
+}
+
+/* aboutus content  */
+.aboutus {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.aboutus_bgm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 54.16%;
+    height: 100%;
+    z-index: -1;
+}
+
+.business_block {
+    max-width: 54%;
+    padding-top: 50px;
+}
+
+.business_left {
+    margin-right: 40px;
+    max-width: 54px;
+    flex-basis: 54px;
+}
+
+.aboutus__cnt_left {
+    max-width: 55.16%;
+    flex-basis: 55.16%;
+    padding-bottom: 180px;
+}
+
+.aboutus__cnt_left h3 {
+    color: #fff;
+}
+
+.business_right {
+    max-width: 79%;
+    flex-basis: 79%;
+}
+.business_right p{
+    padding-top: 10px;
+}
+.aboutus_cnt_top {
+    max-width: 69%;
+}
+
+.aboutus_wrap {
+    padding-top: 180px;
+}
+
+.fields.aboutus_ {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.bank_img_cnt.staf_img {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.staf_cnt {
+    background-color: #f5f5f5;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 80px 50px 86px 50px;
+    margin-left: -24%;
+}
+
+.aboutus_cnt_right {
+    max-width: 44.84%;
+    flex-basis: 44.84%;
+    position: relative;
+    z-index: 1;
+}
+
+.bgm {
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 181%;
+    height: 100%;
+    z-index: 2;
+    right: -181%;
+}
+
+.staf_cnt li {
+    max-width: calc(100% /2);
+    flex-basis: calc(100% / 2);
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding-top: 74px;
+    padding-bottom: 74px;
+}
+
+.staf_cnt li:nth-child(2n) {
+    border-right: 0;
+}
+
+.staf_cnt li:nth-child(3),
+.staf_cnt li:nth-child(4) {
+    border-bottom: 0;
+}
+
+.number {
+    display: block;
+    font-size: 55px;
+    font-weight: bold;
+    color: #010101;
+    line-height: 1.17;
+}
+
+.fields.member {
+    color: #181818;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.corporte_right_cnt.corporte_right_cnt2 figure {
+    margin-top: 0;
+}
+
+.corporate_left.corporate_left2 {
+    padding-top: 240px;
+}
+
+.fields.pro {
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.ceo {
+    display: block;
+    color: #505050;
+}
+
+.profile_right figure {
+    width: 100%;
+}
+
+.profile_right {
+    max-width: 17.3%;
+    flex-basis: 17.3%;
+}
+
+.profile_left {
+    margin-right: 3.7%;
+    max-width: 79%;
+    flex-basis: 79%;
+}
+
+.corporate_left_cnt.corporate_left_cnt2 {
+    padding: 112px 100px 50px 0;
+}
+
+.profile_cnt {
+    align-items: center;
+    padding-top: 50px;
+}
+
+.golden_cnt h2 {
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.golden_cnt {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.banking_blk_cnt.banking_blk_cnt2 {
+    background-color: unset;
+    padding: 0px 30px 40px 30px;
+}
+
+.h_left_logo.h_left_logo2 {
+    padding-top: 15px;
+}
+
+.banking_cnt.banking_cnt2 .h_left_logo.h_left_logo2 li {
+    max-width: 24px;
+    flex-basis: 24px;
+    margin-right: 15px;
+}
+
+.banking_cnt.banking_cnt2 li {
+    max-width: calc(100% / 4);
+    flex-basis: calc(100% / 4);
+}
+
+.fields.pro.golden_name {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.bank_img_cnt.bank_img_cnt2 {
+    margin-bottom: 28px;
+    max-width: 63px;
+    min-height: 63px;
+}
+
+.bank_logo1.gold_img1 {
+    max-width: 28px;
+}
+
+.bank_logo1.gold_img2 {
+    max-width: 37px;
+}
+
+.staf_cnt.staf_cnt2 {
+    background-color: #b60001;
+    padding: 100px 0px 200px 80px;
+}
+
+.staf_cnt.staf_cnt2 li {
+    border: 0;
+}
+
+.bgm.bgm2 {
+    background-color: #b60001;
+}
+
+.corporate_block.conntact_block {
+    background-color: #fff;
+    min-height: 135px;
+    max-width: 135px;
+    margin-right: auto;
+    margin-left: unset;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contactus {
+    display: block;
+    font-size: 50px;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+}
+
+.form_grp_1 {
+    align-items: center;
+}
+
+.form_group textarea,
+.form_group input {
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.form_group.form_grp_3 textarea {
+    min-height: 175px;
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+    color: #fff;
+}
+
+.form_group.form_grp_1 input:first-child {
+    margin-right: 4%;
+}
+
+.form_cnt {
+    padding-top: 50px;
+}
+
+.view_more.submit {
+    border: 2px solid #fff;
+    margin-left: unset;
+    margin-top: 0;
+}
+
+.view_more.submit:hover {
+    background-color: #fff;
+}
+
+.banking_cnt.banking_cnt2.client_cnt1 li {
+    max-width: calc(100% / 5);
+    flex-basis: calc(100% / 5);
+    padding-left: 4.82%;
+    padding-right: 4.82%;
+    display: flex;
+    align-items: center;
+}
+
+.banking_cnt.banking_cnt2.client_cnt1 li:nth-child(3),
+.banking_cnt.banking_cnt2.client_cnt1 li:nth-child(4) {
+    padding-left: 1.82%;
+    padding-right: 1.82%;
+    justify-content: center;
+}
+.banking.clients {
+    overflow: hidden;
+}
+
+.golden_cnt.our_client {
+    text-align: center;
+}
+
+.corporate_left.week_cnt {
+    padding-top: 145px;
+}
+.corporate_block.conntact_block.week_block{
+    background-color: #b60001;
+    margin-left: auto;
+    margin-right: unset;
+}
+.corporate_block.week_block figure {
+    max-width: 76px;
+}
+.corporate_left_cnt.corporate_left_cnt3{
+    padding: 75px 77px 75px 0;
+}
+.corporate_left_cnt.corporate_left_cnt3 h3 span{
+    display: block;
+}
+.time_cnt_right{
+    max-width: 18%;
+    flex-basis: 18%;
+}
+.time_cnt_left{
+    max-width: 76%;
+    flex-basis: 76%;
+    margin-right: 6%;
+}
+.time_cnt_left a{
+    display: block;
+}
+.bank_img_cnt.bank_img_cnt2.time_cnt1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.time_block{
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+.time_block li{
+    margin-bottom: 45px;
+    max-width: calc(100% / 2);
+    flex-basis: calc(100% / 2);
+}
+.time_block li:nth-child(3),
+.time_block li:nth-child(4){
+    margin-bottom: 0;
+}
+.fields.phone{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+/* footer content */
+footer{
+    background-color: #1a1d22;
+    padding-top: 160px;
+    padding-bottom: 145px;
+}
+.clear_cnt{
+    padding-bottom: 24px;
+}
+.footer_blk1_cnt{
+    padding-top: 30px;
+}
+.clear_left{
+    max-width: 5%;
+    flex-basis: 5%;
+    margin-right: 3%;
+}
+.clear_right{
+    max-width: 92%;
+    flex-basis: 92%;
+}
+.home_sm{
+    max-width: 16px;
+}
+.cell{
+    display: block;
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.h_left_logo.footer_logo{
+    padding-top: 23px;
+}
+.h_left_logo.footer_logo li{
+    max-width: 44px;
+    flex-basis: 44px;
+    min-height: 44px;
+    background-color: #b60001;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.ceo.follow_text{
+    color: #fff;
+    font-weight: 600;
+}
+.footer_blk1{
+    max-width:25.03%;
+    flex-basis: 25.03%;
+    margin-right: 8.93%;
+}
+.footer_blk2{
+    flex-basis: 16.88%;
+    max-width: 16.88%;
+    margin-right: 7.61%;
+}
+.footer_bl2_cnt,
+.footer_call_cnt{
+    padding-top: 30px;
+}
+.fields.member.services{
+    font-weight: bold;
+    color: #fff;
+    padding-top: 27px;
+}
+.footer_bl2_cnt li a{
+    display: block;
+    color: #fff;
+}
+.footer_bl2_cnt li{
+    padding-bottom: 32px;
+}
+.footer_bl2_cnt li:last-child{
+    padding-bottom: 0;
+}
+.footer_blk2.footer_blk3{
+    margin-right: 8.61%;
+    max-width: 12.91%;
+    flex-basis: 12.91%;
+}
+.footer_blk2.footer_blk4{
+    margin-right: 0;
+}
+.footer_blk2.footer_blk4{
+    flex-basis: 19.88%;
+    max-width: 19.88%;
+}
+.footer_call{
+    max-width: 26.66%;
+    flex-basis: 26.66%;
+    background-color: #b60001;
+    justify-content: center;
+}
+.footer_call,
+.footer_call2{
+    min-height: 75px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.footer_call2{
+    max-width: 73.34%;
+    flex-basis: 73.34%;
+    border: 2px solid #b60001;
+    padding: 10px 20px;
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.footer_bl2_cnt li a{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.cell:hover,
+.footer_call2:hover,
+.footer_bl2_cnt li a:hover{
+    color: #b60001;
+}
+.footer_call_cnt{
+    padding-bottom: 30px;
+}
+/* media query */
+@media(min-width:1199px) {
+    .container {
+        max-width: 1510px;
+        margin: 0 auto;
+    }
+}
+@media(min-width:2000px){
+    .owl-dots {
+        margin-top: -7%;
+        left: 31%;
+        width: 26%;
+    }
+    .slider li {
+        min-height: 1125px;
+    }
+    .corporte_right_cnt figure {
+        margin-top: -8%;
+    }
+}
+@media(max-width:1800px){
+    .header_right {
+        max-width: 16.57%;
+        flex-basis: 16.57%;
+        padding-left: 33px;
+    }
+    .container{
+        padding: 0 50px !important;
+    }
+    .corporate_left_cnt {
+        padding: 53px 75px 30px 0;
+        max-width: 100%;
+    }
+    .cmn h1 {
+        font-size: 86px;
+    }
+    .owl-dots {
+        margin-top: -17%;
+        left: 4.1%;
+    }
+    .fields {
+        font-size: 21px;
+        margin: 30px 0 20px 0;
+    }
+    .cmn h3 {
+        font-size: 39px;
+    }
+    .corporte_right_cnt figure {
+        margin-top: -12%;
+    }
+    .view_more {
+        margin-top: 29px;
+    }
+    .corporate_block {
+        min-height: 140px;
+        max-width: 140px;
+    }
+    .banking {
+        padding-top: 155px;
+        padding-bottom: 165px;
+    }
+    .business_block {
+        max-width: 66%;
+        padding-top: 40px;
+    }
+    .number {
+        font-size: 50px;
+    }
+    .business_left {
+        margin-right: 35px;
+        max-width: 50px;
+        flex-basis: 50px;
+    }
+    .staf_cnt li {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .staf_cnt {
+        padding: 65px 50px 65px 50px;
+    }
+    .corporate_left.corporate_left2 {
+        padding-top: 164px;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 figure {
+        margin-left: -18%;
+    }
+    .profile_cnt {
+        padding-top: 35px;
+    }
+    .profile_right {
+        max-width: 16.3%;
+        flex-basis: 16.3%;
+    }
+    .corporate_left_cnt.corporate_left_cnt2 {
+        padding: 55px 75px 50px 0;
+    }
+    .cmn h2 {
+        font-size: 49px;
+    }
+    .banking.golden{
+        padding-top: 107px;
+    }
+    .golden_cnt {
+        padding-bottom: 65px;
+    }
+    .fields.pro.golden_name {
+        font-size: 22px;
+        padding-bottom: 12px;
+    }
+    .bank_img_cnt.bank_img_cnt2 {
+        margin-bottom: 20px;
+        max-width: 60px;
+        min-height: 60px;
+        margin-top: -30px;
+    }
+    .staf_cnt.staf_cnt2 {
+        padding: 86px 0px 162px 70px;
+    }
+    .golden_cnt {
+        padding-bottom: 48px;
+    }
+    .client_img5 {
+        max-width: 130px;
+    }
+    .client_img4,
+    .client_img3 {
+        max-width: 210px;
+    }
+    .client_img1,
+    .client_img2 {
+        max-width: 130px;
+    }
+    .banking.clients {
+        padding-top: 124px;
+        padding-bottom: 116px;
+    }
+    .corporate_left.week_cnt {
+        padding-top: 69px;
+    }
+    .corporate_left_cnt.corporate_left_cnt3 {
+        padding: 54px 70px 54px 0;
+    }
+    .time_block {
+        padding-top: 40px;
+    }
+    .time_block li {
+        margin-bottom: 35px;
+    }
+    .corporate_block.conntact_block {
+        margin-bottom: 40px;
+        min-height: 119px;
+    max-width: 119px;
+    }
+    .corporate_block.week_block figure {
+        max-width: 60px;
+    }
+    footer {
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+    .footer_bl2_cnt li {
+        padding-bottom: 26px;
+    }
+}
+@media(max-width:1399px){
+    .header_right {
+        max-width: 220px;
+        flex-basis: 220px;
+        padding-left: 30px;
+    }
+    .navbar {
+        padding: 24px 0;
+    }
+    .ul_header li {
+        margin-right: 2px;
+        min-width: 140px;
+    }
+    .header_top {
+        padding: 15px 0;
+    }
+    .blog {
+        max-width: 285px;
+    }
+    .cmn h1 {
+        font-size: 75px;
+    }
+    .owl-dots {
+        margin-top: -18%;
+        left: 4.5%;
+    }
+    .banner,
+    .slider li {
+        min-height: 770px;
+    }
+    .banner_wrap p {
+        font-size: 26px;
+    }
+    .corporate_left {
+        padding-top: 52px;
+    }
+    .corporate_block {
+        min-height: 125px;
+        max-width: 125px;
+    }
+    .corporate_left_cnt {
+        padding: 48px 65px 48px 20px;
+        max-width: 100%;
+    }
+    .banking {
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+    .cmn h4 {
+        font-size: 30px;
+    }
+    .banking_blk_cnt {
+        padding: 0px 35px 35px 35px;
+    }
+    .banking_blk_cnt p {
+        padding-top: 20px;
+    }
+    .bank_img_cnt {
+        max-width: 73px;
+        min-height: 73px;
+        margin-top: -38px;
+        margin-bottom: 27px;
+    }
+    .cmn h3 {
+        font-size: 31px;
+    }
+    .cmn h5 {
+        font-size: 25px;
+    }
+    .business_block {
+        max-width: 77%;
+        padding-top: 35px;
+    }
+    .staf_cnt {
+        padding: 45px;
+        margin-left: -21%;
+    }
+    .number {
+        font-size: 43px;
+    }
+    .fields {
+        font-size: 20px;
+        margin: 22px 0 16px 0;
+    }
+    .fields.aboutus_ {
+        margin-top: 20px;
+    }
+    .aboutus__cnt_left {
+        padding-bottom: 0;
+    }
+    .aboutus_wrap {
+        padding-top: 110px;
+    }
+    .staf_cnt li {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .bank_logo2 {
+        max-width: 30px;
+    }
+    .corporate_left_cnt.corporate_left_cnt2 {
+        padding: 42px 65px 42px 0;
+    }
+    .corporate_left.corporate_left2 {
+        padding-top: 133px;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 figure {
+        margin-left: -15%;
+    }
+    .cmn h2 {
+        font-size: 46px;
+    }
+    .banking.golden {
+        padding-top: 93px;
+    }
+    .banking {
+        padding-bottom: 111px;
+    }
+    .fields.pro.golden_name {
+        font-size: 20px;
+        padding-bottom: 9px;
+    }
+    .h_left_logo.h_left_logo2 {
+        padding-top: 10px;
+    }
+    .staf_cnt.staf_cnt2 {
+        padding: 70px 0px 122px 55px;
+    }
+    .contactus {
+        font-size: 43px;
+    }
+    .form_group textarea, .form_group input {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+    .view_more {
+        min-height: 65px;
+        font-size: 19px;
+    }
+    .banking.clients {
+        padding-top: 104px;
+        padding-bottom: 90px;
+    }
+    .client_img5 {
+        max-width: 105px;
+    }
+    .client_img4, .client_img3 {
+        max-width: 175px;
+    }
+    .client_img1, .client_img2 {
+        max-width: 115px;
+    }
+    .corporate_left_cnt.corporate_left_cnt3 {
+        padding: 40px 55px 40px 20px;
+    }
+    .corporate_block.conntact_block {
+        margin-bottom: 30px;
+    }
+    body{
+        font-size: 16px;
+    }
+    .fields.phone {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .corporate_left.week_cnt {
+        padding-top: 40px;
+    }
+    .footer_call, .footer_call2 {
+        min-height: 70px;
+    }
+    .footer_call2 {
+        padding: 7px 13px;
+    }
+    .footer_bl2_cnt, .footer_call_cnt {
+        padding-top: 24px;
+    }
+    .footer_blk1_cnt {
+        padding-top: 24px;
+    }
+    .clear_cnt {
+        padding-bottom: 20px;
+    }
+    .fields.member.services {
+        padding-top: 22px;
+    }
+    footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .form_cnt {
+        padding-top: 30px;
+    }
+    .form_group.form_grp_3 textarea {
+        min-height: 140px;
+    }
+    .contact-img1{
+        max-width: 75px;
+    }
+    .header_top::after {
+        top: 56px;
+        
+    }
+}
+@media(max-width:1199px){
+    .banner_wrap {
+        max-width: 69%;
+    }
+    .cmn h1 {
+        font-size: 69px;
+    }
+    .banner_wrap p {
+        font-size: 24px;
+    }
+    .navbar {
+        padding: 20px 0;
+    }
+    .banner, .slider li {
+        min-height: 625px;
+    }
+    .owl-dots {
+        margin-top: -16%;
+        left: 7.2%;
+    }
+    .header_left {
+        padding-right: 30px;
+    }
+    .slider.owl-carousel .owl-dot {
+        min-width: 10px;
+        min-height: 10px;
+    }
+    .mail_img,
+    .header_right figure{
+        max-width: 20px;
+    }
+    .ul_header li {
+        min-width: 115px;
+    }
+    .header_right {
+        max-width: 193px;
+        flex-basis: 193px;
+    }
+    header.active {
+        transform: translateY(-58px);
+        -webkit-transform: translateY(-58px);
+        -moz-transform: translateY(-58px);
+        -ms-transform: translateY(-58px);
+        -o-transform: translateY(-58px);
+}
+    .linkz {
+        min-height: 24px;
+    }
+    .corporte_right_cnt figure {
+        margin-top: -11%;
+    }
+    .corporate_left_cnt {
+        padding: 30px 50px 30px 20px;
+    }
+    .corporate_block {
+        min-height: 106px;
+        max-width: 106px;
+    }
+    .fields {
+        font-size: 16px;
+        margin: 19px 0 15px 0;
+    }
+    .corporate_img2{
+        max-width: 30px;
+    }
+    .cmn h3 {
+        font-size: 28px;
+    }
+    .view_more {
+        min-height: 60px;
+        font-size: 18px;
+        max-width: 200px;
+        flex-basis: 200px;
+    }
+    .cmn h4 {
+        font-size: 25px;
+    }
+    .bank_logo3 {
+        max-width: 29px;
+    }
+    .bank_logo1 {
+        max-width: 41px;
+    }
+    .bank_img_cnt {
+        max-width: 60px;
+        min-height: 60px;
+        margin-top: -39px;
+        margin-bottom: 19px;
+    }
+    .aboutus_cnt_top {
+        max-width: 78%;
+    }
+    .business_left {
+        margin-right: 30px;
+        max-width: 35px;
+        flex-basis: 35px;
+    }
+    .cmn h5 {
+        font-size: 22px;
+    }
+    .business_block {
+        max-width: 83%;
+        padding-top: 30px;
+    }
+    .number {
+        font-size: 38px;
+    }
+    .staf_cnt {
+        padding: 37px;
+        margin-left: -20%;
+    }
+    .corporate_left.corporate_left2 {
+        padding-top: 72px;
+    }
+    .corporate_left_cnt.corporate_left_cnt2 {
+        padding: 38px 45px 38px 20px;
+    }
+    .banking.golden {
+        padding-top: 70px;
+    }
+    .cmn h2 {
+        font-size: 40px;
+    }
+    .golden_cnt {
+        max-width: 98%;
+        padding-bottom: 35px;
+    }
+    .bank_img_cnt.bank_img_cnt2 {
+        margin-bottom: 17px;
+        max-width: 50px;
+        min-height: 50px;
+        margin-top: -25px;
+    }
+    .fields.pro.golden_name {
+        font-size: 19px;
+        padding-bottom: 9px;
+    }
+    .banking_blk_cnt.banking_blk_cnt2 {
+        padding: 0px 21px 30px 21px;
+    }
+    .bank_logo1.gold_img1 {
+        max-width: 19px;
+    }
+    .bank_logo1.gold_img2 {
+        max-width: 26px;
+    }
+    .fb_gray{
+        max-width: 12px;
+    }
+    .banking_cnt.banking_cnt2 .h_left_logo.h_left_logo2 li {
+        margin-right: 12px;
+    }
+    .h_left_logo.h_left_logo2 li a img {
+        width: 100%;
+        height: 100%;
+    }
+    .contact-img1 {
+        max-width: 64px;
+    }
+    .corporate_block.conntact_block {
+        margin-bottom: 22px;
+        min-height: 100px;
+        max-width: 100px;
+    }
+    .form_cnt {
+        padding-top: 20px;
+    }
+    .contactus {
+        font-size: 35px;
+    }
+    .form_group textarea, .form_group input {
+        padding: 12px;
+        margin-bottom: 22px;
+    }
+    .form_group.form_grp_3 textarea {
+        min-height: 101px;
+    }
+    .banking.clients {
+        padding-top: 85px;
+        padding-bottom: 80px;
+    }
+    .client_img4, .client_img3 {
+        max-width: 132px;
+    }
+    .client_img5 {
+        max-width: 82px;
+    }
+    .client_img1, .client_img2 {
+        max-width: 89px;
+    }
+    .corporate_left_cnt.corporate_left_cnt3 {
+        padding: 28px 45px 28px 20px;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 figure {
+        margin-left: -14%;
+    }
+    .fields.phone {
+        margin-bottom: 6px;
+    }
+    .fields.member.services {
+        padding-top: 9px;
+    }
+    body {
+        font-size: 15px;
+    }
+    .footer_blk2.footer_blk3 {
+        margin-right: 5.61%;
+    }
+    .footer_blk2.footer_blk4 {
+        flex-basis: 22.88%;
+        max-width: 22.88%;
+    }
+    .footer_bl2_cnt li {
+        padding-bottom: 17px;
+    }
+    .h_left_logo.footer_logo {
+        padding-top: 19px;
+    }
+    .h_left_logo.footer_logo li {
+        max-width: 36px;
+        flex-basis: 36px;
+        min-height: 36px;
+        margin-right: 13px;
+    }
+    .footer_call, .footer_call2 {
+        min-height: 50px;
+    }
+    footer {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+    
+}
+@media(max-width:991px){
+    .container {
+        padding: 0 15px !important;
+    }
+    .cmn h1 {
+        font-size: 60px;
+    }
+    .banner_wrap {
+        max-width: 76%;
+    }
+    .banner_wrap p {
+        font-size: 20px;
+    }
+    .banner, .slider li {
+        min-height: 558px;
+    }
+    .header_right {
+        max-width: 26%;
+        flex-basis: 26%;
+        padding-left: 10px;
+    }
+    .mail_img, .header_right figure {
+        max-width: 15px;
+    }
+    .header_right figure a{
+        display: block;
+    }
+    .mail {
+        margin-left: 13px;
+    }
+    .blog {
+        max-width: 245px;
+    }
+    .owl-dots {
+        margin-top: -18%;
+        left: 5.8%;
+    }
+    .header_top {
+        padding: 12px 0;
+    }
+    .header_top::after {
+        top: 51px;
+    }    
+    .linkz::after,
+    .linkz.active::after {
+        display: none !important;
+    }
+    .linkz:hover{
+        font-weight: 500;
+    }
+    .linkz.active {
+        font-weight: 500;
+    }
+    .navbar {
+        padding: 18px 0;
+    }
+
+    .navbar-light .cmn_line {
+        position: absolute;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        z-index: 100;
+        display: block;
+        left: 0;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+
+    .cmn_line.cmn_btn1 {
+        top: 5px;
+    }
+
+    .cmn_line.cmn_btn3 {
+        top: 21px;
+    }
+
+    .cmn_line.cmn_btn2 {
+        right: 0px;
+        left: unset;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-light .navbar-toggler {
+        position: relative;
+        width: 33px;
+        height: 26px;
+        border: none;
+    }
+
+    .navbar-light .navbar-toggler:not(.collapsed) .cmn_line.cmn_btn1 {
+        transform: rotate(-49deg);
+        top: 14px;
+        -webkit-transform: rotate(-49deg);
+        -moz-transform: rotate(-49deg);
+        -ms-transform: rotate(-49deg);
+        -o-transform: rotate(-49deg);
+    }
+
+    .navbar-light .navbar-toggler:not(.collapsed) .cmn_line.cmn_btn3 {
+        transform: rotate(46deg);
+        -webkit-transform: rotate(46deg);
+        -moz-transform: rotate(46deg);
+        -ms-transform: rotate(46deg);
+        -o-transform: rotate(46deg);
+        top: 14px;
+    }
+
+    .navbar-light .navbar-toggler:not(.collapsed) .cmn_line.cmn_btn2 {
+        opacity: 0;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        padding-top: 18%;
+        padding-bottom: 18%;
+        right: 0;
+        left: -100%;
+        height: auto;
+        z-index: 88;
+        width: 100%;
+        height: 150vh;
+        overflow: auto;
+        background: rgba(0, 0, 0, 1);
+        top: 0;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .navbar-collapse.show {
+        position: fixed;
+        left: 0;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        left: 0;
+    }
+
+    .navbar-collapse.collapse:not(.show) {
+        display: block;
+        z-index: -1;
+    }
+    .ul_header li {
+        padding-bottom: 3%;
+    }
+    .linkz::after {
+        bottom: -10px;
+    }
+
+    .cmn h3 {
+        font-size: 22px;
+    }
+    .view_more {
+        min-height: 52px;
+        font-size: 17px;
+        max-width: 181px;
+        flex-basis: 181px;
+        margin-top: 24px;
+    }
+    .corporate_block {
+        min-height: 86px;
+        max-width: 86px;
+    }
+    .corporate_img2 {
+        max-width: 24px;
+    }
+    .fields {
+        margin: 13px 0 13px 0;
+        font-size: 15px;
+    }
+    .corporate_left_cnt {
+        padding: 20px 35px 20px 20px;
+    }
+    .corporate_left {
+        padding-top: 37px;
+    }
+    .cmn h4 {
+        font-size: 18px;
+    }
+    .banking_blk_cnt {
+        padding: 0px 25px 25px 25px;
+    }
+    .banking_blk_cnt p {
+        padding-top: 12px;
+    }
+    .bank_img_cnt {
+        max-width: 46px;
+        min-height: 46px;
+        margin-top: -26px;
+        margin-bottom: 14px;
+    }
+    .bank_logo3 {
+        max-width: 22px;
+    }
+    .bank_logo2 {
+        max-width: 23px;
+    }
+    .bank_logo1 {
+        max-width: 27px;
+    }
+    .banking {
+        padding-bottom: 82px;
+        padding-top: 82px;
+    }
+    .staf_cnt {
+        padding: 25px;
+    }
+    .staf_cnt li {
+        padding: 30px 10px;
+    }
+    .number {
+        font-size: 32px;
+    }
+    .aboutus_wrap {
+        padding-top: 83px;
+    }
+    .aboutus_cnt_right {
+        padding-bottom: 50px;
+        background-color: #f5f5f5;
+    }
+    .aboutus__cnt_left {
+        padding-bottom: 50px;
+    }
+    .corporate_left_cnt.corporate_left_cnt2 {
+        padding: 30px 35px 30px 20px;
+    }
+    .banking.golden {
+        padding-top: 60px;
+    }
+    .cmn h2 {
+        font-size: 33px;
+    }
+    .bank_img_cnt.bank_img_cnt2 {
+        margin-bottom: 14px;
+        max-width: 38px;
+        min-height: 38px;
+        margin-top: -19px;
+    }
+    .fb_gray {
+        max-width: 10px;
+    }
+    .aboutus_cnt_right.aboutus_cnt_right-2{
+        padding-bottom: 0;
+        background-color: unset;
+    }
+    .aboutus__cnt_left.aboutus__cnt_left-2{
+        padding-bottom: 0;
+    }
+    .contact-img1 {
+        max-width: 56px;
+    }
+    .corporate_block.conntact_block {
+        margin-bottom: 19px;
+        min-height: 85px;
+        max-width: 85px;
+    }
+    .staf_cnt.staf_cnt2 {
+        padding: 50px 0px 50px 35px;
+    }
+    .contactus {
+        font-size: 31px;
+    }
+    .form_group textarea, .form_group input {
+        padding: 9px;
+        margin-bottom: 19px;
+    }
+    .form_group.form_grp_3 textarea {
+        min-height: 85px;
+    }
+    .golden_cnt {
+        max-width: 100%;
+        padding-bottom: 22px;
+    }
+    .banking_cnt.banking_cnt2.client_cnt1 li {
+        max-width: calc(100% / 4);
+        flex-basis: calc(100% / 4);
+        margin-bottom: 30px;
+        justify-content: center;
+        
+    }
+    .banking_cnt.banking_cnt2.client_cnt1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .time_block {
+        padding-top: 28px;
+    }
+    .time_block li {
+        margin-bottom: 20px;
+    }
+    .client_img4, .client_img3 {
+        max-width: 117px;
+    }
+    .client_img1, .client_img2 {
+        max-width: 79px;
+    }
+    .banking.clients {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .corporate_block.week_block figure {
+        max-width: 43px;
+    }
+    .corporate_left_cnt.corporate_left_cnt3 {
+        padding: 20px 35px 20px 20px;
+    }
+    .time_block li {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .time_block li:nth-child(2n){
+        margin-right: 0;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 figure {
+        margin-left: -74%;
+    }
+    .time_block li:nth-child(3), .time_block li:nth-child(4) {
+        margin-bottom: 20px;
+    }
+    .time_block li:last-child{
+        margin-bottom: 0;
+    }
+    .time_cnt_right {
+        max-width: 11%;
+        flex-basis: 11%;
+    }
+    .time_cnt{
+        justify-content: right;
+    }
+    footer {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    .footer_wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_blk2.footer_blk4 {
+        flex-basis: 37.88%;
+        max-width: 37.88%;
+        padding-top: 40px;
+    }
+    .footer_blk1 {
+        max-width: 32.03%;
+        flex-basis: 32.03%;
+    }
+    .footer_blk2 {
+        flex-basis: 25.88%;
+        max-width: 25.88%;
+    }
+    .footer_blk2.footer_blk3 {
+        margin-right: 0;
+        max-width: 24.91%;
+        flex-basis: 24.91%;
+    }
+    .footer_call_cnt {
+        padding-bottom: 20px;
+    }
+    .h_left_logo li a img{
+        width: 100%;
+        height: 100%;
+    }
+    .h_left_logo li:first-child a img{
+        width: auto;
+        height: auto;
+    }
+    .h_left_logo li {
+        max-width: 16px;
+        flex-basis: 16px;
+        margin-right: 16px;
+    }
+    .header_right {
+        max-width: 33%;
+        flex-basis: 33%;
+    }
+}
+@media(max-width:767px){
+    .header_left::after {
+        top: -22px;
+    }
+    .owl-dots {
+        margin-top: -21%;
+        left: 8.9%;
+    }
+    .header_top::after {
+        top: 45px;
+    }
+    header.active {
+        transform: translateY(-47px);
+    }
+    body {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 16px 0;
+    }
+    .cmn h1 {
+        font-size: 50px;
+    }
+    .banner_wrap {
+        max-width: 90%;
+    }
+    .banner_wrap p {
+        font-size: 18px;
+    }
+    .banner, .slider li {
+        min-height: 500px;
+    }
+    .corporate_wrap {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .corporte_right_cnt figure {
+        margin-top: 0%;
+        margin-left: 0;
+    }
+    .corporate_right {
+        max-width: 71.67%;
+        flex-basis: 71.67%;
+    }
+    .corporate_left {
+        max-width: 80.33%;
+        flex-basis: 80.33%;
+    }
+    .corporate_left_cnt {
+        padding: 20px;
+        text-align: center;
+    }
+    .corporate_block {
+        min-height: 80px;
+        max-width: 80px;
+        margin: 0 auto;
+    }
+    .view_more {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .corporate_left {
+        padding-top: 26px;
+    }
+    .banking_cnt li {
+        max-width: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+        margin-bottom: 3.63%;
+    }
+    .banking_cnt{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banking_cnt li:last-child{
+        margin-bottom: 0 !important;
+    }
+    .banking {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .aboutus_wrap {
+        padding-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bgm{
+        display: none;
+    }
+    .aboutus_bgm {
+        width: 100%;
+        height: 100%;
+    }
+    .aboutus_cnt_top {
+        max-width: 100%;
+    }
+    .business_block {
+        max-width: 100%;
+        padding-top: 28px;
+    }
+    .aboutus_cnt_right {
+        max-width: 90%;
+        flex-basis: 90%;
+        background-color: unset;
+    }
+    .aboutus__cnt_left {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .staf_cnt {
+        margin-left: 0;
+    }
+    .container {
+        padding: 0 30px !important;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 figure {
+        margin-left: 0;
+    }
+    .corporate_left.corporate_left2 {
+        padding-top: 32px;
+    }
+    .profile_left {
+        text-align: left;
+    }
+    .fields.pro {
+        margin-bottom: 10px;
+    }
+    .bank_logo2 {
+        max-width: 17px;
+    }
+    .bank_logo2 {
+        max-width: 17px;
+    }
+    .cmn h2 {
+        font-size: 24px;
+    }
+    .banking_cnt.banking_cnt2 li {
+        max-width: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+    }
+    .fields.pro.golden_name {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+    .banking_blk_cnt.banking_blk_cnt2 {
+        padding: 0px 14px 20px 14px;
+    }
+    .banking_cnt.banking_cnt2 .h_left_logo.h_left_logo2 li {
+        max-width: 19px;
+        flex-basis: 19px;
+        margin-right: 8px;
+    }
+    .h_left_logo.h_left_logo2 li:first-child a img {
+        width: 100%;
+        height: 100%;
+    }
+    .fb_gray {
+        max-width: 8px;
+    }
+    .blog {
+        max-width: 200px;
+    }
+    .staf_cnt.staf_cnt2 {
+        padding: 35px 20px;
+    }
+    .aboutus_bgm.aboutus_bgm2 img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .banking {
+        padding-bottom: 40px;
+    }
+    .banking.golden {
+        padding-top: 40px;
+    }
+    .aboutus_cnt_right.aboutus_cnt_right-2 {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .form_group textarea, .form_group input {
+        padding: 7px;
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+    .aboutus_wrap.aboutus_wrap2{
+        padding-bottom: 50px;
+    }
+    .contactus {
+        font-size: 28px;
+    }
+    .banking_cnt.banking_cnt2.client_cnt1 li {
+        max-width: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+    }
+    .banking.clients {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .mail {
+        display: none;
+    }
+    .header_right {
+        max-width: 6%;
+        flex-basis: 6%;
+    }
+    .header_top {
+        justify-content: space-between;
+    }
+    .banking_cnt.banking_cnt2 li:nth-child(3){
+        margin-bottom: 0;
+    }
+    .corporate_block.conntact_block.week_block {
+        margin-right: auto;
+    }
+    .footer_blk2.footer_blk3,
+    .footer_blk1 {
+        max-width: 45%;
+        flex-basis: 45%;
+    }
+    .footer_blk2.footer_blk3{
+        padding-top: 40px;
+        margin-right: 8.93%;
+    }
+    .footer_blk2 {
+        flex-basis: 46%;
+        max-width: 46%;
+        margin-right: 0;
+    }
+    .footer_blk2.footer_blk4 {
+        max-width: 46%;
+        flex-basis: 46%;
+    }
+    .corporate_left_cnt.corporate_left_cnt3 {
+        padding: 10px;
+    }
+    .time_cnt_left {
+        max-width: 83%;
+        flex-basis: 83%;
+        text-align: left;
+    }
+    .corporate_left.week_cnt {
+        padding-bottom: 40px;
+    }
+    .corporate_wrap {
+        padding: 40px 0;
+    }
+}
+@media(max-width:575px){
+    .cmn h1 {
+        font-size: 40px;
+    }
+    header.active {
+        transform: translateY(-46px);
+    }
+    .banner, .slider li {
+        min-height: 433px;
+    }
+    .owl-dots {
+        margin-top: -23%;
+        left: 7.2%;
+    }
+    .banner_wrap p {
+        font-size: 16px;
+    }
+    .corporate_right {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .corporate_left {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .banking_cnt li {
+        max-width: 75%;
+        flex-basis: 75%;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .banking {
+        padding: 40px 0;
+    }
+    .aboutus_cnt_right {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .aboutus_cnt_right {
+        padding-bottom: 40px;
+    }
+    .aboutus_wrap {
+        padding-top: 40px;
+    }
+    .banking.clients {
+        padding: 40px 0;
+    }
+    .corporate_left.week_cnt {
+        padding-bottom: 0;
+    }
+}
+@media(max-width:480px){
+    .header_top {
+        display: none !important;
+    }
+    .container {
+        padding: 0 17px !important;
+    }
+    header.active {
+        transform: translateY(0px);
+    }
+    .slider.owl-carousel .owl-dot {
+        min-width: 8px;
+        min-height: 8px;
+    }
+    .banner_wrap {
+        max-width: 100%;
+    }
+    .cmn h1 {
+        font-size: 31px;
+    }
+    .banner_wrap p {
+        font-size: 14px;
+    }
+    .banner, .slider li {
+        min-height: 320px;
+    }
+    .corporate_left_cnt {
+        padding: 17px;
+    }
+    .cmn h3 {
+        font-size: 19px;
+    }
+    .banking_cnt li {
+        max-width: 79%;
+        flex-basis: 79%;
+    }
+    .corporte_right_cnt figure {
+        width: 76%;
+        margin: 0 auto;
+    }
+    .corporte_right_cnt.corporte_right_cnt2 figure {
+        margin: 0 auto;
+    }
+    .cmn h4 {
+        font-size: 16px;
+    }
+    .banking_blk_cnt {
+        padding: 0px 20px 20px 20px;
+    }
+    .navbar {
+        padding: 14px 0;
+    }
+    .banking {
+        padding: 35px 0;
+    }
+    .cmn h5 {
+        font-size: 15px;
+    }
+    .business_block {
+        padding-top: 24px;
+    }
+    .staf_cnt {
+        padding: 15px;
+    }
+    .aboutus__cnt_left {
+        padding-bottom: 35px;
+    }
+    .number {
+        font-size: 26px;
+    }
+    .fields {
+        font-size: 14px;
+    }
+    .staf_cnt li {
+        padding: 21px 10px;
+    }
+    .aboutus_cnt_right {
+        padding-bottom: 35px;
+    }
+    .corporate_wrap {
+        padding: 35px 0;
+    }
+    .coma{
+        max-width: 40px;
+    }
+    .coma img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .corporate_left_cnt.corporate_left_cnt2 {
+        padding: 20px 18px;
+    }
+    .profile_cnt {
+        padding-top: 22px;
+    }
+    .banking.golden {
+        padding-top: 24px;
+    }
+    .cmn h2 {
+        font-size: 18px;
+    }
+    .banking_cnt.banking_cnt2 li {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .fields.pro {
+        margin-bottom: 7px;
+    }
+    .corporate_block.conntact_block {
+        margin-bottom: 20px;
+        min-height: 64px;
+        max-width: 64px;
+    }
+    .contact-img1 {
+        max-width: 40px;
+    }
+    .contactus {
+        font-size: 23px;
+    }
+    .golden_image {
+        min-height: 225px;
+    }
+    .aboutus_wrap.aboutus_wrap2 {
+        padding-bottom: 35px;
+        align-items: unset;
+    }
+    .staf_cnt.staf_cnt2 {
+        padding: 32px 18px;
+    }
+    .form_grp_1 {
+        flex-direction: column;
+    }
+    .form_group.form_grp_1 input:first-child {
+        margin-right: 0%;
+    }
+    .view_more {
+        min-height: 43px;
+        font-size: 15px;
+        max-width: 150px;
+        flex-basis: 150px;
+    }
+    .banking_cnt.banking_cnt2 li {
+        max-width: 80%;
+        flex-basis: 80%;
+    }
+    .banking_cnt.banking_cnt2 li:nth-child(3) {
+    margin-bottom: 30px;
+    }
+    .banking.clients {
+        padding: 35px 0;
+    }
+    .corporate_block.week_block figure {
+        max-width: 33px;
+    }
+    .bank_logo1.gold_img1 {
+        max-width: 15px;
+    }
+    .corporate_left.week_cnt {
+        padding-top: 30px;
+    }
+    .footer_blk2.footer_blk4,
+    .footer_blk2,
+    .footer_blk2.footer_blk3,
+    .footer_blk1 {
+        max-width: 100%;
+        margin-right: 0;
+        flex-basis: 100%;
+        padding-top: 30px;
+    }
+    .footer_blk1{
+        padding-top: 0;
+    }
+    .footer_call, .footer_call2 {
+        min-height: 44px;
+    }
+    .footer_call img{
+        max-width: 19px;
+    }
+    .corporate_left_cnt.corporate_left_cnt3 {
+        padding: 17px;
+    }
+    .banking_cnt.banking_cnt2.client_cnt1 li {
+        max-width: calc(100% );
+        flex-basis: calc(100%);
+    }
+}
