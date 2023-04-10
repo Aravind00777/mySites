@@ -1,0 +1,95 @@
+header {
+    position: fixed;
+    z-index: 9999;
+    background-color: $black;
+    width: 100%;
+    @include rfs (50px 0 20px 0 , padding );
+    top: 0;
+    @include tranistions-;
+    &.header.active{
+        background-color: $black;
+    }
+    & .navbar-brand{
+        img{
+            @include fit-image;
+        }
+        @include mq(phablet){
+            max-width: 120px;
+        }
+        @include mq(vsmall){
+            max-width: 100px;
+        }
+    }
+    & .ul_header {
+        li {
+            &:hover{
+                & .dropdown-menu{
+                    display: block;
+                }
+            }
+            @include display-f;
+            padding-right: 30px;
+            @include mq(xxxxl){
+                padding-right: 18px;
+            }
+            @include mq(xxl){
+                padding-right: 11px;
+            }
+            @include mq(tablet){
+                padding-right: 0;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                justify-content: left;
+            }
+            @include mq(vsmall){
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            &:last-child {
+                padding-right: 0;
+                padding-left: 10px;
+                @include mq(xxl){
+                    padding-left: 6px;
+                }
+                @include mq(laptop){
+                    padding-left: 0;
+                }
+            }
+            .headerlinks {
+                color: $white;
+                @include fontvariable($size: 16px, $w: 700);
+                &:hover{
+                    color: $rose;
+                }
+                @include mq(xxl){
+                    @include fontvariable($size: 14px, $w: 700);
+                }
+                @include mq(laptop){
+                    @include fontvariable($size: 13px, $w: 700);
+                }
+                @include mq(tablet){
+                    @include fontvariable($size: 23px, $w: 700);
+                }
+                &.active{
+                    color: $rose;
+                }
+            
+            }
+
+            
+        }
+    }
+}
+.blog{
+    max-width: 210px;
+    display: block;
+    img{
+        @include fit-image();
+    }
+    @include mq(laptop){
+        max-width: 200px;
+    }
+    @include mq(phablet){
+        max-width: 140px;
+    }
+}
