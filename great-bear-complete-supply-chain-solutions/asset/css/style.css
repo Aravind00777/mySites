@@ -1,0 +1,974 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+a, a:hover {
+    text-decoration: none;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+ol, ul, li {
+    list-style: none;
+}
+body{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+/* common class */
+.cmn h2{
+    font-size: 40px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 600;
+}
+/* common class */
+/* header section */
+.navbar{
+    padding: 40px 80px;
+}
+.blog{
+    max-width: 413px;
+}
+.blog img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.visit{
+    font-size: 16px;
+    border: 4px solid transparent;
+    background-color: #00B5E5;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px 11.3px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.navbar-expand-lg {
+    justify-content: space-between;
+}
+.visit:hover{
+    color: #00B5E5;
+    background-color: #fff;
+    border-color: #00B5E5;
+}
+header{
+    position: fixed;
+    width: 100%;
+    transition: .4s;
+    z-index: 9999;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    background-color: #edf8fc;
+}
+header.active{
+    background-color: #edf8fc;
+}
+/* banner section */
+.banner{
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+    background-color: #edf8fc;
+    min-height: 100vh;
+}
+.enquiry{
+    font-size: 48px;
+}
+.thank_cnt{
+    max-width: 37%;
+    margin: 0 auto;
+}
+.thank_cnt p{
+    font-size: 28px;
+    line-height: 1.28;
+    color: #13022B;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+}
+.video_block.video_player video{
+    object-position: 100% 35px;
+}
+
+.banner_wrap h1{
+    color: #13022B;
+    font-size: 64px;
+    line-height: 1.3;
+    text-align: center;
+}
+.banner_wrap span{
+    display: block;
+}
+.medium{
+    font-weight: 500;
+}
+.bold{
+    font-weight: 700;
+}
+.video_block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.video_block video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 100px;
+}
+.get_btn_block{
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+}
+.get_button{
+    font-size: 24px;
+    color: #fff;
+    background-color: #F28B2D;
+    font-weight: 500;
+    width: 100%;
+    border: 4px solid transparent;
+    transition: .4s;
+    max-width: 240px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    min-height: 60px;
+    padding: 10px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+/* get-in-touch section */
+.get-in-touch{
+    padding: 130px 0 160px 0;
+    background-color: #13022B;
+}
+.get-in-touch-wrap{
+    max-width: 61.1%;
+    margin: 0 auto;
+    text-align: center;
+}
+.get-in-touch-wrap_cnt{
+    max-width: 67.56%;
+    margin: 0 auto;
+}
+.call{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 25px;
+}
+.tel{
+    color: #F28B2D;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.tel:hover{
+    color: #F28B2D;
+    text-decoration: underline;
+}
+.get-in-touch-wrap_cnt h2{
+    padding-bottom: 25px;
+}
+.form_name{
+    max-width: 48.11%;
+    flex-basis: 48.11%;
+}
+.form_body form{
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.form_name input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    min-height: 60px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: .5px solid #110329;
+    margin-bottom: 40px;
+}
+.form_name label{
+    text-align: left;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+.form_name.form_text{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.form_name.form_text textarea{
+    width: 100%;
+    min-height: 240px;
+    display: block;
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.form-group {
+    display: block;
+    margin-top: 40px;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: .5px solid #110329;
+    padding: 9px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 6px;
+    height: 14px;
+    border: solid #13022B;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.get_btn_block.get_btn_block2{
+    justify-content: left;
+    max-width: 100%;
+    flex-basis: 100%;
+}
+/* How we can help your business section */
+.business{
+    padding: 135px 0 155px 0;
+    text-align: center;
+}
+.business_wrap h2{
+    color: #13022B;
+    padding-bottom: 18px;
+}
+.business_wrap p{
+    color: #13022B;
+    font-weight: 300;
+}
+.business_wrap_cnt{
+    max-width: 39.77%;
+    margin: 0 auto;
+}
+.business_img{
+    padding-top: 65px;
+}
+.business_img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.business_icons{
+    align-items: center;
+    padding-top: 150px;
+    justify-content: space-between;
+}
+.business_icons figure{
+    width: auto;
+}
+.business_icons figure a{
+    display: block;
+}
+.business_icons figure img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+/* Great brands choose Great Bear section  */
+.brand{
+    background-color: #EAEAEA;
+    padding-top: 135px;
+    padding-bottom: 100px;
+    background-color: rgba(234, 234, 234, 25%);
+}
+.brand_wrap{
+    text-align: center;
+}
+.black{
+    color: #13022B;
+}
+.blue{
+    color: #00B5E5;
+}
+.brand_wrap h2 span{
+    display: block;
+}
+/* footer section */
+footer{
+    background-color: #13022B;
+    padding: 26px 0;
+}
+.footer_wrap{
+    align-items: center;
+    justify-content: space-between;
+}
+.terms{
+    align-items: center;
+}
+.terms li{
+    margin-right: 20px;
+}
+.footer_wrap span,
+.terms li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.75;
+}
+.terms li a:hover{
+    color: #fff;
+}
+.terms li:last-child{
+    margin-right: 0;
+}
+.get_button:hover{
+    color: #F28B2D;
+    background-color: #fff;
+    border-color: #F28B2D;
+}
+/* media query */
+@media(max-width:1700px){
+    .navbar {
+        padding: 26px 60px;
+    }
+    .container{
+        padding: 0 60px;
+    }
+    .get-in-touch-wrap {
+        max-width: 82.1%;
+    }
+    .banner_wrap h1 {
+        font-size: 60px;
+    }
+    .form_name input {
+        min-height: 50px;
+    }
+    .call {
+        font-size: 30px;
+        padding-top: 22px;
+    }
+    .get-in-touch-wrap_cnt h2 {
+        padding-bottom: 22px;
+    }
+    .form-group {
+        margin-top: 34px;
+    }
+    .form_name label {
+        font-size: 23px;
+    }
+    .cmn h2 {
+        font-size: 36px;
+    }
+    .business_wrap_cnt {
+        max-width: 50.77%;
+    }
+    .brand {
+        padding-top: 125px;
+        padding-bottom: 90px;
+    }
+    .business_icons {
+        padding-top: 120px;
+    }
+    .video_block video{
+        object-position: 100% 130px;
+    }
+    .thank_cnt {
+        max-width: 49%;
+    }
+    .enquiry {
+        font-size: 40px;
+    }
+}
+@media(min-width:1199px){
+    .container{
+        max-width: 1760px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:1399px){
+    .banner {
+        padding-top: 140px;
+    }
+    .get-in-touch-wrap {
+        max-width: 91.1%;
+    }
+    .call {
+        font-size: 28px;
+        padding-top: 17px;
+    }
+    .banner_wrap h1 {
+        font-size: 55px;
+    }
+    .get_button {
+        font-size: 23px;
+        min-height: 58px;
+        padding: 9px 10px;
+    }
+    .cmn h2 {
+        font-size: 33px;
+    }
+    body {
+        font-size: 18px;
+    }
+    .call {
+        font-size: 27px;
+        padding-top: 13px;
+    }
+    .get-in-touch-wrap_cnt {
+        max-width: 62.56%;
+    }
+    .form_name label {
+        font-size: 21px;
+    }
+    .blog {
+        max-width: 348px;
+    }
+    .navbar {
+        padding: 19px 60px;
+    }
+    .business_icons figure {
+        max-width: 135px;
+    }
+    .get-in-touch {
+        padding: 111px 0 128px 0;
+    }
+    .form_name input {
+        margin-bottom: 30px;
+    }
+    .form-group label:before {
+        padding: 7px;
+    }
+    .form-group label {
+        font-size: 14px;
+    }
+    .business_wrap_cnt {
+        max-width: 56.77%;
+    }
+    .business {
+        padding: 103px 0 125px 0;
+    }
+    .brand {
+        padding-top: 103px;
+        padding-bottom: 84px;
+    }
+    .footer_wrap span, .terms li a {
+        font-size: 15px;
+    }
+    .business_icons .unilever {
+        max-width: 80px;
+    }
+    .business_icons .vimto {
+        max-width: 117px;
+    }
+    .form-group input:checked+label:after {
+        top: 4px;
+        left: 5px;
+        width: 6px;
+        height: 11px;
+    }
+    .enquiry {
+        font-size: 34px;
+    }
+    .thank_cnt {
+        max-width: 50%;
+    }
+    .thank_cnt p {
+        font-size: 24px;
+        padding-top: 8px;
+    }
+}
+@media(max-width:1199px){
+    .navbar {
+        padding: 16px 40px;
+    }
+    .blog {
+        max-width: 295px;
+    }
+    .container {
+        padding: 0 25px;
+    }
+    .business_img {
+        padding-top: 36px;
+    }
+    .get-in-touch-wrap {
+        max-width: 100%;
+    }
+    .banner_wrap h1 {
+        font-size: 45px;
+    }
+    .get_btn_block {
+        padding-top: 30px;
+    }
+    .get_button {
+        font-size: 21px;
+        min-height: 55px;
+        padding: 9px 10px;
+        border: 3px solid transparent;
+        max-width: 214px;
+    }
+    .visit {
+        font-size: 14px;
+        border: 3px solid transparent;
+        padding: 4px 10.3px;
+    }
+    .banner {
+        min-height: 86vh;
+    }
+    .banner.thank_you {
+        min-height: 66vh;
+    }
+    .get-in-touch {
+        padding: 98px 0 120px 0;
+    }
+    .form_name label {
+        font-size: 19px;
+        padding-bottom: 5px;
+    }
+    .form_name input {
+        margin-bottom: 27px;
+        padding: 8px 12px;
+        font-size: 19px;
+    }
+    .form-group {
+        margin-top: 27px;
+    }
+    .call {
+        font-size: 25px;
+        padding-top: 13px;
+    }
+    body {
+        font-size: 17px;
+    }
+    .cmn h2 {
+        font-size: 29px;
+    }
+    .get-in-touch-wrap_cnt h2 {
+        padding-bottom: 18px;
+    }
+    .form_name.form_text textarea {
+        min-height: 195px;
+        padding: 12px;
+        font-size: 19px;
+    }
+    .business {
+        padding: 90px 0 109px 0;
+    }
+    .business_icons {
+        padding-top: 108px;
+    }
+    .business_icons figure {
+        max-width: 140px;
+    }
+    .brand {
+        padding-top: 87px;
+        padding-bottom: 67px;
+    }
+    .business_icons .unilever{
+        max-width: 70px;
+    }
+    .business_icons  .vimto{
+        max-width: 100px;
+    }
+    .thank_cnt p {
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    .enquiry {
+        font-size: 32px;
+    }
+}
+@media(max-width:991px){
+    .banner_wrap h1 {
+        font-size: 33px;
+    }
+    .blog {
+        max-width: 235px;
+    }
+    .visit {
+        font-size: 13px;
+        border: 3px solid transparent;
+        padding: 3px 7.3px;
+    }
+    .get_btn_block {
+        padding-top: 20px;
+    }
+    .get_button {
+        font-size: 18px;
+        min-height: 41px;
+        padding: 6px 10px;
+        max-width: 171px;
+    }
+    .banner {
+        padding-top: 117px;
+    }
+    .get-in-touch {
+        padding: 78px 0 86px 0;
+    }
+    body {
+        font-size: 15px;
+    }
+    .cmn h2 {
+        font-size: 26px;
+    }
+    .call {
+        font-size: 22px;
+        padding-top: 9px;
+    }
+    .get-in-touch-wrap_cnt {
+        max-width: 78.56%;
+    }
+    .form_name label {
+        font-size: 17px;
+        padding-bottom: 4px;
+    }
+    .form_name input {
+        margin-bottom: 22px;
+        padding: 6px 11px;
+        font-size: 17px;
+        min-height: 39px;
+    }
+    .form_name.form_text textarea {
+        min-height: 161px;
+        padding: 11px;
+        font-size: 16px;
+    }
+    .form-group {
+        margin-top: 22px;
+    }
+    .form-group label:before {
+        padding: 5px;
+        margin-right: 8px;
+    }
+    .form-group label {
+        font-size: 12px;
+    }
+    .business_wrap_cnt {
+        max-width: 71.77%;
+    }
+    .business {
+        padding: 71px 0 81px 0;
+    }
+    .business_icons {
+        padding-top: 72px;
+    }
+    .business_wrap h2 {
+        padding-bottom: 10px;
+    }
+    .business_icons figure {
+        max-width: 112px;
+    }
+    .business_icons .vimto {
+        max-width: 75px;
+    }
+    .business_icons .unilever {
+        max-width: 50px;
+    }
+    .brand {
+        padding-top: 76px;
+        padding-bottom: 56px;
+    }
+    .footer_wrap span, .terms li a {
+        font-size: 13px;
+    }
+    .terms li {
+        margin-right: 11px;
+    }
+    footer {
+        padding: 17px 0;
+    }
+    .container {
+        padding: 0 12px;
+    }
+    .form-group input:checked+label:after {
+        top: 4px;
+        left: 3px;
+        width: 5px;
+        height: 9px;
+    }
+    .thank_cnt {
+        max-width: 66%;
+    }
+    .thank_cnt p {
+        font-size: 19px;
+    }
+    .enquiry {
+        font-size: 25px;
+    }
+}
+@media(max-width:767px){
+    .banner_wrap h1 {
+        font-size: 28px;
+    }
+    .navbar {
+        padding: 13px 20px;
+    }
+    .visit {
+        border: 2px solid transparent;
+        padding: 2px 6.3px;
+        font-size: 12px;
+    }
+    .blog {
+        max-width: 217px;
+    }
+    .get_btn_block {
+        padding-top: 17px;
+    }
+    .get_button {
+        font-size: 15px;
+        min-height: 37px;
+        padding: 6px 8px;
+        max-width: 149px;
+    }
+    .banner {
+        padding-top: 93px;
+    }
+    .get-in-touch {
+        padding: 65px 0 72px 0;
+    }
+    .cmn h2 {
+        font-size: 23px;
+    }
+    .get-in-touch-wrap_cnt h2 {
+        padding-bottom: 15px;
+    }
+    .call {
+        font-size: 20px;
+        padding-top: 6px;
+    }
+    .get-in-touch-wrap_cnt {
+        max-width: 100%;
+    }
+    .form_name label {
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+    .form_name input {
+        margin-bottom: 17px;
+        padding: 4px 11px;
+        font-size: 15px;
+        min-height: 34px;
+    }
+    .form_name.form_text textarea {
+        min-height: 127px;
+        font-size: 15px;
+    }
+    .business_icons {
+        padding-top: 60px;
+    }
+    .business {
+        padding: 54px 0 61px 0;
+    }
+    .business_icons figure {
+        max-width: 89px;
+    }
+    .business_icons .vimto {
+        max-width: 65px;
+    }
+    .business_icons .unilever {
+        max-width: 43px;
+    }
+    .brand {
+        padding-top: 63px;
+        padding-bottom: 47px;
+    }
+    .terms {
+        flex-direction: column;
+    }
+    .footer_wrap {
+        flex-direction: column-reverse;
+    }
+    .terms li {
+        margin-right: 0px;
+        padding-top: 5px;
+    }
+    .thank_cnt {
+        max-width: 87%;
+    }
+    .enquiry {
+        font-size: 20px;
+    }
+    .enquiry {
+        font-size: 18px;
+    }
+    .banner.thank_you {
+        min-height: 50vh;
+    }
+}
+@media(max-width:575px){
+    .navbar {
+        padding: 13px 18px;
+    }
+    .banner {
+        min-height: 85vh;
+    }
+    .blog {
+        max-width: 186px;
+    }
+    .banner_wrap h1 {
+        font-size: 25px;
+    }
+    .get_btn_block {
+        padding-top: 14px;
+    }
+    .get-in-touch {
+        padding: 50px 0;
+    }
+    .cmn h2 {
+        font-size: 21px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .form_name {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .container {
+        padding: 0 18px;
+    }
+    .form_name.form_text textarea {
+        min-height: 110px;
+        font-size: 14px;
+    }
+    .form_name input {
+        margin-bottom: 15px;
+        padding: 4px 11px;
+        font-size: 14px;
+        min-height: 31px;
+    }
+    .get_button {
+        font-size: 14px;
+        min-height: 34px;
+        padding: 4px 8px;
+        max-width: 131px;
+    }
+    .business_icons {
+        padding-top: 42px;
+        flex-direction: column;
+    }
+    .business_icons figure{
+        padding-bottom: 15px;
+    }
+    .brand,
+    .business {
+        padding: 44px 0;
+    }
+    .thank_cnt {
+        max-width: 100%;
+    }
+    .thank_cnt p {
+        font-size: 17px;
+    }
+}
+@media(max-width:480px){
+    .blog {
+        max-width: 148px;
+    }
+    .navbar {
+        padding: 13px 15px;
+    }
+    .banner_wrap h1 {
+        font-size: 23px;
+    }
+    .get_button {
+        min-height: 32px;
+        padding: 2px 8px;
+        max-width: 119px;
+    }
+    .banner {
+        min-height: 79vh;
+    }
+    .visit {
+        font-size: 11px;
+    }
+    .call {
+        font-size: 17px;
+    }
+    .form_body form {
+        padding-top: 25px;
+    }
+    .form-group {
+        margin-top: 16px;
+        text-align: left;
+    }
+    .thank_cnt p {
+        font-size: 14px;
+    }
+    .banner.thank_you{
+        min-height: 60vh;
+    }
+    .banner.thank_you {
+        min-height: 40vh;
+    }
+}
