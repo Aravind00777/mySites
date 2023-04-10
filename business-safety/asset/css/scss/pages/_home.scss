@@ -1,0 +1,829 @@
+.banner {
+    padding: 272px 71px 392px 207px;
+    @include mq(xxxxl){
+        padding: 173px 71px 366px 100px;
+    }
+    @include mq(xxl){
+        padding: 157px 63px 312px 63px;
+    }
+    @include mq(laptop){
+        padding: 120px 50px 283px 50px;
+    }
+    @include mq(tablet){
+        padding: 90px 40px;
+    }
+    @include mq(phablet){
+        padding: 90px 30px 70px 30px;
+    }
+    @include mq(mobile){
+        padding: 90px 30px 50px 30px;
+    }
+    background-color: $grey;
+    p {
+        padding-bottom: 8px;
+        @include mq(phablet){
+            padding-top: 15px;
+            padding-bottom: 0;
+        }
+    }
+
+    @include psudeo($bottom: unset, $top: 50%) {
+        width: 100%;
+        height: 780px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        @include backgoundformat($image: url(../image/Vector-after.png));
+        @include mq(xxl){
+            height: 50%;
+        }
+        @include mq(laptop){
+            height: 42%;
+        }
+        @include mq(phablet){
+            height: 48%;
+        }
+    }
+}
+
+// common code
+.common-rows {
+    & .banner-left {
+        @include flexw(58%);
+        @include mq(mobile){
+            @include flexw(100%);
+        }
+    }
+
+    & .banner-right {
+        @include flexw(100% - 58%);
+        @include display-f;
+        @include mq(mobile){
+            @include flexw(100%);
+            padding-top: 30px;
+        }
+        & .banner-helmet {
+            img {
+                @include fit-image();
+            }
+        }
+    }
+}
+.consultancy{
+    h2{
+        color: $p-color;
+    }
+    p{
+        padding-top: 27px;
+        @include mq(xxxxl){
+            padding-top: 20px;
+        }
+    }
+    p+p{
+        padding-top: 85px;
+        @include mq(xxxxl){
+            padding-top: 50px;
+        }
+        @include mq(laptop){
+            padding-top: 30px;
+        }
+    }
+    position: absolute !important;
+    width: 50.4%;
+    height: 73.4%;
+    padding: 118px 107px;
+    background-color: $white;
+    @include border-radius(40px);
+    bottom: 0;
+    box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.15);
+    left: 223px;
+    @include psudeo($top:unset , $right:unset){
+        @include backgoundformat($image:url("/asset/image/consultancy-after.png"));
+        width: 54%;
+        height: 61.9%;
+        @include mq(xxxxl){
+            width: 70%;
+            height: 67.9%;
+        }
+        @include mq(laptop){
+            width: 74%;
+            height: 70.9%;
+        }
+        @include mq(mobile){
+            width: 74%;
+            height: 77%;
+        }
+    };
+    & .more{
+        margin-top: 48px;
+        @include mq(xxxxl){
+            margin-top: 35px;
+        }
+    }
+    @include mq(xxxxl){
+        padding: 80px;
+        height: 91.4%;
+    }
+    @include mq(xxxxl){
+        padding: 50px;
+        height: 90.4%;
+        margin-top: 80px;
+    }
+    @include mq(laptop){
+        padding: 30px;
+        height: 100%;
+        margin-top: 0;
+        left: 50px;
+    }
+    @include mq(phablet){
+        position: relative !important;
+    @include smcontainer(80%);
+    width: 100%;
+    left: 0;
+    margin-top: 50px;
+
+    }
+
+}
+// common code end
+.return {
+    position: relative;
+    padding: 386px 0 318px 0;
+    z-index: 1;
+    @include mq(xxxxl){
+        padding: 350px 71px 318px 100px;
+        
+    }
+    @include mq(xxl){
+        padding: 300px 63px 250px 63px;
+    }
+    @include mq(laptop){
+        padding: 220px 50px 215px 50px;
+    }
+    @include mq(tablet){
+        padding: 100px 11px;
+    }
+    @include mq(phablet){
+        padding: 70px 11px;
+    }
+    @include mq(mobile){
+        padding: 50px 0px;
+    }
+    & .return-wrap{
+    & .planning {
+        @extend .common-rows;
+        & .return-left {
+            @include flexw(53%);
+            @include mq(mobile){
+                @include flexw(100%);
+                @include text-align();
+            }
+        }
+        & .return-right {
+            @include flexw(100% - 53%);
+            @include text-align(right);
+            @include mq(mobile){
+                @include flexw(100%);
+                @include text-align();
+            }
+        }
+    }
+    & .health {
+        top: -226px;
+        width: 80%;
+        padding: 75px 81px 75px 74px;
+        position: absolute;
+        box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.15);
+        @include border-radius(40px);
+        z-index: 4;
+        background-color: $white;
+        left: 50%;
+        transform: translateX(-50%);
+        @include mq(xxxxl){
+            padding: 60px;
+            width: 83%;
+        }
+        @include mq(xxl){
+            width: 88%;
+        }
+        @include mq(laptop){
+            padding: 40px;
+        }
+        @include mq(tablet){
+            position: relative;
+            top: 0;
+            margin-top: 50px;
+        }
+        @include mq(vsmall){
+            width: 100%;
+            padding: 30px;
+        }
+        & .health-img {
+            height: 218px;
+            img {
+                @include fit-image();
+            }
+        }
+        & .health-sm-blk {
+            padding: 18px 47px 0 47px;
+            @include mq(xxxxl){
+                padding: 17px 15px 0 15px;
+            }
+            & .safety{
+                display: block;
+                color: $p-color;
+                @include fontvariable($size:27px , $w:700 , $lineheight:1.2);
+                @include text-align(); 
+                @include tranistions-;
+                @include mq(xxxxl){
+                    @include fontvariable($size:24px , $w:700 , $lineheight:1.2);
+                }
+                @include mq(laptop){
+                    @include fontvariable($size:19px , $w:700 , $lineheight:1.2);
+                }
+                &:hover{
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+}
+
+// software section
+.software{
+    @include psudeo($loc:after , ){
+        width: 100%;
+        height: 100%;
+        @include backgoundformat($image:url("../image/software-bg2.png"));
+    }
+    padding: 198px 113px 145px 207px;
+    background-color: $darken-violet;
+    @include mq(xxl){
+        padding: 180px 63px 140px 63px;
+    }
+    @include mq(laptop){
+        padding: 72px 50px 72px 50px;
+    }
+    @include mq(phablet){
+        padding:60px 40px;
+    }
+    @include mq(mobile){
+        padding: 50px 30px;
+    }
+    @include psudeo($loc:before, $left:unset ,$bottom:unset , $top:-188px , $after-index:0 ){
+        width: 232px;
+        height: 390px;
+        @include backgoundformat($image:url("../image/software-before.png"), $cover:contain);
+        @include mq(xxl){
+            width: 13%;
+            height: 29%;
+            top: -15%;
+        }
+        @include mq(phablet){
+            display: none;
+        }
+    };
+    & .software-cnt{
+        h2{
+            color: $white;
+        }
+        max-width: 58%;
+        margin-left: auto;
+        padding-right: 100px;
+        @include mq(xxxxl){
+            padding-right: 0;
+        }
+        @include mq(phablet){
+            max-width: 100%;
+            margin: 0 auto;
+            @include text-align;
+        }
+        & .risk-cnt{
+            position: absolute;
+            width: 537px;
+            height: 504px;
+            @include border-radius(40px);
+            top: -14%;
+            left: 13%;
+            @include mq(xxxxl){
+                width: 30%;
+            }
+            @include mq(xxl){
+                width: 26%;
+                height: 36%;
+            }
+            @include mq(phablet){
+                display: none;
+            }
+            & .risk-img{
+                @include psudeo($left:-43px ,$bottom:-43px ,$right:unset, $top:unset){
+                    width: 100%;
+                    height: 100%;
+                    background-color: $orange;
+                    @include border-radius(40px);
+                    @include mq(tablet){
+                        bottom: -30px;
+                        left: -30px;
+                    }
+                };
+                img{
+                    @include fit-image();
+                }
+            }
+        }
+    }
+    & .software-blk{
+        @extend .common-rows;
+        padding-bottom: 58px;
+        padding-top: 88px;
+        @include mq(xxxxl){
+            padding-bottom: 45px;
+            padding-top: 65px;
+        }
+        @include mq(laptop){
+            padding-bottom: 30px;
+            padding-top: 50px;
+        }
+        @include mq(phablet){
+            padding-bottom: 20px;
+            padding-top: 30px;
+        }
+        p{
+            color: $white;
+        }
+        & .software-left,
+        & .software-right{
+            @include flexw(44.8%);
+            @include mq(xxl){
+                @include flexw(48%);
+            }
+            @include mq(mobile){
+                @include flexw(100%);
+
+            }
+        }
+        & .software-right{
+            @include mq(mobile){
+                padding-top: 30px;
+            }
+        }
+    }
+    & .button-center{
+        @include text-align();
+    & .color-orange{
+        background-color: $orange;
+        &:hover{
+            background-color: transparent;
+            color: $orange;
+            border-color: $orange;
+        }
+        &:hover::after{
+            border-color: $orange;
+        }
+    }
+    }
+}
+// audit section 
+.audit{
+    padding: 0px 0px 0px 207px;
+    margin-bottom: 273px;
+    @include relation();
+    @include mq(xxxxl){
+        margin-bottom: 200px;
+    }
+    @include mq(xxxxl){
+        margin-bottom: 150px;
+        padding: 0px 0px 0px 70px;
+
+    }
+    @include mq(laptop){
+        margin-bottom: 100px;
+        padding: 0px 0px 0px 50px;
+    }
+    @include mq(phablet){
+        padding: 60px 0;
+        margin-bottom: 0;
+        @include display-f;
+        flex-direction: column-reverse;
+    }
+    & .audit-bg{
+        max-width: 82.7%;
+        margin-left: auto;
+        @include mq(phablet){
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        img{
+            @include fit-image();
+        }
+    }
+}
+// qualification section
+
+.qualification{
+    @include relation();
+    padding-bottom: 81px;
+    .qulity-img{
+        height: 100vh;
+        @include mq(phablet){
+            height: 30vh;
+        }
+        img{
+            @include fit-image();
+        }
+    }
+    & .qualification-wrap{
+        margin-top: -26%;
+        @include mq(vsmall){
+            margin-top: 40px;
+        }
+        @include display-f($jc:right);
+        @include psudeo( $left:unset ,$bottom:-80px , $right:80px,  $top:unset ,$after-index:-3){
+            width: 63.3%;
+            height: 100%;
+            background-color: $orange;
+            @include border-radius(40px);
+            background-image: unset;
+            @include mq(tablet){
+                bottom: -54px;
+                right: 54px;
+            }
+            @include mq(phablet){
+                bottom: -54px;
+                right: 50px;
+                width: 81%;
+            }
+            @include mq(mobile){
+                bottom: -40px;
+                right: 56px;
+            }
+            @include mq(vsmall){
+                display: none;
+            }
+        };
+        @include psudeo($loc:before,  $bottom:10% , $right:unset,  $top:unset ,$after-index:-3){
+            width: 60%;
+            height: 29%;
+            background-color: transparent;
+            @include backgoundformat($image:url("/asset/image/qulification-after.png"));
+};
+    }
+        & .quality{
+            position: relative !important;
+            height: 100%;
+            @include flexw(62.8%);
+            background-color: $violet;
+            padding: 159px 151px;
+            @include border-radius(40px 0 0px 40px);
+            @include psudeo{
+                display: none;
+            };
+            left: 0;
+            z-index: 10;
+            @include mq(xxxxl){
+                padding: 100px;
+            }
+            @include mq(xxl){
+                padding: 80px;
+            }
+            @include mq(laptop){
+                padding: 65px;
+            }
+            @include mq(phablet){
+                margin: unset;
+                @include flexw(80%);
+            }
+            @include mq(mobile){
+                padding: 45px;
+                @include flexw(85%);
+            }
+            @include mq(vsmall){
+                padding: 25px;
+                @include flexw(100%)
+            }
+            h2{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+            & .more{
+                background-color: $orange;
+                &:hover{
+                    border-color: $orange;
+                    background-color: transparent;
+                    color: $white;
+                }
+                &:hover::after{
+                    border-color: $white;
+                }
+            }
+    }
+}
+// testimonials section 
+.testimonials{
+    padding: 252px 0 154px 0;
+    @include mq(xxxxl){
+        padding: 200px 0 101px 0;
+    }
+    @include mq(laptop){
+        padding: 130px 0 70px 0;
+    }
+    @include mq(tablet){
+        padding: 70px 10px;
+    }
+    @include mq(phablet){
+        padding: 60px 10px;
+    }
+    @include mq(mobile){
+        padding: 50px 0px;
+    }
+    & .tesimonials-wrap{
+        h2{
+            @include text-align();
+        }
+        & .row{
+            margin-top: 52px;
+            @include mq(phablet){
+                margin-top: 40px;
+            }
+            @include mq(phablet){
+                *{
+                    height: 100%;
+                }
+            }
+            & .range-blk{
+                & .comma{
+                    @include smcontainer(65px);
+                    @include mq(laptop){
+                        img{
+                            max-width: 17px;
+                        }
+                    }
+                }
+                @include display-f($jc:unset , $align:unset);
+                flex-direction: column;
+                box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.15);
+                padding: 74px 65px 113px 65px;
+                @include text-align();
+                @include border-radius(40px);
+                min-height: 700px;
+                @include mq(xxxxl){
+                    padding: 60px 60px 80px 60px;
+                }
+                @include mq(xxl){
+                    min-height: 626px;
+                    padding: 50px 40px;
+                }
+                @include mq(laptop){
+                    min-height: 82%;
+                    padding: 30px;
+                }
+                @include mq(tablet){
+                    min-height: 66%;
+                }
+                p{
+                    padding-top: 24px;
+                    @include mq(laptop){
+                        padding-top: 20px;
+                    }
+                }
+            }
+            & .range-cnt{
+                @include text-align;
+                @include mq(phablet){
+                    padding-bottom: 30px;
+                }
+                & .range-icons{
+                    @include smcontainer(120px);
+                    margin-top: -10%;
+                    @include mq(tablet){
+                        @include smcontainer(90px);
+                        margin-top: -10%;
+                    }
+                    @include mq(phablet){
+                        margin-top: -4%;
+                    }
+                    img{
+                        @include fit-image;
+                    }
+                }
+                h3{
+                    padding-top: 20px;
+                    @include mq(tablet){
+                        padding-top: 15px;
+                    }
+                }
+                & .deputy{
+                    @include fontvariable($size:20px , $w:400);
+                    display: block;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+// trusted section 
+.trusted{
+    & .trusted-image{
+        position: absolute;
+        width: 157px;
+        height: 316px;
+        left: 0;
+        top: -12%;
+        img{
+            @include fit-image;
+        }
+        @include mq(xxxxl){
+            width: 103px;
+            height: 212px;
+        }
+        @include mq(laptop){
+            width: 64px;
+            height: 132px;
+            top: 6%;
+        }
+        @include mq(phablet){
+            display: none;
+        }
+    }
+    @include relation();
+    padding: 153px 0 98px 0;
+    @include text-align;
+    @include mq(xxxxl){
+        padding: 100px 0 75px 0;
+    }
+    @include mq(tablet){
+        padding: 70px 0;
+    }
+    @include mq(phablet){
+        padding: 60px 0;
+    }
+    & .carousel-body{
+        padding-top: 65px;
+        @include mq(xxxxl){
+            @include smcontainer(80%);
+        }
+        @include mq(tablet){
+            padding-top: 40px;
+        }
+        & .owl-nav{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            & .owl-prev{
+                left: -7%;
+                position: absolute;
+                width: 52px;
+                height: 52px;
+                @include border-radius(50%);
+                background-color: $violet;
+                @include mq(laptop){
+                    width: 36px;
+                    height: 36px;
+                }
+                span{
+                    width: 20px;
+                    margin: 0 auto;
+                    display: block;
+                    @include backgoundformat($image:url("../image/chevron-left.png"));
+                    @include mq(laptop){
+                        width: 16px;
+                    }
+                }
+            }
+            & .owl-next{
+                right: -7%;
+                position: absolute;
+                width: 52px;
+                height: 52px;
+                @include border-radius(50%);
+                @include mq(laptop){
+                    width: 36px;
+                    height: 36px;
+                }
+                span{
+                    width: 20px;
+                    margin: 0 auto;
+                    display: block;
+                    @include backgoundformat($image:url("../image/chevron-right.png"));
+                    @include mq(laptop){
+                        width: 16px;
+                    }
+                }
+                background-color: $violet;
+            }
+        }
+        & .owl-dots{
+            & .owl-dot{
+                width: 20px;
+                height: 20px;
+                @include border-radius(50%);
+                background-color: $p-color;
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                @include mq(tablet){
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+            & .owl-dot{
+                &.active{
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+}
+
+// clients section 
+.clients{
+    padding: 392px 0 288px 0;
+    @include text-align;
+    background-color: $grey;
+    @include psudeo($top:unset , $right:unset ,$left:50% ){
+        width: 1120px;
+        height: 685px;
+        @include backgoundformat($image:url("../image/client-img.png"));
+        transform:  translateX(-50%)   ;
+        -webkit-transform:  translateX(-50%)   ;
+        -moz-transform:  translateX(-50%)   ;
+        -ms-transform:  translateX(-50%)   ;
+        -o-transform:  translateX(-50%)   ;
+        @include mq(xxxxl){
+            width: 66%;
+            height: 65%;
+        }
+        @include mq(xxl){
+            width: 64%;
+            height: 65%;
+        }
+        @include mq(laptop){
+            width: 75%;
+            height: 71%;
+        }
+        @include mq(mobile){
+            width: 82%;
+            height: 66%;
+        }
+};
+@include psudeo($loc:before , $bottom:unset ){
+    width: 100%;
+    height: 170px;
+    @include backgoundformat($image:url("../image/parabola.png"));
+    @include mq(laptop){
+        height: 85px;
+    }
+    @include mq(tablet){
+        height: 72px;
+    }
+    @include mq(phablet){
+        height: 48px;
+    }
+};
+    @include mq(xxxxl){
+        padding: 320px 0 240px 0;
+    }
+    @include mq(xxl){
+        padding: 282px 0 200px 0;
+    }
+    @include mq(laptop){
+        padding: 150px 0;
+    }
+    @include mq(tablet){
+        padding: 130px 0;
+    }
+    @include mq(phablet){
+        padding: 85px 0;
+    }
+    & .clients-img{
+        padding-top: 100px;
+        li{
+            @include flexw(100% / 7);
+            @include mq(phablet){
+                @include flexw(100% /4);
+            }
+        }
+        @include display-f;
+        @include mq(xxxxl){
+            @include smcontainer(80%);
+        }
+        @include mq(xxl){
+            padding-top: 70px
+        }
+        @include mq(tablet){
+            padding-top: 40px;
+        }
+        li{
+            img{
+                @include fit-image;
+            }
+        }
+    }
+}

@@ -1,0 +1,243 @@
+header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 44px 0 58px 0;
+    top: 0;
+    @include tranistions-;
+    @include mq(xxl){
+        padding: 33px 0;
+    }
+    @include mq(laptop){
+        padding: 18px 0;
+    }
+    &.header.active{
+        background-color: $grey;
+    }
+    & .navbar-brand{
+        &.blog{
+            @include mq(xxxxl){
+                max-width: 300px;
+            }
+            @include mq(xxl){
+                max-width: 270px;
+            }
+            @include mq(laptop){
+                max-width: 200px;
+            }
+        }
+        img{
+            @include fit-image;
+        }
+        @include mq(phablet){
+            max-width: 120px;
+        }
+        @include mq(vsmall){
+            max-width: 100px;
+        }
+    }
+    & .ul_header {
+        li {
+            &:hover{
+                & .dropdown-menu{
+                    display: block;
+                }
+            }
+            @include display-f;
+            padding-right: 30px;
+            @include mq(xxxxl){
+                padding-right: 18px;
+            }
+            @include mq(xxl){
+                padding-right: 11px;
+            }
+            @include mq(tablet){
+                padding-right: 0;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                justify-content: left;
+            }
+            @include mq(vsmall){
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            &:last-child {
+                padding-right: 0;
+                padding-left: 10px;
+                @include mq(xxl){
+                    padding-left: 6px;
+                }
+                @include mq(laptop){
+                    padding-left: 0;
+                }
+            }
+            .linkz {
+                color: $light-black;
+                @include fontvariable($size: 16px, $w: 700 , $family:'Bitter');
+                &:hover{
+                    color: $orange;
+                }
+                @include mq(xxl){
+                    @include fontvariable($size: 14px, $w: 700 , $family:'Bitter');
+                }
+                @include mq(laptop){
+                    @include fontvariable($size: 13px, $w: 700 , $family:'Bitter');
+                }
+                @include mq(tablet){
+                    @include fontvariable($size: 23px, $w: 700 , $family:'Bitter');
+                }
+                &.Contact-us{
+                    @include border-radius(70px);
+                    background-color:$violet;
+                    color: $white;
+                    padding: 12px 28px;
+                    border: 2px solid transparent;
+                    @include tranistions-;
+                    @include mq(laptop){
+                        padding: 12px 17px;
+                    }
+                    @include mq(tablet){
+                        width: 100%;
+                        @include border-radius(10px);
+                        @include text-align;
+                    }
+                    &:hover{
+                        border-color: $violet;
+                        background-color: transparent;
+                        color: $violet;
+                    }
+                }
+            }
+
+            & .dropdown {
+                & .dropdown-menu{
+                    border: 0;
+                    @include border-radius(20px);
+                    width: 300px;
+                    top: 28px;
+                    padding: 20px;
+                    left: 0;
+                    @include mq(tablet){
+                        position: absolute;
+                        display: block;
+                        background-color: transparent;
+                        overflow: hidden;
+                        opacity: 0;
+                        padding: 0;
+                        margin: 0;
+                        width: 0;
+                        z-index: -1;
+                        top: 2%;
+                        &.show{
+                            padding: 0 9px;
+                            padding-top: 25px;
+                            margin: unset;
+                            opacity: 1;
+                            position: relative;
+                            height: 100%;
+                            background-color: transparent;
+                            box-shadow: unset;
+                            z-index: 5;
+                            top: 2%;
+                            width: 100%;
+                        }
+                        li{
+                            padding-bottom: 0;
+                            padding-top: 0;
+                        }
+                    }
+                    @include mq(vsmall){
+                        &.show{
+                            padding-top: 15px;
+                    
+                        }
+                    }
+                    li{
+                        &:last-child{
+                            padding-left: 0;
+                        }
+                    }
+                    & .dropdown-item{
+                        padding: 10px 0;
+                        @include fontvariable($size:17px , $w:500);
+                        @include mq(tablet){
+                            &:hover{
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                    
+                }
+                & .btn-secondary {
+                    padding: 0;
+                    border: 0;
+                    background-color: transparent;
+                    @include fontvariable($size: 16px, $w: 700 , $family:'Bitter');
+                    color: $light-black;
+                    @include tranistions-;
+                    @include mq(xxl){
+                        margin-top: -5px;
+                        @include fontvariable($size: 14px, $w: 700 , $family:'Bitter');
+                    }
+                    @include mq(laptop){
+                        @include fontvariable($size: 13px, $w: 700 , $family:'Bitter');
+                    }
+                    @include mq(tablet){
+                        @include fontvariable($size: 23px, $w: 700 , $family:'Bitter');
+                        width: 100%;
+                        @include text-align(left);
+                    }
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                    &:hover{
+                        color: $orange;
+                    }
+                    
+                    &.dropdown-toggle::after {
+                        border-top: 0;
+                        border-right: 2px solid $light-black;
+                        border-bottom: 2px solid $light-black;
+                        border-left: 0;
+                        height: 10px;
+                        width: 10px;
+                        transform: rotate(45deg);
+                        @include tranistions-;
+                        vertical-align: 2px;
+                        @include mq(xxl){
+                            height: 7px;
+                            width: 7px;
+                        }
+                        @include mq(tablet){
+                            height: 15px;
+                            width: 15px;
+                            position: absolute;
+                            right: 0;
+                            top: 2px;
+                            border-right: 4px solid $light-black;
+                            border-bottom: 4px solid $light-black;
+                            @include rotate(-45deg);
+                        
+                        }
+                    }
+                    &.dropdown-toggle{
+                        &.show{
+                            &::after{
+                                @include rotate(45deg);
+                            }
+                        }
+                        &:hover{
+                            &::after{
+                                border-color: $orange;
+                            }
+                        }
+                    }
+                }
+                @include mq(tablet){
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+body{
+    @include fontvariable($size:16px , $w:500 );
+    &.fixed{
+        position: fixed;
+    }
+}
+
+.container{
+        @include smcontainer(1520px);
+    @include mq(xxxxl){
+        padding: 0 50px;
+    }
+    @include mq(laptop){
+        padding: 0 30px;
+    }
+    
+    
+}
+h1{
+    @include fontvariable($size:120px , $w:700 , $family:'Bitter');
+    color: $violet;
+    @include mq(xxxxl){
+        @include fontvariable($size:95px , $w:700 , $family:'Bitter');
+    }
+    @include mq(xxl){
+        @include fontvariable($size:78px , $w:700 , $family:'Bitter');
+    }
+    @include mq(laptop){
+        @include fontvariable($size:64px , $w:700 , $family:'Bitter');
+    }
+    @include mq(tablet){
+        @include fontvariable($size:50px , $w:700 , $family:'Bitter');
+    }
+    @include mq(phablet){
+        @include fontvariable($size:36px , $w:700 , $family:'Bitter');
+    }
+    @include mq(vsmall){
+        @include fontvariable($size:30px , $w:700 , $family:'Bitter');
+    }
+}
+h2{
+    @include fontvariable($size:100px , $w:700 , $family:'Bitter');
+    color: $violet;
+    @include mq(xxxxl){
+        @include fontvariable($size:80px , $w:700 ,$family:'Bitter');
+    }
+    @include mq(xxl){ 
+        @include fontvariable($size:64px , $w:700 ,$family:'Bitter');
+    }
+    @include mq(laptop){
+        @include fontvariable($size:54px , $w:700 ,$family:'Bitter');
+    }
+    @include mq(tablet){
+        @include fontvariable($size:46px , $w:700 ,$family:'Bitter');
+    }
+    @include mq(phablet){
+        @include fontvariable($size:30px , $w:800 ,$family:'Bitter');
+    }
+    @include mq(vsmall){
+        @include fontvariable($size:25px , $w:800 ,$family:'Bitter');
+    }
+    
+}
+h3{
+    @include fontvariable($size:24px , $w:700 , $family:'Bitter');
+    color: $violet;
+    @include mq(laptop){
+        @include fontvariable($size:22px , $w:700  , $family:'Bitter');
+    }
+    @include mq(phablet){
+        @include fontvariable($size:18px , $w:700  , $family:'Bitter');
+    }
+}
+p{
+    @include fontvariable($size:29px , $w:500 , $lineheight:1.9);
+    color: $p-color;
+    @include mq(xxxxl){
+        @include fontvariable($size:27px , $w:500 ,$lineheight:1.9);
+    }
+    @include mq(xxl){
+        @include fontvariable($size:24px , $w:500 ,$lineheight:1.9);
+    }
+    @include mq(laptop){
+        @include fontvariable($size:22px , $w:500 ,$lineheight:1.9);
+    }
+    @include mq(tablet){
+        @include fontvariable($size:16px , $w:500 ,$lineheight:1.9);
+    }
+}
+.collapse:not(.show) {
+    display:block;
+}
+.collapse{
+    @include mq(tablet){
+        background-color: $grey;
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        padding: 15% 10%;
+        height: 100vh;
+        @include tranistions-;
+        overflow: auto;
+    }
+    @include mq(vsmall){
+        padding: 24% 10%;
+    }
+    &.active{
+        left: 0;
+    }
+}
+
+.accredited{
+    color: $orange;
+    display: inline-block;
+}
+
+.more{
+    color: $white;
+    @include border-radius(110px);
+    margin-top: 30px;
+    background-color: $violet;
+    @include fontvariable($size:25px , $w:700 , $family:'Bitter');
+    box-shadow: 0px 0px 23.7736px rgba(46, 41, 107, 0.5);
+    padding: 19px 61px 19px 41px;
+    display: inline-block;
+    border: 2px solid transparent;
+    @include mq(xxl){
+        @include fontvariable($size:22px , $w:700 , $family:'Bitter');
+    }
+    @include mq(laptop){
+        @include fontvariable($size:20px , $w:700 , $family:'Bitter');
+    }
+    @include mq(laptop){
+        @include fontvariable($size:16px , $w:700 , $family:'Bitter');
+    }
+    @include mq(mobile){
+        padding: 12px 45px 12px 45px;
+        margin-top: 20px;
+    }
+    @include psudeo($top:43% , $bottom:unset , $left:unset , $right:41px){
+        width: 13px;
+        height: 13px;
+        border-right: 3px solid $white;
+        border-bottom: 3px solid $white;
+        @include rotate(-45deg);
+        @include tranistions-;
+        @include mq(xxl){
+            width: 10px;
+            height: 10px;
+        }
+        @include mq(mobile){
+            width: 8px;
+            height: 8px;
+            top: 41%;
+            right: 33px;
+        }
+}
+&:hover{
+    color: $violet;
+    background-color: transparent;
+    border-color: $violet;
+}
+&:hover::after{
+    border-color: $violet;
+}
+}
