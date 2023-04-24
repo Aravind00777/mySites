@@ -1,0 +1,61 @@
+footer{
+    @include rfs(22px 50px , padding);
+    background-color: $dark-green;
+    margin-top: 37px;
+    position: relative;
+    z-index: 1;
+    @include mq(tablet){
+        margin-top: 50px;
+    }
+    @include mq(vsmall){
+        margin-top: 71px;
+    }
+    .location{
+        position: absolute;
+        top: -27px;
+        @include mq(tablet){
+            top: -40px;
+            @include text-align(left);
+            padding-right: 10px;
+        }
+        @include mq(vsmall){
+            top: -61px;
+        }
+    }
+    .footer-link-blk{
+        max-width: 200px;
+        @include mq(vsmall){
+            margin-bottom: 20px;
+        }
+        .footer-link{
+            max-width: 25px;
+            img{
+                @include fit-image($coverd:contain);
+            }
+        }
+    }
+    .footer-link-blk-right{
+        max-width: 463px;
+        align-items: center;
+        @include mq(laptop){
+            max-width: 353px;
+        }
+        .footer-link{
+            max-width: 70px;
+            img{
+                @include fit-image($coverd:contain);
+            }
+        }
+        li{
+            &:last-child{
+                @include psudeo(){
+                    right: unset;
+                    bottom: unset;
+                    width: 2px;
+                    background-color: $green;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
