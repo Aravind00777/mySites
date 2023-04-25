@@ -1,0 +1,22 @@
+header{
+    background-color: $white;
+    padding-top: 21px;
+    padding-bottom: 13px;
+    @include rfs(91px , padding-left);
+    @include rfs(50px , padding-right);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    .navbar-brand{
+        max-width: 230px;
+        @include mq(xxl){
+            max-width: 165px;
+        }
+        @include mq(vsmall){
+            max-width: 115px;
+        }
+        img{
+            @include fit-image($coverd:contain);
+        }
+    }
+}

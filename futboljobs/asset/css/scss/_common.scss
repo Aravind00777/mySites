@@ -1,0 +1,724 @@
+body{
+    @include fontvariables( $w:400 );
+    @include font-size(18px);
+    color: $white;
+    
+}
+
+h1{
+    @include fontvariables( $w:700 );
+    color: $white;
+    @include font-size(30px);
+}
+.fontsize-80{
+    @include fontvariables($w:600);
+    @include font-size(80px);
+    color: $green;
+    @include text-align();
+    display: block;
+}
+.fontsize-60{
+    @include fontvariables($w:700);
+    @include font-size(60px);
+    color: $dark-green;
+    display: block;
+}
+.fontsize-40{
+    @include fontvariables($w:700);
+    @include font-size(40px);
+    color: $green;
+    display: inline-block;
+}
+.fontsize-30{
+    @include fontvariables($w:700);
+    @include font-size(30px);
+    color: $green;
+    display: block;
+}
+.fontsize-28{
+    @include fontvariables($w:700);
+    @include font-size(28px);
+    color: $green;
+    display: block;
+}
+.fontsize-26{
+    @include fontvariables($w:600);
+    @include font-size(26px);
+    color: $dark-green;
+    @include text-align();
+    display: block;
+}
+.fontsize-18{
+    @include fontvariables($w:500);
+    @include font-size(18px);
+    color: $dark-green;
+    @include text-align();
+    display: block;
+}
+.fontsize-18-bold{
+    @include fontvariables($w:700);
+    @include font-size(18px);
+    color: $dark-green;
+    display: block;
+}
+.fontsize-20{
+    @include fontvariables($w:700);
+    @include font-size(20px);
+    color: $dark-green;
+    display: block;
+}
+.fontsize-20-white{
+    @extend .fontsize-20;
+    color: $white;
+}
+.fontsize-24{
+    @include fontvariables($w:600);
+    @include font-size(24px);
+    color: $white;
+    display: block;
+    &.fontsize-24-bold{
+        font-weight: 700;
+        color: $dark-green;
+    }
+    @include mq(mobile){
+        font-size: 14px;
+    }
+}
+
+.last-week{
+    display: block;
+    color: $table-cnt-color;
+    @include mq(xxxxl){
+        font-size: 12px !important;
+        padding-left: 10px;
+    }
+    @include psudeo($left:-8px , $bottom:unset , $right:unset){
+        width: 25px;
+        height: 14px;
+        background-color: $light-green;
+        @include border-radius(4px);
+        @include mq(xxxxl){
+            left: -26px;
+        }
+        @include mq(phablet){
+            left: -18px;
+            width: 17px;
+            height: 11px;
+            top: 3;
+        }
+    }
+    padding-left: 30px;
+    &.current-week{
+        padding-top: 4px;
+        @include psudeo($left:-8px , $bottom:unset , $right:unset){
+            background-color: $green;
+            top: 5px;
+            @include mq(xxxxl){
+                left: -26px;
+            }
+            @include mq(phablet){
+                left: -18px;
+                
+            }
+        }
+    }
+}
+.fontsize-16{
+    @include fontvariables($w:600);
+    @include font-size(16px);
+    color: $green;
+    display: block; 
+    &.fontsize-tb-16{
+        display: table-cell;
+        font-weight: 500;
+        color: $table-cnt-color;
+    }
+    &.blue{
+        color: $blue;
+    }
+    &.yellow{
+        color: $yellow;
+    }
+    &.red{
+        color: $red;
+    }
+    @include mq(mobile){
+        font-size: 12px;
+    }
+}
+.fontsize-16-bold{
+    @include font-size(16px);
+    font-weight: 700;
+    color: $dark-green;
+    
+}
+.tabel-cnt-color{
+    color: $table-cnt-color;
+}
+.fontsize-14{
+    @include fontvariables($w:500);
+    @include font-size(14px);
+    color: $table-cnt-color;
+    &.fontsize-14-bold{
+        font-weight: 700;
+    }
+}
+
+.dropdown{
+    &:hover{
+        > .dropdown-menu{
+            display: block;
+        }
+    }
+    .btn-secondary{
+        background-color: transparent;
+        color: $green;
+        border-color: transparent;
+        @include font-size(18px);
+        @include fontvariables($w:700);
+        width: 141px;
+        @include mq(vsmall){
+            font-size: 13px;
+        }
+        &.btn-secondary:focus {
+            background-color: transparent;
+            border-color: transparent;
+            box-shadow: unset;
+        }
+        
+        &.dropdown-toggle::after {
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 2px solid green;
+            border-left: 2px solid green;
+            width: 12px;
+            height: 12px;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 9px;
+            margin-left: 7px;
+            @include mq(mobile){
+                width: 9px;
+                height: 9px;
+            }
+        }
+        img{
+            @include fit-image;
+            max-width: 18px;
+        }
+    }
+    & .dropdown-menu{
+        left: -62px;
+        top: 35px;
+        width: 225px;
+        border: 0;
+        @include box-shadow(0px 0px 15px -5px rgba(0,0,0,0.75));
+        @include mq(vsmall){
+            left: -95px;
+        }
+        .dropdown-item{
+            padding: 10px;
+            @include font-size(15px);
+        }
+    }
+}
+.display-none{
+    display: none;
+}
+.dashboard-link{
+    display: block;
+    @include font-size(20px);
+    @include fontvariables($w:700);
+    color: $dark-green-50;
+    @include tranistions-;
+    &.login{
+        text-transform: uppercase;
+        color: $dark-green;
+    }
+}
+.subscription-link{
+    display: block;
+    @include font-size(18px);
+    @include fontvariables($w:600);
+    color: $green;
+    background-color: $white;
+    padding: 13px 19px;
+    @include border-radius(10px);
+    border: 2px solid transparent;
+    @include tranistions-;
+    @include mq(laptop){
+        padding: 8px 19px;
+    }
+    &:hover{
+        background-color: transparent;
+        color: $white;
+        border-color: $white;
+    }
+}
+.header-sub{
+    background-color: $green;
+    @include rfs(13px 50px , padding);
+    &.header-sub-second{
+        background-color: $dark-green;
+    }
+    @include mq(tablet){
+        padding: 10px;
+    }
+    h1{
+        @include mq(mobile){
+            font-size: 16px;
+        }
+        @include mq(vsmall){
+            font-size: 14px;
+        }
+    }
+    .header-sub-inner-cnt{
+        @include display-f($jc:right);
+        .subscriptions{
+            @extend .fontsize-18;
+            color: rgba(255,255,255,0.50);
+            sub{
+                @include text-align(right);
+                line-height: 1;
+            }
+            @include mq(phablet){
+                display: none;
+            }
+        }
+        .subscription-link{
+            margin-left: 30px;
+            @include mq(tablet){
+                margin-left: 15px;
+                @include text-align();
+            }
+            @include mq(mobile){
+                font-size: 12px;
+                margin-left: 9px;
+            }
+        }
+        .sub-img{
+            max-width: 70px;
+            margin-left: 7px;
+            @include border-radius(50%);
+            @include mq(laptop){
+                max-width: 48px;
+            }
+            @include mq(mobile){
+                max-width: 35px;
+            }
+            @include mq(mobile){
+                margin-left: 0;
+            }
+            @include mq(vsmall){
+                display: none;
+            }
+            img{
+                @include fit-image;
+            }
+            &.sub-img1{
+                margin-right: 15px;
+            }
+        }
+    }
+}
+.tick{
+    display: block;
+    @include psudeo(){
+        width: 15px;
+        height: 15px;
+        background-color: $green;
+        right: unset;
+        bottom: unset;
+        left: -20px;
+        top: 3px;
+        @include border-radius(50%);
+    }
+    @include psudeo($loc:before){
+        width: 7px;
+        height: 5px;
+        border-left: 2px solid $white;
+        border-bottom: 2px solid $white;
+        right: unset;
+        bottom: unset;
+        left: -16px;
+        top: 7px;
+        z-index: 9;
+        @include rotate(-50deg);
+    }
+    &.blue-circle{
+        &::after{
+            background-color: $blue;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    &.bg-color-blue{
+        background-color: $blue;
+        @include border-radius(30px);
+        color: $white;
+        @include text-align();
+        padding: 4px 10px;
+        font-weight: 500;
+        @include font-size(16px);
+        &::after{
+            display: none;
+        }
+        &.green-20{
+            background-color: $green-20;
+            color: $green       ;
+        }
+        &.red-20{
+            background-color: $red-20;
+            color: $red;
+        }
+    }
+    &.green-circle{
+        &::after{
+            background-color: $green;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    &.yellow-circle{
+        &::after{
+            background-color: $yellow;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    &.red-circle{
+        &::after{
+            background-color: $red;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    &.sort-toggle{
+        cursor: pointer;
+        display: inline-block;
+        &::after{
+            display: none;
+        }
+        &::before{
+            width: 7px;
+            height: 7px;
+            @include rotate(-45deg);
+            border-color: $green;
+            left: unset;
+            right: -19px;
+            top: 4px;
+            border-width: 1px;
+        }   
+    }
+}
+.graph{
+    padding-top: 40px;
+    img{
+        @include fit-image;
+    }
+}
+.bacground-color-none{
+    background-color: transparent !important;
+}
+.message-after{
+    @include psudeo(){
+        width: 25px ;
+        height: 25px;
+        background-color: $green;
+        content: "1";
+        color: $white;
+        left: unset;
+        bottom: unset;
+        padding: 3px;
+        top: 50%;
+        @include transformx(0 , -50%);
+        right: -168px;
+        @include display-f;
+        @include border-radius(5px);
+        @include mq(xxl){
+            right: -149px;
+        }
+        @include mq(laptop){
+            right: -135px;
+            width: 20px;
+            height: 20px;
+        }
+        @include mq(tablet){
+            width: 18px;
+            height: 18px;
+            right: -24px;
+            top: -45%;
+        }
+        @include mq(phablet){
+            right: -10px;
+            top: -74%;
+        }
+    }
+}
+.greens{
+    color: $green;
+}
+.profile-img{
+    @include rfs(142px ,max-width);
+    margin: 0 auto;
+    margin-top: -19%;
+    @include border-radius(50%);
+    img{
+        @include fit-image($coverd:contain);
+    }
+    &.profile-img2{
+        margin: 0;
+        @include rfs(152px , max-width);
+        @include rfs(152px , flex-basis);
+        @include rfs(152px , height);
+        @include mq(mobile){
+            margin: 0 auto;
+        }
+        @include psudeo(){
+            @include rfs(41px , width);
+            @include rfs(41px , height);
+            top: unset;
+            left: unset;
+            right: 10px;
+            background-color: $white;
+            @include border-radius(50%);
+            z-index: 4;
+            @include box-shadow(0px 3px 6px 0px rgba(0,0,0,0.16));
+            @include mq(vsmall){
+                right: 0;
+            }
+        }
+        @include psudeo($loc:before){
+            @include rfs(21px , width);
+            @include rfs(21px , height);
+            top: unset;
+            left: unset;
+            right: 17px;
+            bottom: 10px;
+            @include backgoundformat($image:url('../image/eidt.png'));
+            z-index: 5;
+            @include mq(laptop){
+                right: 14px;
+                bottom: 5px;
+            }
+            @include mq(tablet){
+                right: 12px;
+                bottom: 3px;
+            }
+            @include mq(mobile){
+                width: 12px;
+            }
+            @include mq(vsmall){
+                right: 3px;
+            }
+        }
+    }
+}
+.input-cnt{
+    @include rfs(24px , padding-bottom);
+    input{
+        width: 100%;
+        margin-top: 7px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        @include rfs(18px , padding-right);
+        @include rfs(18px , padding-left);
+        border: 1px solid $dark-green;
+        @include border-radius(5px);
+        outline: none;
+        @include font-size(16px);
+    }
+}
+.password-edit{
+    position: absolute;
+    right: 16px;
+    bottom: 37px;
+    display: block;
+    z-index: 2;
+    @include fontvariables($w:500);
+    @include font-size(10px);
+    color: $green;
+    text-decoration: underline;
+    text-transform: uppercase;
+    @include mq(tablet){
+        bottom: 30px;
+    }
+}
+
+
+// custome select box 
+.custom-select {
+    position: relative;
+    & select {
+        opacity: 0;
+        height: 0 !important;
+        width: 0 !important;
+        display: block;
+        /*hide original SELECT element: */
+    }
+    & .select-selected {
+        width: 100%;
+        margin-top: 7px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        @include rfs(18px , padding-right);
+        @include rfs(18px , padding-left);
+        border: 1px solid $dark-green;
+        @include border-radius(5px);
+        outline: none;
+        @include font-size(16px);
+        @include psudeo($left:unset, $bottom:unset, $right:25px ,$top:40%){
+            width: 10px;
+            height: 10px;
+            border-bottom: 1px solid $green;
+            border-left: 1px solid $green;
+            @include rotate(-45deg);
+            z-index: 0;
+            @include tranistions-;
+            @include mq(xxxxl){
+                right: 12px;
+                top: 29%;
+            }
+            @include mq(xxl){
+                right: 9px;
+                top: 32%;
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+    & .select-items {
+        position: absolute;
+        background-color: $white;
+        top: 74px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        overflow: auto;
+        width: 100%;
+        height: auto;
+        @include box-shadow(0px 3px 6px 0px rgba(0,0,0,16%));
+    }
+}
+
+.select-items div,
+.select-selected {
+    @include fontvariables( $w:500);
+    @include font-size(16px);
+    color: $table-cnt-color;
+    padding: 5px 40px 5px 0px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    @include mq(vsmall){
+        font-size: 14px;
+    }
+}
+.select-items div{
+    padding: 5px 40px 5px 10px;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.max-mb{
+    padding-top: 10px;
+    @include font-size(12px);
+    color: $table-cnt-color;
+    font-weight: 500;
+}
+.birth-date{
+    .select-items{
+        top: 50px;
+    }
+}
+.club{
+    text-transform: uppercase;
+}
+.posted{
+    @include text-align(left);
+}
+.divider{
+    width: 100%;
+    background-color: $green-50;
+    opacity: 1;
+    @include rfs(41px , margin-top);
+    @include rfs(36px , margin-bottom);
+}
+.sub-img-small{
+    max-width: 35px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.card-blk{
+    @include rfs(35px , padding-top);
+    .col-lg-6{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card{
+        border: 0;
+        min-width: 100%;
+        @include border-radius(20px);
+    }
+    .card-img-top{
+        @include fit-image;
+        height: 145px;
+    }
+    .card-body{
+        @include rfs(16px 14px 27px 14px , padding);
+        span{
+            &.fontsize-14{
+                img{
+                    max-width: 32px;
+                    @include rfs(16px , margin-right);
+                }
+            }
+            &.fontsize-18{
+                @include rfs(23px 0 35px 0 , padding);
+                @include font-size(16px);
+            }
+        }
+        
+    }
+}
+.bar_chart{
+    min-height: 300px;
+    @include mq(xxl){
+        min-height: 200px;
+    }
+}
+.r3{
+    .col-lg-4{
+        position: relative;
+        @include rfs(20px 10px 0 10px , padding);
+        @include mq(mobile){
+            padding: 10px 70px 0 70px;
+        }
+        span{
+            padding-top: 10px;
+        }
+    }
+}
+.center-cnt{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    @include transformx(-50% , -50%);
+    span{
+        color: $dark-green-10;
+    }
+}
