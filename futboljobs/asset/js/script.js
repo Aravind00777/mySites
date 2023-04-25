@@ -113,15 +113,19 @@ $(document).ready(function () {
             var id = "#" + data;
             var edit = $(this).attr("edit");
             var editId = '#' + edit;
+            var datafetch = $(this).attr("data2");
+            var datafetchId = '#' + datafetch;
+            var dataContent = $(datafetchId).text();
+            if($(this).hasClass("active")){
+                $("#spanCnt").text(dataContent);
+            }
             $(".edit-blk").hide();
             $(".main-content").hide();
             $(id).parent(".pages").find(id).show();
             if ($(".pannel li:nth-child(2)").hasClass("active")) {
                 $(editId).parent(".lower-header").find(editId).show();
             }
-
         })
-
     })
     $(".cmn-click").click(function () {
         var data = $(this).attr("data");
