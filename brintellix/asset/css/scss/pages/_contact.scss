@@ -1,0 +1,55 @@
+.contact-sec{
+    @include rfs(30px, padding-bottom);
+    background-image: unset;
+    background-color: $light-white;
+
+}
+.get-in-touch-cnt{
+    @include smcontainer(1127px);
+    @include rfs(60px , padding-top);
+    h1{
+        color: $blue;
+    }
+    p{
+        color: $border-color;
+        @include rfs(54px 0 25px 0 , padding);
+    }
+    h3{
+        color: $orange;
+    }
+    form{
+        @include rfs(65px , padding-top);
+        .input-cnt{
+            label{
+                @include font-size(16px);
+                @include fontvariables($w:500);
+                color: $blue;
+                padding-bottom: 15px;
+
+            }
+            textarea,
+            input{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                border: 1px solid $blue;
+                min-height: 40px;
+                font-size: 16px;
+                color: $border-color;
+                @include rfs(30px , margin-bottom);
+            }
+            textarea{
+                min-height: 185px;
+                margin-bottom: 0
+            }
+        }
+    }
+    .row{
+        @include rfs(40px , padding-bottom);
+    }
+}
+.here{
+    color: $orange;
+    display: inline-block;
+    text-decoration: underline;
+}

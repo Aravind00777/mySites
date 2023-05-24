@@ -1,0 +1,514 @@
+.feel-sec{
+    background-image: unset;
+    
+    .li{
+        padding-top: 126px;
+        min-height: 100vh;
+        @include rfs(50px , padding-bottom);
+        @include relation;
+        @include psudeo(){
+            width: 100%;
+            height: 100%;
+            background-color: $shade;
+            
+        };
+        .used{
+            display: block;
+        }
+        .nav-btn{
+            @include display-f($jc:space-between);
+            @include relation($rel:absolute , $index:9);
+            width: 100%;
+            top: 50%;
+            @include transformx(0% , -50%);
+            .arrow-btn{
+                margin-left: 5%;
+                width: 76px;
+                height: 76px;
+                @include border-radius(50%);
+                @include mq(laptop){
+                    width: 49px;
+                    height: 49px;
+            }
+                img{
+                    @include fit-image;
+                }
+                &.arrow-btn-right{
+                    margin-left: 0;
+                    margin-right: 5%;
+                }
+            }
+        }
+    }
+    .feel-sec-cnt{
+        @include rfs(60px , padding-top);
+        @include smcontainer(68%);
+        @include text-align;
+        @include mq(xxl){
+            @include smcontainer(80%);
+            padding-top: 30px;
+        }
+        @include mq(tablet){
+            @include smcontainer(100%);
+            h3{
+                font-size: 23px;
+            }
+        }
+        .feel-image{
+            @include rfs(210px , max-width);
+            margin:  0 auto;
+            @include rfs(50px 0 , padding);
+            @include mq(xxl){
+                padding: 30px 0;
+            }
+            @include mq(tablet){
+                max-width: 120px;
+            }
+            img{
+                @include fit-image;
+            }
+        }
+        &.feel-sec-cnt2{
+            @include smcontainer(67%);
+            @include mq(xxl){
+                @include smcontainer(89%);
+            }
+            h3{
+                line-height: 1.35;
+            }
+        }
+    }
+    
+        .dots-body{
+            @include relation($rel:absolute);
+            width: 100%;
+            bottom: 60px;
+            @include display-f;
+            opacity: 1;
+            @include mq(xxl){
+                bottom: 40px;
+            }
+            li{
+                width: 9px;
+                height: 9px;
+                @include border-radius(50%);
+                border: 1px solid $white;
+                opacity: 1;
+                margin-right: 12px;
+                &.active{
+                    background-color: $white;
+                }
+            }
+        }
+}
+.feelings{
+    @include relation;
+    @include rfs(120px 0 100px 0 , padding);
+    background-color: $light-orange-4;
+    .feelings-cnt-left{
+        max-width: 544px;
+        margin-left: auto;
+        @include mq(tablet){
+            margin-right: auto;
+            padding-top: 120px;
+            
+        }
+        p{
+            @include font-size(16px);
+            
+        }
+        p+p{
+            padding-top: 20px;
+        }
+        .defined-cnt{
+            background-color: $white;
+            @include rfs(55px , margin-top);
+            @include rfs(34px 54px 27px 54px , padding);
+            @include text-align;
+            p{
+                color: $border-color;
+                line-height: 1.4;
+            }
+            h4{
+                color: $orange;
+                padding-bottom: 15px;
+                
+            }
+        }
+        .feelings-top-cnt{
+            h4{
+                padding-bottom: 20px;
+            }
+            .font-size-20-wh{
+                @include rfs(33px , padding-bottom);
+            }
+        }
+    }
+    .feelings-cnt-right{
+        max-width: 644px;
+        margin-left: auto;
+        @include text-align;
+        @include mq(tablet){
+            margin-right: auto;
+
+        }
+        .round-img{
+            @include smcontainer(242px);
+            height: 242px;
+            @include border-radius(50%);
+            @include mq(phablet){
+                @include smcontainer(180px);
+                height: 180px;
+            }
+            img{
+                @include fit-image;
+            }
+        }
+        h2{
+            @include rfs(42px 0,padding );
+            font-size: 40px;
+            line-height: 1.35;
+            @include mq(tablet){
+                font-size: 30px;
+            }
+            &.maintain-h2-padding{
+                @include rfs(30px , padding-top);
+            }
+        }
+    }
+    .feelings-bg{
+        @include relation($rel:absolute , $index:-1);
+        width: 48.22%;
+        height: 100%;
+        right: 0;
+        top: 0;
+
+        @include mq(xxl){
+            width: 59.22%;
+        }
+         
+        img{
+            @include fit-image($coverd:cover);
+            @include mq(xxl){
+                object-fit: cover;
+            }   
+            @include mq(tablet){
+                object-fit: fill;
+            }
+        }
+        @include mq(tablet){
+            .feelings-bg1{
+                display: none;
+            }
+            height: 50%;
+            width: 100%;
+        }
+        @include mq(vsmall){
+            height: 56%;
+        }
+    }
+}
+.design{
+    &.desing2{
+        background-color: $white;
+    }
+    &.desing-white-bg{
+        background-color: $light-white;
+        &.padding-btm{
+            @include rfs(75px , padding-bottom);
+        }
+        
+    }
+    background-color: $sec-color;
+    @include rfs(100px 0 95px 0 , padding);
+    @include mq(tablet){
+        flex-wrap: wrap;
+    }
+    .row{
+        margin: 0 -3.30%;
+        @include mq(xxl){
+            margin: 0 -2.8%;
+        }
+        &.flex-lg-row-reverse{
+            margin: 0 -1.30%;
+            .design-left,
+            .design-right{
+                padding-left: 1.30%;
+                padding-right: 1.30%;
+            }
+        }
+    }
+    .design-left{
+        @include flexw(41%);
+        @include mq(tablet){
+            @include flexw(100%);
+            padding-top: 30px;
+        }
+        &.desing-left2{
+            h4{
+                @include rfs(30px , padding-bottom);
+            }
+        }
+        h4{
+            color: $blue;
+            @include rfs(60px , padding-bottom);
+            &.see-h4{
+                @include rfs(30px , padding-bottom);
+            }
+        }
+        .limitation{
+            @include rfs(30px , padding-top);
+            h4{
+                padding-bottom: 0;
+                padding-bottom: 10px;
+            }
+            p{
+                @include font-size(16px);
+            }
+
+        }
+        p{
+            color: $border-color;
+            @include font-size(20px);
+            
+        }
+
+        .mt-3{
+            font-style: italic;
+        }
+        .study-btn{
+            @include rfs(40px , margin-top);
+        }
+    }
+    .design-left,
+    .design-right{
+        padding-left: 3.30%;
+        padding-right: 3.30%;
+    }
+
+    .design-right{
+        @include flexw(100% - 41%);
+        @include mq(tablet){
+            @include flexw(100%);
+        }
+        .desing-right-cnt{
+            background-color: $blue;
+            @include rfs(25px 27px 16px 27px , padding);
+            &.desing-inner-padding{
+                @include rfs(60px 84px , padding);
+                @include text-align;
+                h4{
+                    @include rfs(34px , padding-bottom);
+                }
+            }
+            @include mq(tablet){
+                margin-top: 70px;
+            }
+        }
+        .change{
+            @include rfs(20px);
+            color: $white;
+            display: block;
+        }
+        .char-img1{
+            padding: 10px 0;
+            img{
+                @include fit-image;
+            }
+        }
+        .desing-row{
+            margin: 0 -3.30%;
+        }
+        .adapted{
+            @extend .change;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+.rating{
+    @include rfs(60px , padding-top);
+    @include smcontainer(64%);
+    @include text-align;
+    @include mq(tablet){
+        @include smcontainer(88%);
+    }
+    @include mq(phablet){
+        @include smcontainer(100%);
+    }
+    p{
+        font-size: 14px;
+        color: $border-color;
+    }
+    p+p{
+        @include rfs(25px , padding-top);
+    }
+}
+.emotional{
+    @include text-align;
+    @include rfs(75px , padding-bottom);
+    @include smcontainer(80%);
+    h3{
+        color: $orange;
+        @include rfs(30px , padding-bottom);
+    }
+    p{
+        @include rfs(20px);
+        color: $border-color;
+    }
+    p+p{
+        padding-top: 10px;
+    }
+    .depressant{
+        display: block;
+        @include rfs(60px , padding-top);
+        color: $border-color;
+        font-size: 14px;
+    }
+}
+.assessed{
+    color: $border-color;
+    padding-top: 14px;
+    display: block;
+}
+}
+.rounded-bullets{
+    padding-top: 15px;
+    li{
+        padding-left: 5px !important;
+        &::after{
+            display: none;
+        }
+        list-style-type: circle;
+        color: $white;
+    }
+}
+.feel-sec-bg{
+    @include relation($rel:absolute , $index:-1);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img{
+        @include fit-image($coverd:cover);
+    }
+}
+.design{
+    &.position-relative{
+        @include backgoundformat($image:url('../image/desing-bg-img.png') , $cover:contain);
+        background-attachment: fixed;
+        @include mq(tablet){
+            background-attachment :unset;
+            background-size: cover;
+            background-color: $blue;
+            background-image: unset;
+        }
+        &.background-image-change{
+            background-image: url("../image/feel-sec-bg5.png");
+        }
+        @include psudeo(){
+            width: 100%;
+            height: 100%;
+            background-color: $shade;
+            
+        };
+        z-index: 1;
+        .both{
+            li{
+                &::after{
+                    background-color: $white;
+                }
+            }
+        }
+        .font-size-14-white{
+            @include rfs(40px , padding-top);
+        }
+    }
+}
+.both{
+    padding-top: 20px;
+    
+    li{
+        @include psudeo($right:unset , $bottom:unset , $top:2px){
+            width: 4px ;
+            height: 4px ;
+            @include border-radius(50%);
+            background-color: $border-color;
+        }
+        padding-left: 15px;         
+        h4{
+            padding-bottom: 0;
+            @include rfs(34px , padding-top);
+        }
+        &.severity{
+            &::after{
+                display: none;
+            }
+        }
+        .mean{
+            @include rfs(25px , padding-top);
+            
+        }
+    }
+    li+li{
+        margin-top: 10px;
+    }
+    .week{
+        color: $border-color;
+        @include font-size(16px);
+        font-weight: 400;
+        
+    }
+        &.both-3{
+            li{
+                padding-left: 0;
+                &::after{
+                    display: none;
+                }
+            }
+        }
+}
+.display-none{
+    display: none;
+    @include mq(tablet){
+        display: block;
+    }
+}
+.display-lg-none{
+    display: none !important;
+    @include mq(mobile){
+        display: block !important;
+    }
+}
+.display-sm-none{
+    display: block !important;
+    @include mq(mobile){
+        display: none !important;
+    }
+}
+.desing-sec-sm-img{
+    display: none;
+    @include mq(tablet){
+        display: block;
+    }
+    img{
+        @include fit-image;
+
+    }
+}
+.rotate-sm{
+    margin: 30px 0;
+    width: 100%;
+    padding: 18px 22px;
+    @include display-f($jc:left);
+    display: none;
+    background: linear-gradient(180deg, rgba(233,131,0,1) 0%, rgba(233,90,0,1) 100%);
+    figure{
+        max-width: 40px;
+        margin-right: 15px;
+        img{
+            @include fit-image;
+        }
+    }
+    @include mq(mobile){
+        display: flex;
+    }
+}
