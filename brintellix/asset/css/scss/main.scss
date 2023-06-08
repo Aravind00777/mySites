@@ -1,0 +1,19 @@
+@import'bootstrap/rfs';
+@import 'format/formats';
+@import'font';
+@import 'variables';
+@import 'mixins';
+@import'common';
+@import'header';
+@import'burger';
+@import'footer';
+
+// pages 
+@import'pages/home';
+@import'pages/patient-experience';
+@import'pages/feel';
+@import'pages/about';
+@import'pages/contact';
+@import'pages/index';
+@import'pages/privacy';
+

@@ -1,0 +1,115 @@
+footer{
+    @include relation();
+    padding-top: 36px;
+    padding-bottom: 46px;
+    .footer-log{
+        @include flexw(11%);
+        @include mq(laptop){
+            @include flexw(13%);
+        }
+        @include mq(tablet){
+            @include flexw(33%);
+        }
+        @include mq(phablet){
+            @include flexw(50%);
+            
+        }
+        @include mq(mobile){
+            @include flexw(100%);
+            
+        }
+        .footer-logo{
+            max-width: 127px;
+            img{
+                @include fit-image();
+                height: auto;
+            }
+        }
+    }
+    .location{
+        @include flexw(20%);
+        @include mq(laptop){
+            @include flexw(27%);
+        }
+        @include mq(tablet){
+            @include flexw(33%);
+        }
+        @include mq(phablet){
+            @include flexw(50%);
+            
+        }
+        @include mq(mobile){
+            @include flexw(100%);
+            padding-top: 30px;
+        }
+        p{
+            color: $blue;
+            @include fontvariable($w:400 , $size:14px);
+            line-height: 2;
+            @include rfs(64px , padding-bottom);
+        }
+    }
+    .contact{
+        @include flexw(19%);
+        @include mq(laptop){
+            @include flexw(30%);
+        }
+        @include mq(tablet){
+            @include flexw(33%);
+        }
+        @include mq(phablet){
+            @include flexw(50%);
+            
+        }
+        @include mq(mobile){
+            @include flexw(100%);
+            padding-top: 30px;  
+            
+        }
+        .mail-link{
+            display: block;
+            color: $blue;
+            @include fontvariable($w:400 , $size:14px);
+            line-height: 2;
+        }
+
+    }
+    .footer-link-cnt{
+        @include flexw(25%);
+        @include mq(tablet){
+            @include flexw(33%);
+            padding-top: 30px;
+        }
+        @include mq(phablet){
+            @include flexw(50%);
+            padding-top: 30px;
+        }
+        @include mq(mobile){
+            @include flexw(100%);
+            
+        }
+        .footer-link{
+            color: $blue;
+            @include fontvariable($w:400 , $size:14px);
+            line-height: 2;
+            @include psudeo($left:unset , $right:-28px , $bottom:unset , $top:3px){
+                width: 18px;
+                height: 8px;
+                @include backgoundformat($image:url('../image/Footer-Arrow.png'));
+
+            }
+        }
+    }
+    .ref-head{
+        line-height: 2;
+    }
+    .footer-divider{
+        margin: 0;
+        height: 1px;
+        background-color: $blue;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 1;
+    }
+}
