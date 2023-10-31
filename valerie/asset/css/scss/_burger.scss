@@ -1,0 +1,71 @@
+#nav-burger {
+    @include rotate(0deg);
+    width: 30px;
+    height: 23px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    display: none;
+    @include mq(tablet){
+        &.open{
+            &::after{
+                opacity: 0;
+            }
+        }
+        display: block;
+    }
+    span{
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $lightpink;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        @include tranistions(.25s ease-in-out);
+    }
+
+    & span:nth-child(1) {
+        top: 0px;
+    }
+    &.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    & span:nth-child(2),
+    & span:nth-child(3){
+        top: 9px;
+    }
+    &.open span:nth-child(2) {
+        @include rotate(45deg);
+    }
+
+    &.open span:nth-child(3) {
+        @include rotate(-45deg)
+    }
+    & span:nth-child(4) {
+        top: 18px;
+    }
+    &.open span:nth-child(4) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+}
+.navbar-toggler:focus{
+    box-shadow: unset;
+}

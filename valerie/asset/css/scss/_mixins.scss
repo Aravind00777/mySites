@@ -1,0 +1,195 @@
+@mixin display-f($align:center , $jc: center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $jc;
+}
+@mixin flexw($width) {
+    max-width: $width;
+    flex-basis: $width;
+}
+@mixin grid($colums , $rowgap , $columngap){
+    display: grid;
+    grid-template-columns: $colums;
+    row-gap: $rowgap;
+    column-gap: $columngap;
+}
+@mixin tranistions- {
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+@mixin rotateY($deg){
+    transform: rotateY($deg);
+    -webkit-transform: rotateY($deg);
+    -moz-transform: rotateY($deg);
+    -ms-transform: rotateY($deg);
+    -o-transform: rotateY($deg);
+}
+@mixin rotate($deg){
+    transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+}
+
+@mixin backgoundformat($image , $cover: cover , $position:center) {
+    background-image: $image;
+    background-position: $position;
+    background-size: $cover;
+    background-repeat: no-repeat;
+}
+
+@mixin smcontainer($width , $auto:0 auto) {
+    max-width: $width;
+    margin: $auto;
+}
+
+@mixin fontvariable($size , $w , $lineheight: 1.1 , $family: 'Avenir Next LT Pro') {
+    font-size: $size;
+    font-weight: $w;
+    line-height: $lineheight;
+    font-family: $family;
+}
+@mixin fontvariables( $w , $lineheight: 1.1 , $family: 'Avenir Next LT Pro') {
+    font-weight: $w;
+    line-height: $lineheight;
+    font-family: $family;
+}
+@mixin fit-image($coverd: contain, $height: 100%) {
+    width: 100%;
+    object-fit: $coverd;
+    height: $height;
+}
+@mixin tranistions($trans) {
+    transition: $trans;
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    -ms-transition: $trans;
+    -o-transition: $trans;
+}
+@mixin text-align($text: center) {
+    text-align: $text;
+}
+
+@mixin relation($rel: relative, $index: 1) {
+    position: $rel;
+    z-index: $index;
+}
+@mixin mq($point) {
+    @if $point ==  xxxl{
+        @media (max-width: 1700px) {
+            @content ;
+        }
+    }
+
+    @else if $point == qhd {
+        @media (min-width: 1921px) {
+            @content ;
+        }
+    }
+
+    @else if $point ==smscreen {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+
+    // edited
+    @else if $point ==xxl {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+
+    @else if $point == laptop {
+        @media (max-width: 1199px) {
+            @content ;
+        }
+    }
+
+    @else if $point == tablet {
+        @media (max-width: 991px) {
+            @content ;
+        }
+    }
+
+    @else if $point == phablet {
+        @media (max-width: 767px) {
+            @content ;
+        }
+    }
+
+    @else if $point == mobile {
+        @media (max-width: 575px) {
+            @content ;
+        }
+    }
+
+    @else if $point == vsmall {
+        @media (max-width: 480px) {
+            @content ;
+        }
+
+    }
+    @else if $point == landscape-mobile {
+        @media  screen and (min-width:600px ) and (max-width: 991px) and (orientation : landscape) {
+            @content ;
+        }
+
+    }
+}
+
+@mixin psudeo(
+    $loc: after,
+    $content: "",
+    $pos: absolute,
+    $top: 0,
+    $bottom: 0,
+    $right: 0,
+    $left: 0,
+    $z-index:1,
+    $after-index:-1) {
+    position: relative;
+    z-index: $z-index;
+    &::#{$loc}{
+        content: $content;
+        position: $pos;
+        top: $top;
+        bottom: $bottom;
+        right: $right;
+        left: $left;
+        z-index: $after-index;
+        @content;
+    }
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+@mixin transformx($x ,$y){
+    transform: translate($x , $y);
+    -webkit-transform: translate($x , $y);
+    -moz-transform: translate($x , $y);
+    -ms-transform: translate($x , $y);
+    -o-transform: translate($x , $y);
+}
+@mixin box-shadow($shade){
+    box-shadow: $shade;
+}
+@mixin flex-direction($direction:column-reverse){
+    flex-direction: $direction;
+}
+@mixin skew( $sk){
+    transform: skew($sk);
+    -webkit-transform: skew($sk);
+    -moz-transform: skew($sk);
+    -ms-transform: skew($sk);
+    -o-transform: skew($sk);
+}
