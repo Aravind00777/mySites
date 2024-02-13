@@ -1,0 +1,109 @@
+body {
+    @include fontvariable($size: 14px, $w: 400);
+}
+
+h1 {
+    @include fontvariable($size: 42px, $w: 700);
+    color: $balck;
+
+    @include mq(xxxxl) {
+        font-size: 36px;
+    }
+
+    @include mq(laptop) {
+        font-size: 30px;
+    }
+
+    @include mq(tablet) {
+        font-size: 26px;
+    }
+}
+
+h2 {
+    @include fontvariable($size: 24px, $w: 700, $lineheight: 1.83);
+
+    @include mq(tablet) {
+        font-size: 20px;
+    }
+}
+
+.h1-sm {
+    @include fontvariable($size: 22px, $w: 700);
+    display: block;
+
+    @include mq(xxxxl) {
+        font-size: 20px;
+    }
+
+    @include mq(laptop) {
+        font-size: 17px;
+    }
+
+    @include mq(tablet) {
+        font-size: 15px;
+    }
+}
+
+.font-18 {
+    @include fontvariable($size: 18px, $w: 600);
+    color: $black69;
+
+    @include mq(laptop) {
+        font-size: 16px;
+    }
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+}
+
+.font-16 {
+    @include fontvariable($size: 16px, $w: 400, $family: 'Open Sans');
+    color: $gray-01;
+}
+
+.font-38 {
+    @include fontvariable($size: 38px, $w: 700, $lineheight: 1.8);
+    color: $white;
+
+    @include mq(xxxxl) {
+        font-size: 30px;
+    }
+
+    @include mq(xxl) {
+        font-size: 28px;
+    }
+
+    @include mq(phablet) {
+        font-size: 22px;
+    }
+}
+
+.campaign-btn {
+    padding: 7px 10px;
+    color: $rose;
+    border: 1px solid $rose;
+    display: inline-block;
+    max-width: 140px;
+    width: 100%;
+    @include text-align;
+    margin-top: 25px;
+    @include fontvariables($w: 700, $lineheight: 1.85);
+    @include border-radius(4px);
+    @include tranistions-;
+
+    &:hover {
+        background-color: $rose;
+        color: $white;
+    }
+}
+
+.logo-wraper.hide {
+    display: none;
+
+    @include mq(mobile) {
+        display: flex;
+        padding-right: 10px;
+    }
+
+}

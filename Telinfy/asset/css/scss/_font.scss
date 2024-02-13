@@ -1,0 +1,47 @@
+
+
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../font/cairo/Cairo-SemiBold.woff2') format('woff2'),
+        url('../font/cairo/Cairo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../font/cairo/Cairo-Medium.woff2') format('woff2'),
+        url('../font/cairo/Cairo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../font/cairo/Cairo-Bold.woff2') format('woff2'),
+        url('../font/cairo/Cairo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../font/cairo/Cairo-Regular.woff2') format('woff2'),
+        url('../font/cairo/Cairo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/open-sans/OpenSans-Regular.woff2') format('woff2'),
+        url('../font/open-sans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
